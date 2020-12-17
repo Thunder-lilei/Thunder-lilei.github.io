@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <title>html | 李雷的博客</title>
+  
+    
+<link rel="stylesheet" href="/js/aos/aos.css">
+
+  
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/animate.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/shareJs/share.min.css">
+
+  
+  <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="李雷的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+  
+<script src="/js/jquery3.5.1.js"></script>
+
+  
+<script src="/js/vue2.6.11.js"></script>
+
+  <body>
+    <header class="header bg-color" 
+  style="position: fixed; 
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+  <i class="fa fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+  <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+  </div>
+  <div class="drawer-box" :class="{'active': visible}">
+    <div class="drawer-box-head bg-color">
+      <img class="drawer-box-head_logo" src="/medias/logo.png" alt="logo">
+      <h3 class="drawer-box-head_title">李雷的博客</h3>
+      <h5 class="drawer-box-head_desc">慢慢来</h5>
+    </div>
+    <div class="drawer-box-content">
+      <ul class="drawer-box-content_menu">
+        
+          <li class="drawer-box-content_item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+        <li class="drawer-box-content_item">
+          <a href="">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span>Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDrawer',
+    data: {
+      visible: false,
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      }
+    },
+    created() {}
+  })
+</script>
+    </div>
+    <div class="blog-title" id="author-avatar">
+      <div class="avatar">
+        <img src="/medias/logo.png" alt="logo">
+      </div>
+      <a href="/" class="logo">李雷的博客</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+      </ul>
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
+  <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+    <div class="message-box">
+      <h2>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="title">搜索</span>
+      </h2>
+      <form class="site-search-form">
+        <input type="text"
+          placeholder="请输入关键字"
+          id="local-search-input" 
+          @click="getSearchFile()"
+          class="st-search-input"
+          v-model="searchInput"
+        />
+      </form>
+      <div class="result-wrapper">
+        <div id="local-search-result" class="local-search-result-cls"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/local_search.js"></script>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile();
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+    </nav>
+  </div>
+  
+  <a target="_blank" rel="noopener" href="https://github.com/Thunder-lilei" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</header>
+    <main class="main" style="margin-top: 60px;">
+      
+
+
+<div class="post-detail-header" style="background: url(https://i.loli.net/2020/11/08/gVBndm846EZpiNk.jpg) no-repeat; background-size: cover; 
+  background-position: center center;">
+  
+    <span class="title">html</span>
+  
+</div>
+<div class="row justify-center">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2020-11-09</span>
+      </div>
+      
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/%E5%89%8D%E7%AB%AF/" class="">
+              前端
+            </a>
+          
+            <a href="/tags/html/" class="">
+              html
+            </a>
+          
+        </div>
+        
+        
+        <div class="categories">
+          <i class="iconfont iconbookmark1"></i>
+          
+            <a href="/categories/technology/" class="">
+              technology
+            </a>
+          
+        </div>
+        
+      </div>
+      <div class="post-content">
+        <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li>超文本<strong>标记语言</strong></li>
+<li>标记语言是一套<strong>标记标签</strong>（用来描述网页）</li>
+<li>.htm或.html</li>
+<li>大小写不敏感</li>
+</ul>
+<hr>
+<h2 id="html标签（标记）"><a href="#html标签（标记）" class="headerlink" title="html标签（标记）"></a>html标签（标记）</h2><ul>
+<li>尖括号包围<code>&lt;html&gt;</code></li>
+<li>通常成对出现<code>&lt;b&gt;&lt;/b&gt;</code>，第一个叫<strong>开始标签</strong>（开放标签），第二个叫<strong>结束标签</strong>（闭合标签）</li>
+<li>空标签，只包含属性，没有闭合标签</li>
+</ul>
+<ol>
+<li><h3 id="lt-h1-gt-—-lt-h6-gt-标题"><a href="#lt-h1-gt-—-lt-h6-gt-标题" class="headerlink" title="&lt;h1&gt;—&lt;h6&gt;标题"></a><code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code>标题</h3></li>
+<li><h3 id="lt-p-gt-段落"><a href="#lt-p-gt-段落" class="headerlink" title="&lt;p&gt;段落"></a><code>&lt;p&gt;</code>段落</h3><ul>
+<li>浏览器会自动在段落前后添加空行</li>
+<li>应该使用<code>&lt;br/&gt;</code>替换<code>&lt;p&gt;&lt;/p&gt;</code>来实现空行</li>
+</ul>
+</li>
+<li><h3 id="lt-a-gt-链接"><a href="#lt-a-gt-链接" class="headerlink" title="&lt;a&gt;链接"></a><code>&lt;a&gt;</code>链接</h3><ul>
+<li>href属性指定链接地址</li>
+<li><code>target=&quot;_blank&quot;</code>，链接会在新窗口打开</li>
+</ul>
+</li>
+<li><h3 id="lt-img-gt-图像"><a href="#lt-img-gt-图像" class="headerlink" title="&lt;img&gt;图像"></a><code>&lt;img&gt;</code>图像</h3><ul>
+<li>src图片地址</li>
+<li>width，height图片尺寸</li>
+<li>alt，替换文本属性，图像不加载时显示的文本</li>
+</ul>
+</li>
+<li><h3 id="lt-hr-gt-水平线"><a href="#lt-hr-gt-水平线" class="headerlink" title="&lt;hr&gt;水平线"></a><code>&lt;hr&gt;</code>水平线</h3><ul>
+<li>分割内容</li>
+</ul>
+</li>
+<li><h3 id="lt-gt-注释"><a href="#lt-gt-注释" class="headerlink" title="&lt;!-- --&gt;注释"></a><code>&lt;!-- --&gt;</code>注释</h3><ul>
+<li>提高可读性</li>
+<li>浏览器会忽视注释</li>
+</ul>
+</li>
+<li><h3 id="lt-br-gt-折行"><a href="#lt-br-gt-折行" class="headerlink" title="&lt;br/&gt;折行"></a><code>&lt;br/&gt;</code>折行</h3><ul>
+<li>不产生新段落的情况下换行</li>
+<li>浏览器会移除源代码众多与的空格和换行，所有<strong>连续的空格和换行</strong>会被算作一个<strong>空格</strong></li>
+</ul>
+</li>
+<li><h3 id="lt-table-gt"><a href="#lt-table-gt" class="headerlink" title="&lt;table&gt;"></a><code>&lt;table&gt;</code></h3><ul>
+<li>包含行<code>&lt;tr&gt;</code>，单元格<code>&lt;td&gt;</code>，表头<code>&lt;th&gt;</code>（大多数浏览器为粗体居中）</li>
+<li>border定义边框，通常情况下无边框</li>
+<li>空的单元格可以使用空格占位符将边框显现出来<br><img src="https://i.loli.net/2020/11/09/FYZtaB8HIMDyeRl.png" alt="Snipaste_2020-11-09_17-07-23.png"></li>
+<li>caption，定义表格标题，居中唯一</li>
+<li>thead，页眉，tbody，主题，tfoot，页脚</li>
+</ul>
+</li>
+<li><h3 id="lt-li-gt-lt-li-gt-列表项"><a href="#lt-li-gt-lt-li-gt-列表项" class="headerlink" title="&lt;li&gt;&lt;/li&gt;列表项"></a><code>&lt;li&gt;&lt;/li&gt;</code>列表项</h3><ul>
+<li><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4>  <code>&lt;ul&gt;&lt;/ul&gt;</code><br>  可以嵌套使用，标记点会有变化  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>咖啡<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>茶</span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>红茶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>绿茶</span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>中国茶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span>非洲茶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>牛奶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <img src="https://i.loli.net/2020/11/10/cgLdS1ATE6GQOtx.png" alt="Snipaste_2020-11-10_16-53-33.png"></li>
+<li><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><ul>
+<li><code>type</code>递增标点类型<br><code>&lt;ol&gt;&lt;/ol&gt;</code> <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">	<span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>有序列表<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>有序列表<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>数字列表：<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>柠檬<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>桔子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>字母列表：<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;A&quot;</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>柠檬<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>桔子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>小写字母列表：<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;a&quot;</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>柠檬<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>桔子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>罗马字母列表：<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;I&quot;</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>柠檬<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>桔子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>小写罗马字母列表：<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;i&quot;</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>柠檬<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">li</span>&gt;</span>桔子<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>  </span><br><span class="line">	```	</span><br><span class="line">	![Snipaste_2020-11-10_16-57-14.png](https://i.loli.net/2020/11/10/VcEQIuelsoJTH9h.png)</span><br><span class="line">- #### 自定义列表项</span><br><span class="line">```html</span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>Black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>White cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>这是两个没有定义的自定义列表项<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>这是两个没有定义的自定义列表项<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/11/10/7adrZXutHKDQqBO.png" alt="Snipaste_2020-11-10_16-47-10.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="lt-div-gt-和-lt-span-gt-块"><a href="#lt-div-gt-和-lt-span-gt-块" class="headerlink" title="&lt;div&gt;和&lt;span&gt;块"></a><code>&lt;div&gt;和&lt;span&gt;</code>块</h2><ol>
+<li><code>&lt;div&gt;</code>是块级元素<ul>
+<li>表格布局</li>
+<li>对内容块设置样式属性</li>
+</ul>
+</li>
+<li><code>&lt;span&gt;</code>是内联元素<ul>
+<li>为部分文本设置样式属性</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="html文档-网页"><a href="#html文档-网页" class="headerlink" title="html文档 = 网页"></a>html文档 = 网页</h2><ul>
+<li>html文档描述网页</li>
+<li>文档包含<strong>html标签</strong>和<strong>纯文本</strong></li>
+<li>浏览器不会显示html标签，而是使用标签解释页面内容<br>例：<br>  <code>&lt;html&gt;文本&lt;/html&gt;</code>，文本描述网页<br>  <code>&lt;body&gt;文本&lt;/body&gt;</code>，文本可见的网页内容</li>
+</ul>
+<hr>
+<h2 id="html元素"><a href="#html元素" class="headerlink" title="html元素"></a>html元素</h2><ul>
+<li>html文档由html元素定义</li>
+<li>从开始标签到结束标签的所有代码</li>
+<li>可以有空内容（在开始标签中进行关闭）</li>
+<li>大多数元素可以有属性</li>
+<li>大多数可以嵌套</li>
+<li>大多数html元素分为<strong>块级元素</strong>（通常以新行开始结束）和<strong>内联元素</strong>（通常不以新行开始）</li>
+</ul>
+<hr>
+<h2 id="html属性"><a href="#html属性" class="headerlink" title="html属性"></a>html属性</h2><ul>
+<li><strong>名称/值</strong></li>
+<li>开始标签中规定</li>
+<li>属性值加<strong>引号</strong><code>&quot;&quot;</code></li>
+</ul>
+<ol>
+<li><h3 id="避免使用的标签和属性"><a href="#避免使用的标签和属性" class="headerlink" title="避免使用的标签和属性"></a>避免使用的标签和属性</h3><ul>
+<li>应使用样式替代</li>
+<li>标签<ul>
+<li><code>&lt;center&gt;</code>，定义居中</li>
+<li><code>font</code>/<code>basefont</code>，定义字体</li>
+<li><code>s</code>/<code>strike</code>，定义删除线文本</li>
+<li><code>u</code>，定义下划线文本</li>
+</ul>
+</li>
+<li>属性<ul>
+<li><code>align</code>，定义文本对齐方式</li>
+<li><code>bgcolor</code>，定义背景颜色</li>
+<li><code>color</code>，定义文本颜色</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="href，-lt-a-gt-中指定，链接的地址"><a href="#href，-lt-a-gt-中指定，链接的地址" class="headerlink" title="href，&lt;a&gt;中指定，链接的地址"></a>href，<code>&lt;a&gt;</code>中指定，链接的地址</h3></li>
+<li><h3 id="algin，对齐方式"><a href="#algin，对齐方式" class="headerlink" title="algin，对齐方式"></a>algin，对齐方式</h3><ul>
+<li>center，居中</li>
+<li>left，right</li>
+<li>文本<ul>
+<li><code>text-align:对齐方式</code>，文本对齐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="border，边框"><a href="#border，边框" class="headerlink" title="border，边框"></a>border，边框</h3></li>
+<li><h3 id="class，元素类名"><a href="#class，元素类名" class="headerlink" title="class，元素类名"></a>class，元素类名</h3></li>
+<li><h3 id="id，唯一"><a href="#id，唯一" class="headerlink" title="id，唯一"></a>id，唯一</h3></li>
+<li><h3 id="style，行内样式"><a href="#style，行内样式" class="headerlink" title="style，行内样式"></a>style，行内样式</h3><ul>
+<li>改变所有html元素的样式的通用方法</li>
+<li>也可以在独立的样式表（css文件）中定义</li>
+<li><code>background-color:颜色</code>，定义背景颜色</li>
+<li>字体<ul>
+<li><code>font-family:字体系列名称</code>，字体系列</li>
+<li><code>font-size:大小</code>，字体大小</li>
+<li><code>color:颜色</code>，字体颜色</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="title，规定元素额外信息"><a href="#title，规定元素额外信息" class="headerlink" title="title，规定元素额外信息"></a>title，规定元素额外信息</h3></li>
+<li><h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><ul>
+<li>对读者不可见</li>
+<li>可以创建直接跳至改命名锚的链接<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;label&quot;</span>&gt;</span>锚<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#label&quot;</span>&gt;</span>提示<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	或<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;提示页面地址#label&quot;</span>&gt;</span>其它页面提示<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	``` </span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">## html文本</span><br><span class="line">### 文本格式化</span><br><span class="line">```html</span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>b 变大<span class="tag">&lt;<span class="name">b</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">big</span>&gt;</span>big 大号字<span class="tag">&lt;<span class="name">big</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>strong 加重语气<span class="tag">&lt;<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>small 小号字<span class="tag">&lt;<span class="name">small</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>em 着重<span class="tag">&lt;<span class="name">em</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>i 斜体字<span class="tag">&lt;<span class="name">i</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>sub 下标字<span class="tag">&lt;<span class="name">sub</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>sup 上标字<span class="tag">&lt;<span class="name">sup</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ins</span>&gt;</span>ins 插入字<span class="tag">&lt;<span class="name">ins</span>/&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">del</span>&gt;</span>del 删除字<span class="tag">&lt;<span class="name">del</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/11/09/ruW6LpXZhAbok3m.png" alt="Snipaste_2020-11-09_11-43-59.png"></li>
+</ul>
+</li>
+</ol>
+<h3 id="预格式文本"><a href="#预格式文本" class="headerlink" title="预格式文本"></a>预格式文本</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">这是</span><br><span class="line">预格式文本。</span><br><span class="line">它保留了      空格</span><br><span class="line">和换行。</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>pre 标签很适合显示计算机代码：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">for i = 1 to 10</span><br><span class="line">     print i</span><br><span class="line">next i</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2020/11/09/3Kh1WpvaCFZmgrx.png" alt="Snipaste_2020-11-09_11-47-43.png"></p>
+<h3 id="计算技术标签，代码标签"><a href="#计算技术标签，代码标签" class="headerlink" title="计算技术标签，代码标签"></a>计算技术标签，代码标签</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>Computer code<span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Keyboard input<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tt</span>&gt;</span>Teletype text<span class="tag">&lt;/<span class="name">tt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">samp</span>&gt;</span>Sample text<span class="tag">&lt;/<span class="name">samp</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">var</span>&gt;</span>Computer variable<span class="tag">&lt;/<span class="name">var</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2020/11/09/CpxQXa2NZAgtI1m.png" alt="Snipaste_2020-11-09_11-51-47.png"></p>
+<h3 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">address</span>&gt;</span></span><br><span class="line">Written by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;mailto:webmaster@example.com&quot;</span>&gt;</span>Donald Duck<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.<span class="tag">&lt;<span class="name">br</span>&gt;</span> </span><br><span class="line">Visit us at:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Example.com<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Box 564, Disneyland<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">USA</span><br><span class="line"><span class="tag">&lt;/<span class="name">address</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h3><ul>
+<li>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</li>
+<li>仅对于 IE 5 中的 acronym 元素有效。</li>
+<li>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">&quot;etcetera&quot;</span>&gt;</span>etc.<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">&quot;World Wide Web&quot;</span>&gt;</span>WWW<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/11/09/DmFvPuXANbHCxK5.png" alt="Snipaste_2020-11-09_11-55-56.png"></li>
+</ul>
+<p>###文字方向</p>
+<ul>
+<li>需要浏览器支持 <strong>bi-directional override (bdo)</strong><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">&quot;rtl&quot;</span>&gt;</span></span><br><span class="line">Here is some Hebrew text</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><ul>
+<li>使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">这是长的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span><br><span class="line">这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line">这是短的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span></span><br><span class="line">这是短的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">q</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/11/09/7RSQP8miEUhvXIc.png" alt="Snipaste_2020-11-09_12-00-54.png"></li>
+</ul>
+<hr>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><ul>
+<li>通过使用 HTML4.0，所有的格式化代码均可移出 HTML 文档，然后移入一个独立的样式表。</li>
+<li>使用<ul>
+<li>外部样式表，一般应用在多个页面<br><code>&lt;link rel=&quot;&quot; type=&quot;&quot; href=&quot;&quot;&gt;</code></li>
+<li>内部样式表，一般应用在单个页面<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">body</span> &#123;&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">p</span> &#123;&#125;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">style</span>/&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+<li>内联样式，一般应用在个别元素<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">内容</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="html类"><a href="#html类" class="headerlink" title="html类"></a>html类</h2><p>为相同的类设置样式</p>
+<ul>
+<li><h3 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h3>  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.cities</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span><span class="selector-pseudo">:blue</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">color</span><span class="selector-pseudo">:white</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">margin</span><span class="selector-pseudo">:20px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">padding</span><span class="selector-pseudo">:20px</span>;</span></span><br><span class="line">&#125; </span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;cities&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>London<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>London is the capital city of England. </span><br><span class="line">It is the most populous city in the United Kingdom, </span><br><span class="line">with a metropolitan area of over 13 million inhabitants.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;cities&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Paris<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Paris is the capital and most populous city of France.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;cities&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Tokyo<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,</span><br><span class="line">and the most populous metropolitan area in the world.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <img src="https://i.loli.net/2020/11/10/Zvx9qpQOayzRTrS.png" alt="Snipaste_2020-11-10_17-13-30.png"></li>
+<li><h3 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h3>  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">span</span><span class="selector-class">.red</span> &#123;<span class="attribute">color</span>:red;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;red&quot;</span>&gt;</span>Important<span class="tag">&lt;/<span class="name">span</span>&gt;</span> Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  <img src="https://i.loli.net/2020/11/10/jVOumrIkqHKbQnU.png" alt="Snipaste_2020-11-10_17-15-34.png"></li>
+</ul>
+<hr>
+<h2 id="响应式WEB设计"><a href="#响应式WEB设计" class="headerlink" title="响应式WEB设计"></a>响应式WEB设计</h2><p>RWD （Responsive Web Design）</p>
+<ol>
+<li>自己创建</li>
+<li>Bootstrap（开发响应式web的html，css，js框架）</li>
+</ol>
+<hr>
+<h2 id="html框架"><a href="#html框架" class="headerlink" title="html框架"></a>html框架</h2><ul>
+<li>可以在浏览器窗口显示不止一个框架（每份HTML文档），每个框架独立于其他框架</li>
+<li>制作<strong>导航栏</strong></li>
+<li>缺点<ul>
+<li>需要跟踪更多的html文档</li>
+<li>很难打印整张页面</li>
+</ul>
+</li>
+<li><h3 id="lt-frameset-gt-（rows行框架，cols列框架）"><a href="#lt-frameset-gt-（rows行框架，cols列框架）" class="headerlink" title="&lt;frameset&gt;（rows行框架，cols列框架）"></a><code>&lt;frameset&gt;</code>（rows行框架，cols列框架）</h3><ul>
+<li>混合框架<br><img src="https://i.loli.net/2020/11/11/HDI2T8EKb5SLX9q.png" alt="Snipaste_2020-11-11_09-27-23.png"></li>
+<li>导航框架<br>两个框架，每个框架里有一个html页面，期中一个页面包含三个框架链接<br><img src="https://i.loli.net/2020/11/11/qhbenN5SBVdDfvx.png" alt="Snipaste_2020-11-11_09-28-31.png"></li>
+<li>内联框架<br>可以调整大小<br><img src="https://i.loli.net/2020/11/11/AfC7eHBPjzL1k3V.png" alt="Snipaste_2020-11-11_09-32-24.png"></li>
+</ul>
+</li>
+<li>属性<ul>
+<li><code>noresize=&quot;noresize&quot;</code>是框架无法拖动</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="html页面布局"><a href="#html页面布局" class="headerlink" title="html页面布局"></a>html页面布局</h2><h3 id="lt-div-gt"><a href="#lt-div-gt" class="headerlink" title="&lt;div&gt;"></a><code>&lt;div&gt;</code></h3><ul>
+<li>语义元素<br><img src="https://i.loli.net/2020/11/16/Otol1Y9i57gsV2I.png" alt="Snipaste_2020-11-16_10-41-00.png"><h3 id="lt-table-gt-1"><a href="#lt-table-gt-1" class="headerlink" title="&lt;table&gt;"></a><code>&lt;table&gt;</code></h3><h4 id="lt-th-gt-表头"><a href="#lt-th-gt-表头" class="headerlink" title="&lt;th&gt;表头"></a><code>&lt;th&gt;</code>表头</h4><h4 id="lt-tr-gt-行"><a href="#lt-tr-gt-行" class="headerlink" title="&lt;tr&gt;行"></a><code>&lt;tr&gt;</code>行</h4><h4 id="lt-td-gt-单元格"><a href="#lt-td-gt-单元格" class="headerlink" title="&lt;td&gt;单元格"></a><code>&lt;td&gt;</code>单元格</h4></li>
+</ul>
+<hr>
+<h2 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h2><ul>
+<li>RWD （Responsive Web Design）</li>
+<li>RWD 能够以可变尺寸传递网页</li>
+<li>RWD 对于平板和移动设备是必需的</li>
+</ul>
+<ol>
+<li>手写</li>
+<li>Bootstrap 是最流行的开发响应式 web 的 HTML, CSS, 和 JS 框架。</li>
+</ol>
+<hr>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ol>
+<li>颜色<code>bgcolor</code><ul>
+<li>属性值可以是十六进制数、RGB 值或颜色名。<ul>
+<li><code>bgcolor=&quot;#000000&quot;</code></li>
+<li><code>bgcolor=&quot;rgb(0,0,0)&quot;</code></li>
+<li><code>bgcolor=&quot;black&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>图像<code>background</code><ul>
+<li>属性值为图像的URL（相对地址、绝对地址）</li>
+<li>如果图像尺寸小于浏览器窗口，那么图像将在整个浏览器窗口进行复制。<ul>
+<li><code>background=&quot;clouds.gif&quot;</code>    </li>
+<li><code>background=&quot;http://www.w3school.com.cn/clouds.gif&quot;</code></li>
+</ul>
+</li>
+<li>背景图片会增加页面加载时间</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="html脚本"><a href="#html脚本" class="headerlink" title="html脚本"></a>html脚本</h2><ul>
+<li><code>&lt;script&gt;</code></li>
+</ul>
+<hr>
+<h2 id="html文件路径"><a href="#html文件路径" class="headerlink" title="html文件路径"></a>html文件路径</h2><p><img src="https://i.loli.net/2020/11/16/ZA5zYfWCT9mkba1.png" alt="Snipaste_2020-11-16_10-56-54.png"></p>
+<ul>
+<li>绝对路径<br>  指向一个因特网文件的完整url</li>
+<li>相对路径<br>  相对于当前页面的文件</li>
+<li>使用相对路径是个好习惯（如果可能）。</li>
+</ul>
+<hr>
+<h2 id="html头部元素"><a href="#html头部元素" class="headerlink" title="html头部元素"></a>html头部元素</h2><ul>
+<li><h3 id="lt-title-gt-文档标题"><a href="#lt-title-gt-文档标题" class="headerlink" title="&lt;title&gt;文档标题"></a><code>&lt;title&gt;</code>文档标题</h3><ul>
+<li>是必需的</li>
+<li>页面被添加到收藏夹时显示的标题</li>
+<li>搜索引擎结果中的页面标题</li>
+</ul>
+</li>
+<li>有<code>target=&quot;_blank&quot;</code>或没有链接都会在新表签页中打开</li>
+<li><h3 id="lt-meta-gt-文档关键词"><a href="#lt-meta-gt-文档关键词" class="headerlink" title="&lt;meta&gt;文档关键词"></a><code>&lt;meta&gt;</code>文档关键词</h3><ul>
+<li>规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据</li>
+<li>一些搜索引擎会利用 meta 元素的 name 和 content 属性来索引您的页面<br>例：<code>&lt;meta name=&quot;keywords&quot; content=&quot;HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript&quot;&gt;</code></li>
+<li>重定向<br>  例：<code>&lt;meta http-equiv=&quot;Refresh&quot; content=&quot;5;url=http://www.w3school&quot; /&gt;</code></li>
+</ul>
+</li>
+<li><h3 id="lt-base-gt"><a href="#lt-base-gt" class="headerlink" title="&lt;base&gt;"></a><code>&lt;base&gt;</code></h3><ul>
+<li>为页面上所有链接提供默认地址<br>例：<code>&lt;base href=&quot;http://www.w3school.com.cn/images/&quot; /&gt;</code></li>
+</ul>
+</li>
+<li><h3 id="lt-link-gt"><a href="#lt-link-gt" class="headerlink" title="&lt;link&gt;"></a><code>&lt;link&gt;</code></h3><ul>
+<li>定义文档与外部资源之间关系</li>
+<li>连接样式表<br>  例：<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot; /&gt;</code></li>
+</ul>
+</li>
+<li><h3 id="lt-style-gt"><a href="#lt-style-gt" class="headerlink" title="&lt;style&gt;"></a><code>&lt;style&gt;</code></h3><ul>
+<li>定义样式</li>
+</ul>
+</li>
+<li><h3 id="lt-script-gt"><a href="#lt-script-gt" class="headerlink" title="&lt;script&gt;"></a><code>&lt;script&gt;</code></h3><ul>
+<li>脚本</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="字符实体"><a href="#字符实体" class="headerlink" title="字符实体"></a>字符实体</h2><ul>
+<li>预留字符必须被替换成字符实体</li>
+<li>并不是所有浏览器都支持字符实体，对字符数字的支持很好<br><img src="https://i.loli.net/2020/11/16/DFEk6SvNVqYuUKL.png" alt="Snipaste_2020-11-16_11-18-56.png"></li>
+</ul>
+<hr>
+<h2 id="html统一资源定位符（url）"><a href="#html统一资源定位符（url）" class="headerlink" title="html统一资源定位符（url）"></a>html统一资源定位符（url）</h2><h3 id="语法规则"><a href="#语法规则" class="headerlink" title="语法规则"></a>语法规则</h3><p><code>scheme://host.domain:port/path/filename</code></p>
+<ul>
+<li>scheme - 定义因特网服务的类型。最常见的类型是 http<br><img src="https://i.loli.net/2020/11/16/kshoBFvHxcVw2XM.png" alt="Snipaste_2020-11-16_11-24-20.png"></li>
+<li>host - 定义域主机（http 的默认主机是 www）</li>
+<li>domain - 定义因特网域名，比如 w3school.com.cn</li>
+<li>:port - 定义主机上的端口号（http 的默认端口号是 80）</li>
+<li>path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。</li>
+<li>filename - 定义文档/资源的名称</li>
+</ul>
+<hr>
+<h2 id="HTML-lt-DOCTYPE-gt"><a href="#HTML-lt-DOCTYPE-gt" class="headerlink" title="HTML &lt;!DOCTYPE&gt;"></a>HTML &lt;!DOCTYPE&gt;</h2><p>html版本声明<br><img src="https://i.loli.net/2020/11/16/NkxhLT4yEKPRSWO.png" alt="Snipaste_2020-11-16_11-29-49.png"></p>
+<hr>
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>以xml格式编写的html</p>
+<hr>
+<h2 id="画布Canvas"><a href="#画布Canvas" class="headerlink" title="画布Canvas"></a>画布Canvas</h2><ul>
+<li><p>通过js绘制图像</p>
+</li>
+<li><p><code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot;&gt;&lt;/canvas&gt;</code><br>  赋予<code>id</code>，规定大小</p>
+</li>
+<li><h3 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h3>  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">&quot;myCanvas&quot;</span>);</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> cxt=c.getContext(<span class="string">&quot;2d&quot;</span>);</span></span><br><span class="line"><span class="javascript">	cxt.fillStyle=<span class="string">&quot;#FF0000&quot;</span>;</span></span><br><span class="line">	cxt.fillRect(0,0,150,75);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  <img src="https://i.loli.net/2020/11/16/elKnY6oq4hOjWvZ.png" alt="Snipaste_2020-11-16_14-19-42.png"></p>
+<ul>
+<li><code>getContext(&quot;2d&quot;)</code>：内建的html5对象，内含方法</li>
+<li><code>fillStyle</code> 方法将其染成红色</li>
+<li><code>fillRect</code> 方法规定了形状、位置和尺寸。</li>
+</ul>
+</li>
+<li><h3 id="线条"><a href="#线条" class="headerlink" title="线条"></a>线条</h3>  <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line">	</span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">&quot;myCanvas&quot;</span>);</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> cxt=c.getContext(<span class="string">&quot;2d&quot;</span>);</span></span><br><span class="line">	cxt.moveTo(70,10);</span><br><span class="line">	cxt.lineTo(70,70);</span><br><span class="line">	cxt.moveTo(90,10);</span><br><span class="line">	cxt.lineTo(90,20);</span><br><span class="line">	cxt.moveTo(90,30);</span><br><span class="line">	cxt.lineTo(90,70);</span><br><span class="line">	cxt.stroke()</span><br><span class="line">	</span><br><span class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  <img src="https://i.loli.net/2020/11/16/sTgSKDJlF6eX8k5.png" alt="Snipaste_2020-11-16_14-27-36.png"></p>
+</li>
+<li><h3 id="图形"><a href="#图形" class="headerlink" title="图形"></a>图形</h3></li>
+<li><h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3></li>
+<li><h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3></li>
+</ul>
+<hr>
+<h2 id="矢量图SVG"><a href="#矢量图SVG" class="headerlink" title="矢量图SVG"></a>矢量图SVG</h2><ul>
+<li>可伸缩矢量图形</li>
+<li><strong>XML格式</strong>定义图形</li>
+<li>改变尺寸的情况下其图形<strong>质量不会有损失</strong></li>
+<li>可通过文本编辑器来创建和修改</li>
+<li>可被搜索、索引、脚本化或压缩<br>例：<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="attr">version</span>=<span class="string">&quot;1.1&quot;</span> <span class="attr">height</span>=<span class="string">&quot;190&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">polygon</span> <span class="attr">points</span>=<span class="string">&quot;100,10 40,180 190,60 10,60 160,180&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/11/17/JPpj1IQXSE3iTDR.png" alt="Snipaste_2020-11-17_09-14-04.png"></li>
+</ul>
+<hr>
+<h2 id="Canvas-vs-SVG"><a href="#Canvas-vs-SVG" class="headerlink" title="Canvas vs SVG"></a>Canvas vs SVG</h2><ol>
+<li>JS vs XML</li>
+<li>SVG每个元素都可用，都可附加js事件处理器，每个绘制的图形均被视为对象，浏览器能根据属性的改变重现图形 vs Canvas中图形一旦被绘制就不能实时更改<br><img src="https://i.loli.net/2020/11/17/fxEuFsL4WzTU2v6.png" alt="Snipaste_2020-11-17_09-18-10.png"></li>
+</ol>
+<hr>
+<h2 id="html多媒体"><a href="#html多媒体" class="headerlink" title="html多媒体"></a>html多媒体</h2><ul>
+<li>多媒体<ul>
+<li>音效、音乐、视频、动画</li>
+</ul>
+</li>
+<li><h3 id="视频格式"><a href="#视频格式" class="headerlink" title="视频格式"></a>视频格式</h3>  <img src="https://i.loli.net/2020/11/17/mOAbxsUqrCW8gYL.png" alt="Snipaste_2020-11-17_09-20-21.png"></li>
+<li><h3 id="声音格式"><a href="#声音格式" class="headerlink" title="声音格式"></a>声音格式</h3>  <img src="https://i.loli.net/2020/11/17/XIof9q1RDEjCVUw.png" alt="Snipaste_2020-11-17_09-20-56.png"></li>
+</ul>
+
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>Lilei</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2020/11/09/html/" target="_blank" title="html">http://Thunder-lilei.github.io/2020/11/09/html/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <div class="post-nav">
+
+  <div class="post-nav-prev post-nav-item">
+    <a href="/2020/11/10/mian-shi-ti-chuan-song-men/">
+      上一篇:    面试题传送门
+    </a>
+  </div>
+
+
+
+  <div class="post-nav-next post-nav-item">
+    <a href="/2020/11/08/mysql/">
+      <span>
+        下一篇:    mysql 
+      </span>
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+      <div id="appDonate" class="post-donate">
+  <div id="donate_board" class="donate_bar center" ref="donate">
+    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
+  </div>
+  <transition name="fade">
+    <div 
+      class="donate-box-mask"
+      v-cloak 
+      v-if="visible"
+      @click="cancelDialogDrawer()"
+    >
+    </div>
+  </transition>
+  <transition name="bounce">
+    <div class="donate-box" v-cloak v-if="visible">
+      <div class="donate-box_close">
+        <i class="fa fa-times" aria-hidden="true" @click="cancelDialogDrawer"></i>
+      </div>
+      <div class="donate-box_title">
+        <h4>
+          你的赏识是我前进的动力
+        </h4>
+      </div>
+      <div class="donate-box_tab">
+        <div class="Alipay" :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
+          支付宝
+        </div>
+        <div class="WeChatpay" :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
+          微信
+        </div>
+      </div>
+      <div class="donate-box_img">
+        <div class="AlipayImg" v-if="tabActive === 'Alipay'">
+          <img src="/medias/zfb.jpg" alt="支付宝打赏" />
+        </div> 
+        <div class="WeChatpayImg" v-if="tabActive === 'WeChatpay'">
+          <img src="/medias/wx.jpg" alt="微信打赏" />
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDonate',
+    data: {
+      visible: false,
+      tabActive: 'Alipay',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        // function getScroll() {
+        //   return {
+        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        //   };
+        // }
+        this.top = $(document).scrollTop() // or getScroll().top
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+      changeTabActive(name) {
+        this.tabActive = name;
+      }
+    },
+    created() {}
+  })
+</script>
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+
+
+<script src="/js/shareJs/social-share.min.js"></script>
+
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+
+    <!-- 评论 -->
+      
+        
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>目录</span>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+
+</style>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+    </main>
+    <div class="footer bg-color">
+  <div class="footer-main">
+    <div class="link">
+      <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:1730241541@qq.com">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
+      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541">
+        <i class="fa fa-qq" aria-hidden="true"></i>
+      </a>
+      <a href="/atom.xml" target="_blank">
+        <i class="fa fa-rss" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      Copyright © 2019 - 2020 <a target="_blank" rel="noopener" href="https://github.com/yuang01">yuang01</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> 
+    </div>
+    
+      
+  <!-- 不蒜子统计 -->
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-book" aria-hidden="true"></i>本站总阅读量：<span id="busuanzi_value_page_pv"></span> 次
+  </span>
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  <span class="post-meta-divider">|</span>
+  <span id="busuanzi_container_site_uv" style='display:none'>
+        <i class="fa fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+  </span>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+  </div>
+</div>
+
+
+    
+      <div class="goTop bg-color">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+
+<script src="/js/goTop.js"></script>
+
+    
+
+    
+      <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+<style>
+.aplayer .aplayer-lrc p {
+  
+  display: none;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px !important;
+}
+
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
+  
+  font-size: 15px;
+  color: #42b983;
+}
+
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0px !important;
+}
+
+
+</style>
+<meting-js  
+  class=""
+  server="netease"
+  type="playlist"
+  id="442274724"
+  fixed='true'
+  autoplay='false'
+  theme='#42b983'
+  loop='all'
+  order='random'
+  preload='auto'
+  volume='0.7'
+  list-folded='true'
+>
+</meting-js>
+
+<!-- <style>
+  #aplayer {
+    position: fixed;
+    left: 0;
+    bottom: 300px;
+  }
+</style> -->
+<script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    
+
+    <!-- 图片放大 -->
+    
+      
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/wrapImage.js"></script>
+
+    
+
+    <!-- 爱心点击 -->
+    
+      
+<script src="/js/clicklove.js"></script>
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
+    
+      
+<script src="/js/aos/aos.js"></script>
+
+      <script>
+        // https://github.com/michalsnik/aos
+        const themeOffset = parseInt('120') || 120;
+        const themeDelay = parseInt('0')|| 0;
+        const themeDuration = parseInt('400') || 400;
+        const themeEasing = 'ease' || 'ease';
+        const themeOnce = JSON.parse('true' || true);
+        const themeMirror = JSON.parse('false' || false);
+        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: themeOffset, // offset (in px) from the original trigger point
+          delay: themeDelay, // values from 0 to 3000, with step 50ms
+          duration: themeDuration, // values from 0 to 3000, with step 50ms
+          easing: themeEasing, // default easing for AOS animations
+          once: themeOnce, // whether animation should happen only once - while scrolling down
+          mirror: themeMirror, // whether elements should animate out while scrolling past them
+          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+        });
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+<div id="appCopy">
+</div>
+<script>
+  var vm = new Vue({
+    el: '#appCopy',
+    data: {
+    },
+    computed: {
+    },
+    mounted() {
+      const that = this;
+      //  监听 ctrl + c事件  
+      $(document).unbind('keypress').bind('keypress', function (e) {
+        if (e.ctrlKey && e.keyCode == 67) {
+          doSomething();
+          // 返回false, 防止重复触发copy事件  
+          return false;
+        }
+      })
+
+      // 鼠标右键的复制事件  
+      $(document).unbind('copy').bind('copy', function (e) {
+        doSomething();
+        // console.log('右键复制 监听成功');
+      });
+
+      function doSomething() {
+        that.$notify({
+          title: '成功',
+          content: '复制成功了哦',
+          type: 'success'
+        })
+        // console.log('ctrl + c 监听成功');  
+      }
+    },
+    methods: {
+    },
+    created() { }
+  })
+</script>
+    
+
+    <!-- 输入框打字特效 -->
+    
+      
+<script src="/js/activate-power-mode.js"></script>
+
+      <script>
+          POWERMODE.colorful = true;  // 打开随机颜色特效
+          POWERMODE.shake = false;    // 关闭输入框抖动
+          document.body.addEventListener('input', POWERMODE);//监听打字事件
+      </script>
+    
+
+    <!-- markdown代码一键复制功能 -->
+    
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    <script>
+      !function (e, t, a) {
+        var copy = '复制';
+        /* code */
+        var initCopyCode = function(){
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+          copyHtml += '<i class="fa fa-globe"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre code").before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+              target: function(trigger) {
+                  return trigger.nextElementSibling;
+              }
+          });
+        }
+        initCopyCode();
+      }(window, document);
+    </script>
+  
+  </body>
+</html>

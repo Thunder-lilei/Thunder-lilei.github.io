@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <title>面试题_ssm | 李雷的博客</title>
+  
+    
+<link rel="stylesheet" href="/js/aos/aos.css">
+
+  
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/animate.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/shareJs/share.min.css">
+
+  
+  <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="李雷的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+  
+<script src="/js/jquery3.5.1.js"></script>
+
+  
+<script src="/js/vue2.6.11.js"></script>
+
+  <body>
+    <header class="header bg-color" 
+  style="position: fixed; 
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+  <i class="fa fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+  <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+  </div>
+  <div class="drawer-box" :class="{'active': visible}">
+    <div class="drawer-box-head bg-color">
+      <img class="drawer-box-head_logo" src="/medias/logo.png" alt="logo">
+      <h3 class="drawer-box-head_title">李雷的博客</h3>
+      <h5 class="drawer-box-head_desc">慢慢来</h5>
+    </div>
+    <div class="drawer-box-content">
+      <ul class="drawer-box-content_menu">
+        
+          <li class="drawer-box-content_item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+        <li class="drawer-box-content_item">
+          <a href="">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span>Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDrawer',
+    data: {
+      visible: false,
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      }
+    },
+    created() {}
+  })
+</script>
+    </div>
+    <div class="blog-title" id="author-avatar">
+      <div class="avatar">
+        <img src="/medias/logo.png" alt="logo">
+      </div>
+      <a href="/" class="logo">李雷的博客</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+      </ul>
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
+  <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+    <div class="message-box">
+      <h2>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="title">搜索</span>
+      </h2>
+      <form class="site-search-form">
+        <input type="text"
+          placeholder="请输入关键字"
+          id="local-search-input" 
+          @click="getSearchFile()"
+          class="st-search-input"
+          v-model="searchInput"
+        />
+      </form>
+      <div class="result-wrapper">
+        <div id="local-search-result" class="local-search-result-cls"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/local_search.js"></script>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile();
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+    </nav>
+  </div>
+  
+  <a target="_blank" rel="noopener" href="https://github.com/Thunder-lilei" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</header>
+    <main class="main" style="margin-top: 60px;">
+      
+
+
+<div class="post-detail-header" style="background: url(https://i.loli.net/2020/11/08/YK521mIZ8oFDnxS.jpg) no-repeat; background-size: cover; 
+  background-position: center center;">
+  
+    <span class="title">面试题_ssm</span>
+  
+</div>
+<div class="row justify-center">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2020-10-01</span>
+      </div>
+      
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/ssm/" class="">
+              ssm
+            </a>
+          
+            <a href="/tags/java/" class="">
+              java
+            </a>
+          
+            <a href="/tags/%E9%9D%A2%E8%AF%95/" class="">
+              面试
+            </a>
+          
+        </div>
+        
+        
+        <div class="categories">
+          <i class="iconfont iconbookmark1"></i>
+          
+            <a href="/categories/question/" class="">
+              question
+            </a>
+          
+        </div>
+        
+      </div>
+      <div class="post-content">
+        <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="ssm"><a href="#ssm" class="headerlink" title="ssm"></a>ssm</h2><ul>
+<li><p>通过HttpServletRequest. getParameter获取的参数.<br> 由客户端浏览器和Web容器配置共同决定编码<br> 浏览器根据jsp页面开头声明的编码方式对request中参数编码<br> tomcat默认解码是ISO-8859-1，  但是我们可以显示指定解码格式通过调用  request.setCharacterEncoding(“UTF-8”)，或者修改tomcat的配置文件server.xml中的编码，添加uriEncoding属性</p>
+</li>
+<li><p><strong>依赖</strong><br> 依赖注入能够独立开发各组件，然后根据组件间关系进行组装<br> 依赖注入提供使用接口编程<br> 依赖注入指对象在使用时动态注入<br> 依赖注入的动机就是减少组件之间的耦合度，使开发更为简洁<br> 依赖注入是一种思想，或者说是一种设计模式，在java中是通过反射机制实现，与具体框架无关<br> 依赖注入三种方式：</p>
+<ul>
+<li>接口注入</li>
+<li>setter方法注入</li>
+<li>构造方法注入</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="servlet生命周期"><a href="#servlet生命周期" class="headerlink" title="servlet生命周期"></a>servlet生命周期</h2><p>Servlet的生命周期分为5个阶段：加载、创建、初始化、处理客户请求、卸载。</p>
+<ol>
+<li><h3 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h3> 容器通过类加载器使用servlet类对应的文件加载servlet</li>
+<li><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3> 通过调用servlet构造函数创建一个servlet对象</li>
+<li><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3> 调用init方法初始化</li>
+<li><h3 id="处理客户请求"><a href="#处理客户请求" class="headerlink" title="处理客户请求"></a>处理客户请求</h3> 每当有一个客户请求，容器会创建一个线程来处理客户请求</li>
+<li><h3 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h3> 调用destroy方法让servlet自己释放其占用的资源</li>
+</ol>
+<hr>
+<h2 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h2><ul>
+<li>Spring是一系列轻量级Java EE框架的集合</li>
+<li>Spring中包含一个“依赖注入”模式的实现</li>
+<li>使用Spring可以实现声明式事务</li>
+<li>Spring并没有为我们提供日志系统，我们需要使用AOP（面向方面编程）的方式，借助Spring与日志系统log4j实现我们自己的日志系统。</li>
+</ul>
+<h2 id="jsp"><a href="#jsp" class="headerlink" title="jsp"></a>jsp</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42614447/article/details/86535581">详细查看</a></p>
+<p>JSP会先解释成Servlet源文件，然后编译成Servlet类文件<br>servlet生命周期：init 、service、destory<br>除了init只初始化一次外、其他用户端运行JSP时方法都会运行一次</p>
+<ol>
+<li><h3 id="九大内置对象（隐含对象）"><a href="#九大内置对象（隐含对象）" class="headerlink" title="九大内置对象（隐含对象）"></a>九大内置对象（隐含对象）</h3><p> 不需要预先声明</p>
+<ul>
+<li><p><strong>request 请求对象</strong>　<br>类型 javax.servlet.ServletRequest 作用域 Request<br>javax.servlet.httpServletRequest类型<br>客户端的请求信息，主要用于接受通过HTTP协议传送到服务器的数据（包括头信息、系统信息、请求方式以及请求参数等）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">常用方法：</span><br><span class="line"><span class="number">1.</span> <span class="function">object <span class="title">getAttribute</span><span class="params">(String name)</span> 返回指定属性的属性值（常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. Enumeration <span class="title">getAttributeNames</span><span class="params">()</span> 返回所有可用属性名的枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. String <span class="title">getCharacterEncoding</span><span class="params">()</span> 返回字符编码方式（常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. <span class="keyword">int</span> <span class="title">getContentLength</span><span class="params">()</span> 返回请求体的长度（以字节数） </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. String <span class="title">getContentType</span><span class="params">()</span> 得到请求体的MIME类型 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. ServletInputStream <span class="title">getInputStream</span><span class="params">()</span> 得到请求体中一行的二进制流 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">7. String <span class="title">getParameter</span><span class="params">(String name)</span> 返回name指定参数的参数值（常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">8. Enumeration <span class="title">getParameterNames</span><span class="params">()</span> 返回可用参数名的枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">9. String[] <span class="title">getParameterValues</span><span class="params">(String name)</span> 返回包含参数name的所有值的数组 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">10. String <span class="title">getProtocol</span><span class="params">()</span> 返回请求用的协议类型及版本号 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">11. String <span class="title">getScheme</span><span class="params">()</span> 返回请求用的计划名,如:http.https及ftp等 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">12. String <span class="title">getServerName</span><span class="params">()</span> 返回接受请求的服务器主机名 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">13. <span class="keyword">int</span> <span class="title">getServerPort</span><span class="params">()</span> 返回服务器接受此请求所用的端口号 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">14. BufferedReader <span class="title">getReader</span><span class="params">()</span> 返回解码过了的请求体 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">15. String <span class="title">getRemoteAddr</span><span class="params">()</span> 返回发送此请求的客户端IP地址 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">16. String <span class="title">getRemoteHost</span><span class="params">()</span> 返回发送此请求的客户端主机名 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">17. <span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String key,Object obj)</span> 设置属性的属性值（常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">18. String <span class="title">getRealPath</span><span class="params">(String path)</span> 返回一虚拟路径的真实路径</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>response 响应对象</strong><br>类型 javax.servlet.SrvletResponse 作用域 Page<br>服务器收到客户端请求后做出的响应  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="function">String <span class="title">getCharacterEncoding</span><span class="params">()</span> 返回响应用的是何种字符编码 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. ServletOutputStream <span class="title">getOutputStream</span><span class="params">()</span> 返回响应的一个二进制输出流 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. PrintWriter <span class="title">getWriter</span><span class="params">()</span> 返回可以向客户端输出字符的一个对象 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. <span class="keyword">void</span> <span class="title">setContentLength</span><span class="params">(<span class="keyword">int</span> len)</span> 设置响应头长度 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. <span class="keyword">void</span> <span class="title">setContentType</span><span class="params">(String type)</span> 设置响应的MIME类型 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. <span class="title">sendRedirect</span><span class="params">(java.lang.String location)</span> 重新定向客户端的请求 （常用）</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>pageContext 页面上下文对象</strong><br>类型 javax.servlet.jsp.PageContext 作用域 Page<br>通过它可以获取 JSP页面的out、request、reponse、session、application 等对象<br>供了对JSP页面内所有的对象及名字空间的访问</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="function">JspWriter <span class="title">getOut</span><span class="params">()</span> 返回当前客户端响应被使用的JspWriter流<span class="params">(out)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. HttpSession <span class="title">getSession</span><span class="params">()</span> 返回当前页中的HttpSession对象<span class="params">(session)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. Object <span class="title">getPage</span><span class="params">()</span> 返回当前页的Object对象<span class="params">(page)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. ServletRequest <span class="title">getRequest</span><span class="params">()</span> 返回当前页的ServletRequest对象<span class="params">(request)</span> （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. ServletResponse <span class="title">getResponse</span><span class="params">()</span> 返回当前页的ServletResponse对象<span class="params">(response)</span> （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. Exception <span class="title">getException</span><span class="params">()</span> 返回当前页的Exception对象<span class="params">(exception)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">7. ServletConfig <span class="title">getServletConfig</span><span class="params">()</span> 返回当前页的ServletConfig对象<span class="params">(config)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">8. ServletContext <span class="title">getServletContext</span><span class="params">()</span> 返回当前页的ServletContext对象<span class="params">(application)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">9. <span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String name,Object attribute)</span> 设置属性及属性值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">10. <span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String name,Object obj,<span class="keyword">int</span> scope)</span> 在指定范围内设置属性及属性值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">11. <span class="keyword">public</span> Object <span class="title">getAttribute</span><span class="params">(String name)</span> 取属性的值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">12. Object <span class="title">getAttribute</span><span class="params">(String name,<span class="keyword">int</span> scope)</span> 在指定范围内取属性的值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">13. <span class="keyword">public</span> Object <span class="title">findAttribute</span><span class="params">(String name)</span> 寻找一属性,返回起属性值或NULL </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">14. <span class="keyword">void</span> <span class="title">removeAttribute</span><span class="params">(String name)</span> 删除某属性 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">15. <span class="keyword">void</span> <span class="title">removeAttribute</span><span class="params">(String name,<span class="keyword">int</span> scope)</span> 在指定范围删除某属性 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">16. <span class="keyword">int</span> <span class="title">getAttributeScope</span><span class="params">(String name)</span> 返回某属性的作用范围 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">17. Enumeration <span class="title">getAttributeNamesInScope</span><span class="params">(<span class="keyword">int</span> scope)</span> 返回指定范围内可用的属性名枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">18. <span class="keyword">void</span> <span class="title">release</span><span class="params">()</span> 释放pageContext所占用的资源 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">19. <span class="keyword">void</span> <span class="title">forward</span><span class="params">(String relativeUrlPath)</span> 使当前页面重导到另一页面 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">20. <span class="keyword">void</span> <span class="title">include</span><span class="params">(String relativeUrlPath)</span> 在当前位置包含另一文件 </span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>session 会话对象</strong><br>类型 javax.servlet.http.HttpSession 作用域 Session<br>session对象内部使用Map类来保存数据，因此保存数据的格式为 “Key/value”</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="function"><span class="keyword">long</span> <span class="title">getCreationTime</span><span class="params">()</span> 返回SESSION创建时间 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. <span class="keyword">public</span> String <span class="title">getId</span><span class="params">()</span> 返回SESSION创建时JSP引擎为它设的惟一ID号 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. <span class="keyword">long</span> <span class="title">getLastAccessedTime</span><span class="params">()</span> 返回此SESSION里客户端最近一次请求时间 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. <span class="keyword">int</span> <span class="title">getMaxInactiveInterval</span><span class="params">()</span> 返回两次请求间隔多长时间此SESSION被取消<span class="params">(ms)</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. String[] <span class="title">getValueNames</span><span class="params">()</span> 返回一个包含此SESSION中所有可用属性的数组 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. <span class="keyword">void</span> <span class="title">invalidate</span><span class="params">()</span> 取消SESSION，使SESSION不可用 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">7. <span class="keyword">boolean</span> <span class="title">isNew</span><span class="params">()</span> 返回服务器创建的一个SESSION,客户端是否已经加入 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">8. <span class="keyword">void</span> <span class="title">removeValue</span><span class="params">(String name)</span> 删除SESSION中指定的属性 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">9. <span class="keyword">void</span> <span class="title">setMaxInactiveInterval</span><span class="params">()</span> 设置两次请求间隔多长时间此SESSION被取消<span class="params">(ms)</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>application 应用程序对象</strong><br>类型 javax.servlet.ServletContext 作用域 Application </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="function">Object <span class="title">getAttribute</span><span class="params">(String name)</span> 返回给定名的属性值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. Enumeration <span class="title">getAttributeNames</span><span class="params">()</span> 返回所有可用属性名的枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. <span class="keyword">void</span> <span class="title">setAttribute</span><span class="params">(String name,Object obj)</span> 设定属性的属性值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. <span class="keyword">void</span> <span class="title">removeAttribute</span><span class="params">(String name)</span> 删除一属性及其属性值 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. String <span class="title">getServerInfo</span><span class="params">()</span> 返回<span class="title">JSP</span><span class="params">(SERVLET)</span>引擎名及版本号 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. String <span class="title">getRealPath</span><span class="params">(String path)</span> 返回一虚拟路径的真实路径 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">7. ServletContext <span class="title">getContext</span><span class="params">(String uripath)</span> 返回指定WebApplication的application对象 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">8. <span class="keyword">int</span> <span class="title">getMajorVersion</span><span class="params">()</span> 返回服务器支持的Servlet API的最大版本号 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">9. <span class="keyword">int</span> <span class="title">getMinorVersion</span><span class="params">()</span> 返回服务器支持的Servlet API的最大版本号 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">10. String <span class="title">getMimeType</span><span class="params">(String file)</span> 返回指定文件的MIME类型 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">11. URL <span class="title">getResource</span><span class="params">(String path)</span> 返回指定资源<span class="params">(文件及目录)</span>的URL路径 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">12. InputStream <span class="title">getResourceAsStream</span><span class="params">(String path)</span> 返回指定资源的输入流 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">13. RequestDispatcher <span class="title">getRequestDispatcher</span><span class="params">(String uripath)</span> 返回指定资源的RequestDispatcher对象 （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">14. Servlet <span class="title">getServlet</span><span class="params">(String name)</span> 返回指定名的Servlet （常用）</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">15. Enumeration <span class="title">getServlets</span><span class="params">()</span> 返回所有Servlet的枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">16. Enumeration <span class="title">getServletNames</span><span class="params">()</span> 返回所有Servlet名的枚举 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">17. <span class="keyword">void</span> <span class="title">log</span><span class="params">(String msg)</span> 把指定消息写入Servlet的日志文件 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">18. <span class="keyword">void</span> <span class="title">log</span><span class="params">(Exception exception,String msg)</span> 把指定异常的栈轨迹及错误消息写入Servlet的日志文件 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">19. <span class="keyword">void</span> <span class="title">log</span><span class="params">(String msg,Throwable throwable)</span> 把栈轨迹及给出的Throwable异常的说明信息 写入Servlet的日志文件 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">``` </span></span><br><span class="line"><span class="function">- **out 输出对象** </span></span><br><span class="line"><span class="function">类型 javax.servlet.jsp.JspWriter 作用域 Page  </span></span><br><span class="line"><span class="function">out对象是JspWriter类的实例,是向客户端输出内容常用的对象</span></span><br><span class="line"><span class="function">``` java</span></span><br><span class="line"><span class="function">	常用方法：</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">1. <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span> 清除缓冲区的内容 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. <span class="keyword">void</span> <span class="title">clearBuffer</span><span class="params">()</span> 清除缓冲区的当前内容 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. <span class="keyword">void</span> <span class="title">flush</span><span class="params">()</span> 清空流 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. <span class="keyword">int</span> <span class="title">getBufferSize</span><span class="params">()</span> 返回缓冲区以字节数的大小，如不设缓冲区则为0 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">5. <span class="keyword">int</span> <span class="title">getRemaining</span><span class="params">()</span> 返回缓冲区还剩余多少可用 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">6. <span class="keyword">boolean</span> <span class="title">isAutoFlush</span><span class="params">()</span> 返回缓冲区满时，是自动清空还是抛出异常 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">7. <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> 关闭输出流 </span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>config 配置对象</strong><br>类型 javax.servlet.ServletConfig 作用域 Page<br>当一个Servlet 初始化时，容器把某些信息通过 config对象传递给这个 Servlet。 开发者可以在web.xml 文件中为应用程序环境中的Servlet程序和JSP页面提供初始化参数。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	 常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="function">ServletContext <span class="title">getServletContext</span><span class="params">()</span> 返回含有服务器相关信息的ServletContext对象 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. String <span class="title">getInitParameter</span><span class="params">(String name)</span> 返回初始化参数的值 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. Enumeration <span class="title">getInitParameterNames</span><span class="params">()</span> 返回Servlet初始化所需所有参数的枚举</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>page 页面对象</strong><br>类型 javax.lang.Object 作用域 Page<br>只有在JSP页面内才是合法的<br>page对象就是指向当前JSP页面本身，有点象类中的this指针，它是java.lang.Object类的实例</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	常用方法：</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span> <span class="class"><span class="keyword">class</span> <span class="title">getClass</span> 返回此<span class="title">Object</span>的类 （常用）</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">2. <span class="title">int</span> <span class="title">hashCode</span>() 返回此<span class="title">Object</span>的<span class="title">hash</span>码 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">3. <span class="title">boolean</span> <span class="title">equals</span>(<span class="title">Object</span> <span class="title">obj</span>) 判断此<span class="title">Object</span>是否与指定的<span class="title">Object</span>对象相等 （常用）</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">4. <span class="title">void</span> <span class="title">copy</span>(<span class="title">Object</span> <span class="title">obj</span>) 把此<span class="title">Object</span>拷贝到指定的<span class="title">Object</span>对象中 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">5. <span class="title">Object</span> <span class="title">clone</span>() 克隆此<span class="title">Object</span>对象 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">6. <span class="title">String</span> <span class="title">toString</span>() 把此<span class="title">Object</span>对象转换成<span class="title">String</span>类的对象 （常用）</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">7. <span class="title">void</span> <span class="title">notify</span>() 唤醒一个等待的线程 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">8. <span class="title">void</span> <span class="title">notifyAll</span>() 唤醒所有等待的线程 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">9. <span class="title">void</span> <span class="title">wait</span>(<span class="title">int</span> <span class="title">timeout</span>) 使一个线程处于等待直到<span class="title">timeout</span>结束或被唤醒 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">10. <span class="title">void</span> <span class="title">wait</span>() 使一个线程处于等待直到被唤醒 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">11. <span class="title">void</span> <span class="title">enterMonitor</span>() 对<span class="title">Object</span>加锁 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">12. <span class="title">void</span> <span class="title">exitMonitor</span>() 对<span class="title">Object</span>开锁</span></span><br><span class="line"><span class="class"></span></span><br></pre></td></tr></table></figure></li>
+<li><p><strong>exception 例外对象</strong><br>类型 javax.lang.Throwable 作用域 page<code>此对象不能在一般JSP文件中直接使用，而只能在使用了“&lt;%@ page isErrorPage=&quot;true &quot;%&gt;”的JSP文件中使用</code></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="number">1.</span> <span class="function">String <span class="title">getMessage</span><span class="params">()</span> 返回描述异常的消息 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2. String <span class="title">toString</span><span class="params">()</span> 返回关于异常的简短描述消息 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">3. <span class="keyword">void</span> <span class="title">printStackTrace</span><span class="params">()</span> 显示异常及其栈轨迹 </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">4. Throwable <span class="title">FillInStackTrace</span><span class="params">()</span> 重写异常的执行栈轨迹</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><h3 id="四大作用域"><a href="#四大作用域" class="headerlink" title="四大作用域"></a>四大作用域</h3><ul>
+<li><strong>pageContext</strong><br>变量无法传递</li>
+<li><strong>request</strong><br><code>从http请求发起，到服务器处理结束，返回响应的整个过程</code>刷新页面后重新计算，除非重新提交</li>
+<li><strong>session</strong><br>当前会话<code>从用户打开浏览器开始，到用户关闭浏览器这中间的过程</code></li>
+<li><strong>application</strong><br>整个应用<code>从应用启动，到应用结束</code><br>application里的变量可以被所有用户共用</li>
+</ul>
+</li>
+<li><h3 id="jsp页面对象的使用"><a href="#jsp页面对象的使用" class="headerlink" title="jsp页面对象的使用"></a>jsp页面对象的使用</h3><ol>
+<li>&lt;% String myBean = (String)pageContext.getAttribute(“stringBean”,PageContext.PAGE_SCOPE);<br>%&gt;<br>&lt;%=myBean%&gt;<br>通过 pageContext（PageContext类的实例，提供对JSP页面所有对象以及命名空间的访问） 获取stringBean 的值，赋给 String 类型的变量 myBean，然后通过 Jsp 表达式 处理该值</li>
+<li>&lt;bean:write name=“something”/&gt;</li>
+<li>&lt;%=stringBean%&gt;<br>通过Jsp 表达式 获取变量 stringBean 的值</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="History对象"><a href="#History对象" class="headerlink" title="History对象"></a>History对象</h2><ul>
+<li><p><strong>History 对象包含用户（在浏览器窗口中）访问过的 URL。</strong></p>
+</li>
+<li><p><strong>History 对象是 window 对象的一部分，可通过 window.history 属性对其进行访问</strong></p>
+</li>
+<li><p><strong>所有浏览器都支持该对象</strong></p>
+</li>
+<li><p><strong>History 对象属性</strong><br><a target="_blank" rel="noopener" href="https://www.runoob.com/jsref/prop-his-length.html">length</a>返回历史列表中的网址数</p>
+</li>
+<li><p><strong>History 对象方法</strong><br><a target="_blank" rel="noopener" href="https://www.runoob.com/jsref/met-his-back.html">back()</a>加载 history 列表中的前一个 URL<br><a target="_blank" rel="noopener" href="https://www.runoob.com/jsref/met-his-forward.html">forward()</a>加载 history 列表中的下一个 URL<br><a target="_blank" rel="noopener" href="https://www.runoob.com/jsref/met-his-go.html">go()</a>加载 history 列表中的某个具体页面</p>
+</li>
+</ul>
+<hr>
+<h2 id="Log4j"><a href="#Log4j" class="headerlink" title="Log4j"></a>Log4j</h2><ul>
+<li>Log4j支持按分钟为间隔生成新的日志文件</li>
+<li>Log4j是一个打印日志用的组件</li>
+<li>Log4j支持按年为间隔生成新的日志文件</li>
+<li>log4j在运行期间是不可以重新设置的</li>
+<li>springboot可以动态修改日志级别</li>
+</ul>
+<hr>
+<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
+<li>加载驱动的方法</li>
+</ul>
+<ol>
+<li>Class.forName(“com.microsoft.sqlserver.jdbc.SQLServerDriver”);</li>
+<li>DriverManager.registerDriver(new com.mysql.jdbc.Driver());</li>
+<li>System.setProperty(“jdbc.drivers”, “com.mysql.jdbc.Driver”);</li>
+</ol>
+<hr>
+<h2 id="PO-VO-DTO-BO-POJO-DAO-区别"><a href="#PO-VO-DTO-BO-POJO-DAO-区别" class="headerlink" title="PO VO  DTO BO POJO DAO 区别"></a>PO VO  DTO BO POJO DAO 区别</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hunmeng/p/11298680.html">https://www.cnblogs.com/hunmeng/p/11298680.html</a></p>
+<ol>
+<li><h3 id="PO"><a href="#PO" class="headerlink" title="PO"></a>PO</h3></li>
+</ol>
+<ul>
+<li>persistant object：持久层对象</li>
+<li>对应数据库中的字段</li>
+</ul>
+<ol start="2">
+<li><h3 id="VO"><a href="#VO" class="headerlink" title="VO"></a>VO</h3></li>
+</ol>
+<ul>
+<li>value object：值对象</li>
+<li>通常用于业务层之间的数据传递</li>
+</ul>
+<ol start="3">
+<li><h3 id="DTO"><a href="#DTO" class="headerlink" title="DTO"></a>DTO</h3></li>
+</ol>
+<ul>
+<li>data transfer object：数据传输对象</li>
+<li>表里字段大于页面需要展示的字段，作为中间bean</li>
+<li>能提高数据传输的速度（减少了传输字段）</li>
+<li>能隐藏后端表结构</li>
+</ul>
+<ol start="4">
+<li><h3 id="BO"><a href="#BO" class="headerlink" title="BO"></a>BO</h3></li>
+</ol>
+<ul>
+<li>business object：业务对象</li>
+<li>把业务逻辑封装为一个对象</li>
+<li>PO的组合</li>
+</ul>
+<ol start="5">
+<li><h3 id="POJO"><a href="#POJO" class="headerlink" title="POJO"></a>POJO</h3></li>
+</ol>
+<ul>
+<li>plain ordinary java object：简单无规则java对象</li>
+<li>纯的传统意义的java对象，最基本的Java Bean只有属性加上属性的get和set方法。可以转化为PO、DTO、VO</li>
+</ul>
+<ol start="6">
+<li><h3 id="DAO"><a href="#DAO" class="headerlink" title="DAO"></a>DAO</h3></li>
+</ol>
+<ul>
+<li>data access object：数据访问对象</li>
+<li>封装对数据的访问</li>
+</ul>
+<hr>
+<h2 id="Dao层，Mapper层，controller层，service层，model层，entity层"><a href="#Dao层，Mapper层，controller层，service层，model层，entity层" class="headerlink" title="Dao层，Mapper层，controller层，service层，model层，entity层"></a>Dao层，Mapper层，controller层，service层，model层，entity层</h2><ul>
+<li><h3 id="数据持久化操作"><a href="#数据持久化操作" class="headerlink" title="数据持久化操作"></a>数据持久化操作</h3>  把数据放到持久化的介质中，同时提供增删改查操作</li>
+<li><h3 id="model"><a href="#model" class="headerlink" title="model"></a>model</h3>  model层=entity层。存放我们的实体类，与数据库中的属性值基本保持一致。</li>
+<li><h3 id="service"><a href="#service" class="headerlink" title="service"></a>service</h3>  存放业务逻辑处理，也是一些关于数据库处理的操作，但不是直接和数据库打交道，他有接口还有接口的实现方法,在接口的实现方法中需要导入mapper层，mapper层是直接跟数据库打交道的，他也是个接口，只有方法名字，具体实现在mapper.xml文件里，service是供我们使用的方法</li>
+<li><h3 id="mapper"><a href="#mapper" class="headerlink" title="mapper"></a>mapper</h3>  mapper层=dao层，现在用mybatis逆向工程生成的mapper层，其实就是dao层。对数据库进行数据持久化操作，他的方法语句是直接针对数据库操作的</li>
+<li><h3 id="controller"><a href="#controller" class="headerlink" title="controller"></a>controller</h3>  控制器，导入service层，controller通过接收前端传过来的参数进行业务操作，在返回一个指定的路径或者数据表</li>
+</ul>
+<hr>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><ul>
+<li><h3 id="RequestMapping"><a href="#RequestMapping" class="headerlink" title="@RequestMapping"></a>@RequestMapping</h3><p>  用于请求url映射。</p>
+</li>
+<li><h3 id="RequestBody"><a href="#RequestBody" class="headerlink" title="@RequestBody**"></a>@RequestBody**</h3><p>  注解实现接收http请求的json数据，将json转换为java对象。</p>
+<pre><code>  [详细查看](https://blog.csdn.net/justry_deng/article/details/80972817)</code></pre>
+<ol>
+<li>GET方式无请求体，所以使用@RequestBody接收数据时，前端不能使用GET方式提交数据，而是用POST方式进行提交</li>
+<li>@RequestBody与@RequestParam()可以同时使用<br> 一个请求，只有一个RequestBody；一个请求，可以有多个RequestParam<br> RequestBody 接收的是请求体里面的数据；而RequestParam接收的是key-value里面的参数<br> 如果参数时放在请求体中，传入后台的话，那么后台要用@RequestBody才能接收到；如果不是放在请求体中的话，那么后台接收前台传过来的参数时，要用@RequestParam来接收</li>
+<li>请求体格式    <img src="https://i.loli.net/2020/10/15/PWMIDtSGjwaLpRi.png" alt="2018081416513428.png"></li>
+</ol>
+</li>
+<li><h3 id="ResponseBody"><a href="#ResponseBody" class="headerlink" title="@ResponseBody"></a>@ResponseBody</h3><p>  <a target="_blank" rel="noopener" href="https://blog.csdn.net/originations/article/details/89492884">详细查看</a></p>
+<ul>
+<li>作用在方法上</li>
+<li>将java对象转为json格式的数据</li>
+<li>将controller的方法返回的对象通过适当的转换器转换为指定的格式之后，写入到response对象的body区，通常用来返回JSON数据或者是XML数据</li>
+<li>在使用此注解之后不会再走视图处理器，而是直接将数据写入到输入流中</li>
+<li>返回结果直接写入 HTTP response body<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">后台 Controller类中对应的方法：</span><br><span class="line"><span class="meta">@RequestMapping(&quot;/login.do&quot;)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">login</span><span class="params">(String name, String password, HttpSession session)</span> </span>&#123;</span><br><span class="line">	user = userService.checkLogin(name, password);</span><br><span class="line">	session.setAttribute(<span class="string">&quot;user&quot;</span>, user);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">new</span> JsonResult(user);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="meta">@RequestBody</span>是作用在形参列表上，用于将前台发送过来固定格式的数据【xml格式 或者 json等】封装为对应的 JavaBean 对象，</span><br><span class="line">封装时使用到的一个对象是系统默认配置的 HttpMessageConverter进行解析，然后封装到形参上。</span><br><span class="line">如上面的登录后台代码可以改为：</span><br><span class="line"><span class="meta">@RequestMapping(&quot;/login.do&quot;)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Object <span class="title">login</span><span class="params">(<span class="meta">@RequestBody</span> User loginUuser, HttpSession session)</span> </span>&#123;</span><br><span class="line">	user = userService.checkLogin(loginUser);</span><br><span class="line">	session.setAttribute(<span class="string">&quot;user&quot;</span>, user);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">new</span> JsonResult(user);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><h3 id="RequestParam"><a href="#RequestParam" class="headerlink" title="@RequestParam"></a>@RequestParam</h3><ol>
+<li>test(String name)<br> 没有name 参数不会报错</li>
+<li>test(@RequestParam String name)<br> 没有name 参数会报错，（也可以设置required = false)</li>
+<li>test(@RequestParam(“userName”) String name)<br> name 参数换为userName</li>
+</ol>
+</li>
+<li><h3 id="SuppressWarnings-“unused”"><a href="#SuppressWarnings-“unused”" class="headerlink" title="@SuppressWarnings(“unused”)"></a>@SuppressWarnings(“unused”)</h3><p>  表示该属性在方法或类中没有使用。添加此注解可以去除属性上的黄色警告</p>
+</li>
+</ul>
+<hr>
+<h2 id="乱码问题"><a href="#乱码问题" class="headerlink" title="乱码问题"></a>乱码问题</h2><p>解决<strong>post</strong>请求乱码：我们可以在<strong>web.xml</strong>里边配置一个<strong>CharacterEncodingFilter</strong> 过滤器。设置为<strong>utf-8</strong>。</p>
+<p>解决<strong>get</strong>请求乱码有两种方法个：</p>
+<p>1）修改tomcat配置文件添加编码和工程编码一致；</p>
+<ol start="2">
+<li><p>另一种方法对参数进行重新编码；</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String username = <span class="keyword">new</span> String(Request.getParameter(<span class="string">&quot;userName&quot;</span>).getBytes(<span class="string">&quot;ISO8859-1&quot;</span>),<span class="string">&quot;utf-8&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="springmvc优点"><a href="#springmvc优点" class="headerlink" title="springmvc优点"></a>springmvc优点</h2></li>
+<li><p>可以支持各种视图技术,而不仅仅局限于JSP</p>
+</li>
+<li><p>与Spring框架集成（如IoC容器、AOP等）</p>
+</li>
+<li><p>清晰的角色分配:前端控制器(dispatcherServlet) , 请求到处理器映射（handlerMapping), 处理器适配器（HandlerAdapter), 视图解析器（ViewResolver）</p>
+</li>
+</ol>
+<hr>
+<h2 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h2><ol>
+<li><h3 id="修改mapper方法返回属性"><a href="#修改mapper方法返回属性" class="headerlink" title="修改mapper方法返回属性"></a>修改mapper方法返回属性</h3> xml中基本类型返回属性的属性名注意<code>resultMap</code>和<code>resultType</code></li>
+<li><h3 id="insertSelective（）"><a href="#insertSelective（）" class="headerlink" title="insertSelective（）"></a>insertSelective（）</h3><ul>
+<li>选择性保存数据</li>
+<li>主键是自动添加的，默认插入为空</li>
+<li>插入成功则返回1，失败返回0</li>
+</ul>
+</li>
+<li><h3 id="updateByPrimaryKeySelective"><a href="#updateByPrimaryKeySelective" class="headerlink" title="updateByPrimaryKeySelective()"></a>updateByPrimaryKeySelective()</h3><ul>
+<li>成功更新几条返回则返回相应的条数</li>
+<li>选择性更新数据</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="RequestParam和-PathVariable"><a href="#RequestParam和-PathVariable" class="headerlink" title="@RequestParam和@PathVariable"></a>@RequestParam和@PathVariable</h2><ul>
+<li><strong>@RequestParam</strong><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//在url中输入:localhost:8080/**/?userName=zhangsan</span></span><br><span class="line"><span class="comment">//请求中包含username参数（如/requestparam1?userName=zhang），则自动传入。</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">queryUserName</span><span class="params">(<span class="meta">@RequestParam</span> String userName)</span></span></span><br></pre></td></tr></table></figure>
+在传递参数的时候如果是url?userName=zhangsan&amp;userName=wangwu时，即两个同名参数，前台传递了两个一样的参数，可用如下方式:<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">requestparam8</span><span class="params">(<span class="meta">@RequestParam(value=&quot;userName&quot;)</span> String []  userNames)</span></span></span><br><span class="line"><span class="function"><span class="comment">//或者是</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">requestparam8</span><span class="params">(<span class="meta">@RequestParam(value=&quot;list&quot;)</span> List&lt;String&gt; list)</span>  </span></span><br></pre></td></tr></table></figure>
+前端传参的URL： url = “<code>$&#123;ctx&#125;/main/mm/am/edit?Id=$&#123;Id&#125;&amp;name=$&#123;name&#125;</code>” 后端使用集合来接受参数，灵活性较好<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/edit&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">edit</span><span class="params">(Model model, <span class="meta">@RequestParam</span> Map&lt;String, Object&gt; paramMap )</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> id = Long.parseLong(paramMap.get(<span class="string">&quot;id&quot;</span>).toString());</span><br><span class="line">        String name = paramMap.get(<span class="string">&quot;name&quot;</span>).toString;</span><br><span class="line">        <span class="keyword">return</span> page(<span class="string">&quot;edit&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+@RequestParam绑定基本数据类型，若required属性为false（默认为true），且设置了defaultValue属性，没有问题；</li>
+</ul>
+<p>@RequestParam绑定基本数据类型，若required属性为false（默认为true），且没有设置defaultValue属性，则当没有传该参数时，会报500（因为无法将null赋值给基本数据类型）</p>
+<ul>
+<li><strong>@PathVariable</strong><br>使用@PathVariable接收参数，参数值需要在url进行占位， 前端传参的URL：url = “<code>$&#123;ctx&#125;/main/mm/am/edit/$&#123;Id&#125;/$&#123;name&#125;</code>”<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/edit/&#123;id&#125;/&#123;name&#125;&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">edit</span><span class="params">(Model model, <span class="meta">@PathVariable</span> <span class="keyword">long</span> id,<span class="meta">@PathVariable</span> String name)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> page(<span class="string">&quot;edit&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="spring和springboot和springmvc"><a href="#spring和springboot和springmvc" class="headerlink" title="spring和springboot和springmvc"></a>spring和springboot和springmvc</h2></li>
+</ul>
+<p><strong>SpringFrame</strong><br>SpringFramework 最重要的特征是依赖注入。所有 SpringModules（多模块） 不是依赖注入就是 IOC 控制反转。</p>
+<p>当我们恰当的使用 DI 或者是 IOC 的时候，我们可以开发松耦合应用。松耦合应用的单元测试可以很容易的进行。</p>
+<p><strong>SpringMVC</strong><br>Spring MVC 提供了一种分离式的方法来开发 Web 应用。通过运用像 DispatcherServelet，MoudlAndView 和 ViewResolver 等一些简单的概念，开发 Web 应用将会变的非常简单。</p>
+<p><strong>SpringBoot</strong><br>Spring 和 SpringMVC 的问题在于需要配置大量的参数。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;</span>&gt; </span><br><span class="line">	&lt;property name=<span class="string">&quot;prefix&quot;</span>&gt; </span><br><span class="line">		&lt;value&gt;/WEB-INF/views/&lt;/value&gt; </span><br><span class="line">	&lt;/property&gt; </span><br><span class="line">	&lt;property name=<span class="string">&quot;suffix&quot;</span>&gt; </span><br><span class="line">		&lt;value&gt;.jsp&lt;/value&gt; </span><br><span class="line">	&lt;/property&gt; </span><br><span class="line">&lt;/bean&gt; </span><br><span class="line">&lt;mvc:resources mapping=<span class="string">&quot;/webjars/**&quot;</span> location=<span class="string">&quot;/webjars/&quot;</span>/&gt;  </span><br></pre></td></tr></table></figure>
+<p>Spring Boot 通过一个自动配置和启动的项来目解决这个问题。为了更快的构建产品就绪应用程序，Spring Boot 提供了一些非功能性特征。</p>
+<hr>
+<h2 id="session"><a href="#session" class="headerlink" title="session"></a>session</h2><p><strong>HttpSessionAttributeListener</strong>：可以实现此侦听器接口获取此web应用程序中会话属性列表更改的通知；<br><strong>HttpSessionBindingListener</strong>：当该对象从一个会话中被绑定或者解绑时通知该对象，这个对象由HttpSessionBindingEvent对象通知。这可能是servlet程序显式地从会话中解绑定属性的结果，可能是由于会话无效，也可能是由于会话超时；<br><strong>HttpSessionObjectListener</strong>：没有该接口API；<br><strong>HttpSessionListener</strong>：当web应用程序中的活动会话列表发生更改时通知该接口的实现类，为了接收该通知事件，必须在web应用程序的部署描述符中配置实现类；<br><strong>HttpSessionActivationListener</strong>：绑定到会话的对象可以侦听容器事件，通知它们会话将被钝化，会话将被激活。需要一个在虚拟机之间迁移会话或持久会话的容器来通知所有绑定到实现该接口会话的属性。</p>
+<hr>
+
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>Lilei</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2020/10/01/mian-shi-ti-ssm/" target="_blank" title="面试题_ssm">http://Thunder-lilei.github.io/2020/10/01/mian-shi-ti-ssm/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <div class="post-nav">
+
+  <div class="post-nav-prev post-nav-item">
+    <a href="/2020/10/01/mian-shi-ti-qian-duan/">
+      上一篇:    面试题_前端
+    </a>
+  </div>
+
+
+
+  <div class="post-nav-next post-nav-item">
+    <a href="/2020/09/30/mian-shi-ti-os/">
+      <span>
+        下一篇:    面试题_os 
+      </span>
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+      <div id="appDonate" class="post-donate">
+  <div id="donate_board" class="donate_bar center" ref="donate">
+    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
+  </div>
+  <transition name="fade">
+    <div 
+      class="donate-box-mask"
+      v-cloak 
+      v-if="visible"
+      @click="cancelDialogDrawer()"
+    >
+    </div>
+  </transition>
+  <transition name="bounce">
+    <div class="donate-box" v-cloak v-if="visible">
+      <div class="donate-box_close">
+        <i class="fa fa-times" aria-hidden="true" @click="cancelDialogDrawer"></i>
+      </div>
+      <div class="donate-box_title">
+        <h4>
+          你的赏识是我前进的动力
+        </h4>
+      </div>
+      <div class="donate-box_tab">
+        <div class="Alipay" :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
+          支付宝
+        </div>
+        <div class="WeChatpay" :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
+          微信
+        </div>
+      </div>
+      <div class="donate-box_img">
+        <div class="AlipayImg" v-if="tabActive === 'Alipay'">
+          <img src="/medias/zfb.jpg" alt="支付宝打赏" />
+        </div> 
+        <div class="WeChatpayImg" v-if="tabActive === 'WeChatpay'">
+          <img src="/medias/wx.jpg" alt="微信打赏" />
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDonate',
+    data: {
+      visible: false,
+      tabActive: 'Alipay',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        // function getScroll() {
+        //   return {
+        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        //   };
+        // }
+        this.top = $(document).scrollTop() // or getScroll().top
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+      changeTabActive(name) {
+        this.tabActive = name;
+      }
+    },
+    created() {}
+  })
+</script>
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+
+
+<script src="/js/shareJs/social-share.min.js"></script>
+
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+
+    <!-- 评论 -->
+      
+        
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>目录</span>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+
+</style>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+    </main>
+    <div class="footer bg-color">
+  <div class="footer-main">
+    <div class="link">
+      <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:1730241541@qq.com">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
+      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541">
+        <i class="fa fa-qq" aria-hidden="true"></i>
+      </a>
+      <a href="/atom.xml" target="_blank">
+        <i class="fa fa-rss" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      Copyright © 2019 - 2020 <a target="_blank" rel="noopener" href="https://github.com/yuang01">yuang01</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> 
+    </div>
+    
+      
+  <!-- 不蒜子统计 -->
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-book" aria-hidden="true"></i>本站总阅读量：<span id="busuanzi_value_page_pv"></span> 次
+  </span>
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  <span class="post-meta-divider">|</span>
+  <span id="busuanzi_container_site_uv" style='display:none'>
+        <i class="fa fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+  </span>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+  </div>
+</div>
+
+
+    
+      <div class="goTop bg-color">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+
+<script src="/js/goTop.js"></script>
+
+    
+
+    
+      <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+<style>
+.aplayer .aplayer-lrc p {
+  
+  display: none;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px !important;
+}
+
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
+  
+  font-size: 15px;
+  color: #42b983;
+}
+
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0px !important;
+}
+
+
+</style>
+<meting-js  
+  class=""
+  server="netease"
+  type="playlist"
+  id="442274724"
+  fixed='true'
+  autoplay='false'
+  theme='#42b983'
+  loop='all'
+  order='random'
+  preload='auto'
+  volume='0.7'
+  list-folded='true'
+>
+</meting-js>
+
+<!-- <style>
+  #aplayer {
+    position: fixed;
+    left: 0;
+    bottom: 300px;
+  }
+</style> -->
+<script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    
+
+    <!-- 图片放大 -->
+    
+      
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/wrapImage.js"></script>
+
+    
+
+    <!-- 爱心点击 -->
+    
+      
+<script src="/js/clicklove.js"></script>
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
+    
+      
+<script src="/js/aos/aos.js"></script>
+
+      <script>
+        // https://github.com/michalsnik/aos
+        const themeOffset = parseInt('120') || 120;
+        const themeDelay = parseInt('0')|| 0;
+        const themeDuration = parseInt('400') || 400;
+        const themeEasing = 'ease' || 'ease';
+        const themeOnce = JSON.parse('true' || true);
+        const themeMirror = JSON.parse('false' || false);
+        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: themeOffset, // offset (in px) from the original trigger point
+          delay: themeDelay, // values from 0 to 3000, with step 50ms
+          duration: themeDuration, // values from 0 to 3000, with step 50ms
+          easing: themeEasing, // default easing for AOS animations
+          once: themeOnce, // whether animation should happen only once - while scrolling down
+          mirror: themeMirror, // whether elements should animate out while scrolling past them
+          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+        });
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+<div id="appCopy">
+</div>
+<script>
+  var vm = new Vue({
+    el: '#appCopy',
+    data: {
+    },
+    computed: {
+    },
+    mounted() {
+      const that = this;
+      //  监听 ctrl + c事件  
+      $(document).unbind('keypress').bind('keypress', function (e) {
+        if (e.ctrlKey && e.keyCode == 67) {
+          doSomething();
+          // 返回false, 防止重复触发copy事件  
+          return false;
+        }
+      })
+
+      // 鼠标右键的复制事件  
+      $(document).unbind('copy').bind('copy', function (e) {
+        doSomething();
+        // console.log('右键复制 监听成功');
+      });
+
+      function doSomething() {
+        that.$notify({
+          title: '成功',
+          content: '复制成功了哦',
+          type: 'success'
+        })
+        // console.log('ctrl + c 监听成功');  
+      }
+    },
+    methods: {
+    },
+    created() { }
+  })
+</script>
+    
+
+    <!-- 输入框打字特效 -->
+    
+      
+<script src="/js/activate-power-mode.js"></script>
+
+      <script>
+          POWERMODE.colorful = true;  // 打开随机颜色特效
+          POWERMODE.shake = false;    // 关闭输入框抖动
+          document.body.addEventListener('input', POWERMODE);//监听打字事件
+      </script>
+    
+
+    <!-- markdown代码一键复制功能 -->
+    
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    <script>
+      !function (e, t, a) {
+        var copy = '复制';
+        /* code */
+        var initCopyCode = function(){
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+          copyHtml += '<i class="fa fa-globe"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre code").before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+              target: function(trigger) {
+                  return trigger.nextElementSibling;
+              }
+          });
+        }
+        initCopyCode();
+      }(window, document);
+    </script>
+  
+  </body>
+</html>

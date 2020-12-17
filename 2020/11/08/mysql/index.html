@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <title>mysql | 李雷的博客</title>
+  
+    
+<link rel="stylesheet" href="/js/aos/aos.css">
+
+  
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/animate.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/js/shareJs/share.min.css">
+
+  
+  <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="李雷的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+  
+<script src="/js/jquery3.5.1.js"></script>
+
+  
+<script src="/js/vue2.6.11.js"></script>
+
+  <body>
+    <header class="header bg-color" 
+  style="position: fixed; 
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+  <i class="fa fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+  <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+  </div>
+  <div class="drawer-box" :class="{'active': visible}">
+    <div class="drawer-box-head bg-color">
+      <img class="drawer-box-head_logo" src="/medias/logo.png" alt="logo">
+      <h3 class="drawer-box-head_title">李雷的博客</h3>
+      <h5 class="drawer-box-head_desc">慢慢来</h5>
+    </div>
+    <div class="drawer-box-content">
+      <ul class="drawer-box-content_menu">
+        
+          <li class="drawer-box-content_item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="drawer-box-content_item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+        <li class="drawer-box-content_item">
+          <a href="">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span>Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDrawer',
+    data: {
+      visible: false,
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      }
+    },
+    created() {}
+  })
+</script>
+    </div>
+    <div class="blog-title" id="author-avatar">
+      <div class="avatar">
+        <img src="/medias/logo.png" alt="logo">
+      </div>
+      <a href="/" class="logo">李雷的博客</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>首页</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              
+              <span>归档</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>标签</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>分类</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>关于</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>友情链接</span>
+            </a>
+          </li>
+        
+      </ul>
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
+  <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+    <div class="message-box">
+      <h2>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="title">搜索</span>
+      </h2>
+      <form class="site-search-form">
+        <input type="text"
+          placeholder="请输入关键字"
+          id="local-search-input" 
+          @click="getSearchFile()"
+          class="st-search-input"
+          v-model="searchInput"
+        />
+      </form>
+      <div class="result-wrapper">
+        <div id="local-search-result" class="local-search-result-cls"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/local_search.js"></script>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile();
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+    </nav>
+  </div>
+  
+  <a target="_blank" rel="noopener" href="https://github.com/Thunder-lilei" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</header>
+    <main class="main" style="margin-top: 60px;">
+      
+
+
+<div class="post-detail-header" style="background: url(https://i.loli.net/2020/11/08/eOQSWsX7MCaVU5g.jpg) no-repeat; background-size: cover; 
+  background-position: center center;">
+  
+    <span class="title">mysql</span>
+  
+</div>
+<div class="row justify-center">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2020-11-08</span>
+      </div>
+      
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/mysql/" class="">
+              mysql
+            </a>
+          
+        </div>
+        
+        
+        <div class="categories">
+          <i class="iconfont iconbookmark1"></i>
+          
+            <a href="/categories/knowledge/" class="">
+              knowledge
+            </a>
+          
+        </div>
+        
+      </div>
+      <div class="post-content">
+        <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="传送门"><a href="#传送门" class="headerlink" title="传送门"></a>传送门</h2><h3 id="Mysql-数据"><a href="#Mysql-数据" class="headerlink" title="Mysql_数据"></a><a target="_blank" rel="noopener" href="https://www.lileiblog.top/2020/11/11/mysql-shu-ju/">Mysql_数据</a></h3><hr>
+<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><ol>
+<li>表格形式</li>
+<li>行为<strong>记录名称</strong> 列为记录名称对应的<strong>数据域</strong> 行列组成<strong>表单</strong> 表单组成<strong>database</strong></li>
+<li>关系型数据库(Relational Database Management System)</li>
+</ol>
+<hr>
+<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><ol>
+<li>数据库：关联表</li>
+<li>数据表：数据的矩阵</li>
+<li>列：相同类型的数据</li>
+<li>行：一组相关的数据</li>
+<li>表头：每一列名称</li>
+<li>冗余：降低性能，提高数据安全性</li>
+<li>主键：唯一，一个表一个，不能重复的，不允许为空<br> <strong>联合主键：就是用多个字段一起作为一张表的主键。</strong></li>
+<li>外键：关联两个表，主键用于<strong>保证数据完整性</strong></li>
+<li>复合键：将多个列组成一个索引键，复合索引</li>
+<li>索引：快速访问特定信息，对一列或多列的值进行排序的一种结构，索引 该字段没有重复值但可以有一个空值，索引用于<strong>提高查询排序的速度</strong>，可以有多个唯一索引</li>
+<li>参照完整性：保证数据一致性 </li>
+</ol>
+<hr>
+<h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><ol>
+<li><p>mysql中，结果集满足联结条件，该联接是内连接</p>
+</li>
+<li><p>“HAVING 条件表达式”用来筛选满足条件的分组</p>
+</li>
+<li><p><strong>statement</strong></p>
+<ol>
+<li><p><strong>Statement</strong>:<br>普通的不带参的查询SQL；支持批量更新,批量删除;  </p>
+</li>
+<li><p><strong>PreparedStatement</strong>:<br>可变参数的SQL,编译一次,执行多次,效率高;<br>安全性好，有效防止Sql注入等问题;<br>支持批量更新,批量删除;  </p>
+</li>
+<li><p><strong>CallableStatement</strong>:<br>继承自PreparedStatement,支持带参数的SQL操作;<br>支持调用存储过程,提供了对输出和输入/输出参数(INOUT)的支持;</p>
+<p>PreparedStatement可以阻止常见的SQL注入式攻击</p>
+<p>一个占位符只能对应一个值</p>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="sql问题"><a href="#sql问题" class="headerlink" title="sql问题"></a>sql问题</h2><ol>
+<li><h3 id="Sql语句中关于如何在LIKE’-’中给？赋值"><a href="#Sql语句中关于如何在LIKE’-’中给？赋值" class="headerlink" title="Sql语句中关于如何在LIKE’%?%’中给？赋值"></a>Sql语句中关于如何在LIKE’%?%’中给？赋值</h3> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ct = <span class="keyword">new</span> ConnDB().getConn();</span><br><span class="line">ps = ct.prepareStatement(<span class="string">&quot;select * from news where keyWords like&#x27;%&quot;</span>+search+<span class="string">&quot;%&#x27;&quot;</span>);</span><br><span class="line">ps.setString(<span class="number">1</span>, search)</span><br></pre></td></tr></table></figure>
+<p> ？它代表的仅仅是一个字符，而不是一个特殊符号</p>
+</li>
+<li><h3 id="重复数据"><a href="#重复数据" class="headerlink" title="重复数据"></a>重复数据</h3><ol>
+<li><h4 id="处理重复数据"><a href="#处理重复数据" class="headerlink" title="处理重复数据"></a>处理重复数据</h4></li>
+</ol>
+<ul>
+<li>primary key（主键）或者unique（唯一）保证数据唯一性，（重点是表中的限制），`insert ignore into 表名 (字段1,字段2…) values(值1,值2…);<br><img src="https://i.loli.net/2020/11/10/dSGo9eZgFuktQ34.png" alt="Snipaste_2020-11-10_10-53-15.png"><br><img src="https://i.loli.net/2020/11/10/gMdb4lvVuhL8pR9.png" alt="Snipaste_2020-11-10_10-47-06_1.png"><br><img src="https://i.loli.net/2020/11/10/SrN71FjYMTRmfO8.png" alt="Snipaste_2020-11-10_10-47-06_2.png"></li>
+<li><code>replace into 表名 (字段1,字段2...) values(值1,值2...);</code>有重复的对象会删除旧的插入新的<br><img src="https://i.loli.net/2020/11/10/UlGYbEPCiRVDqjF.png" alt="Snipaste_2020-11-10_10-50-42.png"></li>
+</ul>
+<ol start="2">
+<li><h4 id="统计重复记录"><a href="#统计重复记录" class="headerlink" title="统计重复记录"></a>统计重复记录</h4> <code>select count(*) as 别名,字段名1,字段名2... from 表名 group by 字段名1,字段名2,,, having 别名&gt;1;</code><br><img src="https://i.loli.net/2020/11/10/MkT8oDuKpOmIzsh.png" alt="Snipaste_2020-11-10_10-56-06.png"></li>
+<li><h4 id="过滤重复记录"><a href="#过滤重复记录" class="headerlink" title="过滤重复记录"></a>过滤重复记录</h4><ul>
+<li>按重复字段分组</li>
+<li><code>distinct</code><br><img src="https://i.loli.net/2020/11/10/Kzuk5JFRQMar4Nj.png" alt="Snipaste_2020-11-10_13-32-53.png"></li>
+</ul>
+</li>
+<li><h4 id="删除重复记录"><a href="#删除重复记录" class="headerlink" title="删除重复记录"></a>删除重复记录</h4><ul>
+<li>按重复字段分组，重新建表<br><img src="https://i.loli.net/2020/11/10/twi1LG25dvCBZJQ.png" alt="Snipaste_2020-11-10_13-43-21.png"></li>
+<li>在数据表中添加主键和索引</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h2><ul>
+<li>使字段实现自增<ol>
+<li><code>AUTO_INCREMENT</code>定义列<br><code>id INT UNSIGNED NOT NULL AUTO_INCREMENT,</code>建表时添加<br><img src="https://i.loli.net/2020/11/10/zERlHIbT9fL17VJ.png" alt="Snipaste_2020-11-10_10-06-19.png"></li>
+<li><code>last_insert_id()</code>获取最后的插入表中的自增列的值<br><img src="https://i.loli.net/2020/11/10/kys5vOq2ZGQKXmB.png" alt="Snipaste_2020-11-10_10-07-59.png"></li>
+<li>重置序列<br><img src="https://i.loli.net/2020/11/10/2DOIqWyfHiL3XtG.png" alt="Snipaste_2020-11-10_10-13-32.png"></li>
+<li>设置序列开始值<ul>
+<li><code>auto_increment=初始值</code>建表时<br><img src="https://i.loli.net/2020/11/10/mr4cynobLXG5vfW.png" alt="Snipaste_2020-11-10_10-23-53.png"></li>
+<li><code>ALTER TABLE 表名 AUTO_INCREMENT =  100;</code>建表后</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ol>
+<li><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><ul>
+<li><code>create database 数据库名;</code></li>
+<li><code>CREATE DATABASE IF NOT EXISTS 数据库名 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;</code>（数据库存在创建否则不创建，设定编码集为utf8）</li>
+</ul>
+</li>
+<li><h3 id="查看所有show-databases"><a href="#查看所有show-databases" class="headerlink" title="查看所有show databases;"></a>查看所有<code>show databases;</code></h3></li>
+<li><h3 id="删除drop-database-数据库名"><a href="#删除drop-database-数据库名" class="headerlink" title="删除drop database 数据库名;"></a>删除<code>drop database 数据库名;</code></h3></li>
+<li><h3 id="选择use-数据库名"><a href="#选择use-数据库名" class="headerlink" title="选择use 数据库名;"></a>选择<code>use 数据库名;</code></h3></li>
+</ol>
+<hr>
+<h2 id="元数据"><a href="#元数据" class="headerlink" title="元数据"></a>元数据</h2><ul>
+<li><h3 id="show-status服务器状态"><a href="#show-status服务器状态" class="headerlink" title="show status服务器状态"></a><code>show status</code>服务器状态</h3>  <img src="https://i.loli.net/2020/11/10/Iisy9HJGogmWkKh.png" alt="Snipaste_2020-11-10_09-18-07.png"></li>
+<li><h3 id="SHOW-VARIABLES服务器配置信息"><a href="#SHOW-VARIABLES服务器配置信息" class="headerlink" title="SHOW VARIABLES服务器配置信息"></a><code>SHOW VARIABLES</code>服务器配置信息</h3>  <img src="https://i.loli.net/2020/11/10/XYGPkVwvEl1IHuA.png" alt="Snipaste_2020-11-10_09-18-46.png"></li>
+<li><h3 id="select-version服务器版本信息"><a href="#select-version服务器版本信息" class="headerlink" title="select version服务器版本信息"></a><code>select version</code>服务器版本信息</h3>  <img src="https://i.loli.net/2020/11/10/CikYWDuUASoRaVn.png" alt="Snipaste_2020-11-10_09-20-23.png"></li>
+<li><h3 id="select-database-当前数据库名，没有选择返回null"><a href="#select-database-当前数据库名，没有选择返回null" class="headerlink" title="select database()当前数据库名，没有选择返回null"></a><code>select database()</code>当前数据库名，没有选择返回null</h3>  <img src="https://i.loli.net/2020/11/10/fbYGQ2Fy9PjcO1K.png" alt="Snipaste_2020-11-10_09-21-35.png"></li>
+<li><h3 id="select-user-当前用户名"><a href="#select-user-当前用户名" class="headerlink" title="select user()当前用户名"></a><code>select user()</code>当前用户名</h3>  <img src="https://i.loli.net/2020/11/10/54dqCRgBY3irJ98.png" alt="Snipaste_2020-11-10_09-23-30.png"></li>
+</ul>
+<hr>
+<h2 id="数据表"><a href="#数据表" class="headerlink" title="数据表"></a>数据表</h2><ol>
+<li><h3 id="创建create-table-表名-列名-列类型"><a href="#创建create-table-表名-列名-列类型" class="headerlink" title="创建create table 表名(列名 列类型)"></a><strong>创建</strong><code>create table 表名(列名 列类型)</code></h3><ul>
+<li>之前要选择database</li>
+<li>多列之间用<code>,</code>隔开</li>
+<li>字段不为空为<code>NOT NULL</code></li>
+<li><code>AUTO_INCREMENT</code>为自增</li>
+<li><code>PRIMARY KEY</code>关键字定义主键</li>
+<li><code>ENGINE</code>设置存储引擎，<code>CHARSET</code>设置编码。<br>例：<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`runoob_tbl`</span>(</span><br><span class="line">  <span class="string">`runoob_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,  </span><br><span class="line">  <span class="string">`runoob_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,  </span><br><span class="line">  <span class="string">`runoob_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,  </span><br><span class="line">  <span class="string">`submission_date`</span> <span class="built_in">DATE</span>, PRIMARY <span class="keyword">KEY</span> (<span class="string">`runoob_id`</span>)</span><br><span class="line">    )<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h3 id="删除drop-table-表名"><a href="#删除drop-table-表名" class="headerlink" title="删除drop table 表名"></a><strong>删除</strong><code>drop table 表名</code></h3><ul>
+<li>之前要选择database</li>
+</ul>
+</li>
+<li><h3 id="临时表"><a href="#临时表" class="headerlink" title="临时表"></a>临时表</h3></li>
+</ol>
+<ul>
+<li>只在当前连接可见，关闭连接自动删除表并释放所有空间</li>
+<li>temporary</li>
+<li>临时表不在数据表列表里，只能select，可以drop<br><img src="https://i.loli.net/2020/11/09/oR67N3fnirCbVKF.png" alt="Snipaste_2020-11-09_17-24-26.png"></li>
+</ul>
+<ol start="4">
+<li><h3 id="复制表"><a href="#复制表" class="headerlink" title="复制表"></a>复制表</h3></li>
+</ol>
+<ul>
+<li><p><code>show create table 表名;</code></p>
+</li>
+<li><p>复制，修改后创建<br><img src="https://i.loli.net/2020/11/09/6igsjnrRdIUoKCf.png" alt="Snipaste_2020-11-09_17-30-40.png"></p>
+</li>
+<li><p><code>create table 新表名 like 表名;</code><br><img src="https://i.loli.net/2020/11/09/NnjJ6ADi9zvGVIx.png" alt="Snipaste_2020-11-09_17-32-22.png"></p>
+</li>
+</ul>
+<hr>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^</td>
+<td>以输入为开头</td>
+</tr>
+<tr>
+<td>$</td>
+<td>以输入为结尾</td>
+</tr>
+<tr>
+<td>.</td>
+<td>除了<code>\n</code>之外的任何单个字符，[.\n]</td>
+</tr>
+<tr>
+<td>[…]</td>
+<td>匹配包含的任意一个字符</td>
+</tr>
+<tr>
+<td>[^…]</td>
+<td>匹配未包含的任意一个字符</td>
+</tr>
+<tr>
+<td>`p1</td>
+<td>p2</td>
+</tr>
+</tbody></table>
+<ul>
+<li>| 匹配前面的子表达式0-多次</li>
+</ul>
+<ul>
+<li>| 匹配前面的子表达式1-多次<br>{n} | 匹配确定的n次，连续<br>{n,m} | 最少匹配n次最多匹配m次，连续<br><img src="https://i.loli.net/2020/11/09/PWj9Z25bdkhLfiU.png" alt="Snipaste_2020-11-09_14-09-03.png"><br><img src="https://i.loli.net/2020/11/09/3vwWEf82HqKLoSe.png" alt="Snipaste_2020-11-09_14-12-35.png"><br><img src="https://i.loli.net/2020/11/09/tN5CvPxwXAejVpD.png" alt="Snipaste_2020-11-09_14-09-44.png"><br><img src="https://i.loli.net/2020/11/09/w5BGe3gzlH1DxqT.png" alt="Snipaste_2020-11-09_14-10-15.png"><br><img src="https://i.loli.net/2020/11/09/dA63cyTW2eKqLnv.png" alt="Snipaste_2020-11-09_14-11-53.png"><br><img src="https://i.loli.net/2020/11/09/ltzE1Z4Tg2kLjNh.png" alt="Snipaste_2020-11-09_14-22-00.png"><br><img src="https://i.loli.net/2020/11/09/Ya3OucPsU9RoMry.png" alt="Snipaste_2020-11-09_14-13-31.png"><br><img src="https://i.loli.net/2020/11/09/MEJfmbTPpO8WX73.png" alt="Snipaste_2020-11-09_14-24-30.png"></li>
+</ul>
+<hr>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><ul>
+<li><p>只有使用了 Innodb 数据库引擎的数据库或表才支持事务。</p>
+</li>
+<li><p>维护数据库的完整性，保证成批的 SQL 语句要么全部执行，要么全部不执行。</p>
+</li>
+<li><p>管理 insert,update,delete 语句</p>
+</li>
+<li><h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul>
+<li><p><strong>原子性</strong><br>  一个事务（transaction）中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态</p>
+</li>
+<li><p><strong>一致性</strong><br>在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设规则，这包含资料的精确度、串联性以及后续数据库可以自发性地完成预定的工作。</p>
+</li>
+<li><p><strong>隔离性</strong><br>数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。</p>
+</li>
+<li><p><strong>持久性</strong><br>事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。、</p>
+</li>
+</ul>
+</li>
+<li><h3 id="事务控制语句"><a href="#事务控制语句" class="headerlink" title="事务控制语句"></a>事务控制语句</h3><ul>
+<li><p>BEGIN 或 START TRANSACTION<br>显式地开启一个事务；</p>
+</li>
+<li><p>COMMIT 也可以使用 COMMIT WORK，不过二者是等价的。<br>COMMIT 会提交事务，并使已对数据库进行的所有修改成为永久性的；<br><img src="https://i.loli.net/2020/11/09/5EvHiPwdOU1gMFc.png" alt="Snipaste_2020-11-09_14-44-05.png">    </p>
+</li>
+<li><p>ROLLBACK 也可以使用 ROLLBACK WORK，不过二者是等价的。<br>回滚会结束用户的事务，并撤销正在进行的所有未提交的修改；<br><img src="https://i.loli.net/2020/11/09/JeSr2fbIuciNq3K.png" alt="Snipaste_2020-11-09_14-44-36.png"></p>
+</li>
+<li><p>SAVEPOINT identifier，SAVEPOINT<br>允许在事务中创建一个保存点，一个事务中可以有多个 SAVEPOINT；</p>
+</li>
+<li><p>RELEASE SAVEPOINT identifier<br>删除一个事务的保存点，当没有指定的保存点时，执行该语句会抛出一个异常；</p>
+</li>
+<li><p>ROLLBACK TO identifier<br>把事务回滚到标记点；</p>
+</li>
+<li><p>SET TRANSACTION<br>用来设置事务的隔离级别。InnoDB 存储引擎提供事务的隔离级别有READ UNCOMMITTED、READ COMMITTED、REPEATABLE READ 和 SERIALIZABLE。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><ul>
+<li>单列索引<br>  只包含一个列，一个表可以有多个单列索引</li>
+<li>组合索引<br>  包含多个列</li>
+<li>包含主键与索引字段以及指向实体表的记录</li>
+<li>降低更新表的速度（更新表时，mysql需要保存数据和索引文件）</li>
+<li>建立索引会占用磁盘空间的索引文件</li>
+</ul>
+<ol>
+<li><h3 id="建立"><a href="#建立" class="headerlink" title="建立"></a>建立</h3><ul>
+<li><code>create index 索引名 on 表名(列名)</code></li>
+<li>修改表结构<code>alter table 表名 add index 索引名(列名)</code></li>
+<li>建表的时候指定<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">username <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line"><span class="keyword">index</span> [索引名] (username(<span class="keyword">length</span>))</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li>
+<li><strong>唯一索引</strong><ul>
+<li><code>create unique index 索引名 on 表名 (username(length))</code></li>
+<li>修改表结构<code>alter table 表名 add unique [索引名] (username(length))</code></li>
+<li>建表的时候指定<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">username <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">unioque [索引名] (username(<span class="keyword">length</span>))</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h3><ul>
+<li><code>drop index [索引名] on 表名</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>数值类型<br><img src="https://i.loli.net/2020/11/07/51pU4JkLSGBYsfE.png" alt="Snipaste_2020-11-07_15-57-36.png"></li>
+<li>日期和时间<br><img src="https://i.loli.net/2020/11/07/1c68pRrwLJfE7FA.png" alt="Snipaste_2020-11-07_15-57-49.png"></li>
+<li>字符串<br><img src="https://i.loli.net/2020/11/07/FfMyv1BR9rb7Ll2.png" alt="Snipaste_2020-11-07_15-57-57.png"></li>
+</ol>
+<hr>
+<h2 id="防止sql注入"><a href="#防止sql注入" class="headerlink" title="防止sql注入"></a>防止sql注入</h2><hr>
+<h2 id="导出导入数据"><a href="#导出导入数据" class="headerlink" title="导出导入数据"></a>导出导入数据</h2><hr>
+<h2 id="mysql函数"><a href="#mysql函数" class="headerlink" title="mysql函数"></a>mysql函数</h2><hr>
+<h2 id="mysql运算符"><a href="#mysql运算符" class="headerlink" title="mysql运算符"></a>mysql运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><ul>
+<li><h4 id="加法"><a href="#加法" class="headerlink" title="+加法"></a><code>+</code>加法</h4></li>
+<li><h4 id="减法"><a href="#减法" class="headerlink" title="-减法"></a><code>-</code>减法</h4></li>
+<li><h4 id="乘法"><a href="#乘法" class="headerlink" title="*乘法"></a><code>*</code>乘法</h4></li>
+<li><h4 id="或DIV除法（div是商）"><a href="#或DIV除法（div是商）" class="headerlink" title="/或DIV除法（div是商）"></a><code>/或DIV</code>除法（div是商）</h4>  <img src="https://i.loli.net/2020/11/10/hPq1AZlaVcHMmfb.png" alt="Snipaste_2020-11-10_14-59-05.png"></li>
+<li><h4 id="或MOD取余"><a href="#或MOD取余" class="headerlink" title="%或MOD取余"></a><code>%或MOD</code>取余</h4>  <img src="https://i.loli.net/2020/11/10/16LXnMhQesEz8Aj.png" alt="Snipaste_2020-11-10_15-00-09.png"></li>
+</ul>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>正确为1，错误为0</p>
+<ul>
+<li><h4 id="等于"><a href="#等于" class="headerlink" title="=等于"></a><code>=</code>等于</h4></li>
+<li><h4 id="lt-gt-安全等于，null也可以比较"><a href="#lt-gt-安全等于，null也可以比较" class="headerlink" title="&lt;=&gt;安全等于，null也可以比较"></a><code>&lt;=&gt;</code>安全等于，null也可以比较</h4>  <img src="https://i.loli.net/2020/11/10/YQqO8wTXUEbcZA7.png" alt="Snipaste_2020-11-10_15-11-22.png"></li>
+<li><h4 id="lt-gt-或-不等于"><a href="#lt-gt-或-不等于" class="headerlink" title="&lt;&gt;或!=不等于"></a><code>&lt;&gt;或!=</code>不等于</h4></li>
+<li><h4 id="gt-大于"><a href="#gt-大于" class="headerlink" title="&gt;大于"></a><code>&gt;</code>大于</h4></li>
+<li><h4 id="lt-小于"><a href="#lt-小于" class="headerlink" title="&lt;小于"></a><code>&lt;</code>小于</h4></li>
+<li><h4 id="gt-大于等于"><a href="#gt-大于等于" class="headerlink" title="&gt;=大于等于"></a><code>&gt;=</code>大于等于</h4></li>
+<li><h4 id="lt-小于等于"><a href="#lt-小于等于" class="headerlink" title="&lt;=小于等于"></a><code>&lt;=</code>小于等于</h4></li>
+<li><h4 id="between两值之间（包括两端）"><a href="#between两值之间（包括两端）" class="headerlink" title="between两值之间（包括两端）"></a><code>between</code>两值之间（包括两端）</h4></li>
+<li><h4 id="not-between不在两值之间"><a href="#not-between不在两值之间" class="headerlink" title="not between不在两值之间"></a><code>not between</code>不在两值之间</h4></li>
+<li><h4 id="in在集合中"><a href="#in在集合中" class="headerlink" title="in在集合中"></a><code>in</code>在集合中</h4></li>
+<li><h4 id="not-in不在集合中"><a href="#not-in不在集合中" class="headerlink" title="not in不在集合中"></a><code>not in</code>不在集合中</h4>  <img src="https://i.loli.net/2020/11/10/2FDyJM3S1bprIAg.png" alt="Snipaste_2020-11-10_15-08-07.png"></li>
+<li><h4 id="like模糊匹配"><a href="#like模糊匹配" class="headerlink" title="like模糊匹配"></a><code>like</code>模糊匹配</h4></li>
+<li><h4 id="regexp或rlike正则式匹配"><a href="#regexp或rlike正则式匹配" class="headerlink" title="regexp或rlike正则式匹配"></a><code>regexp或rlike</code>正则式匹配</h4>  <img src="https://i.loli.net/2020/11/10/NPkOIudfR8eJw9E.png" alt="Snipaste_2020-11-10_15-15-05.png"></li>
+<li><h4 id="is-null为空"><a href="#is-null为空" class="headerlink" title="is null为空"></a><code>is null</code>为空</h4>  <img src="https://i.loli.net/2020/11/10/ZhKDNie6oUBHcwr.png" alt="Snipaste_2020-11-10_15-13-56.png"></li>
+<li><h4 id="is-not-null不为空"><a href="#is-not-null不为空" class="headerlink" title="is not null不为空"></a><code>is not null</code>不为空</h4></li>
+</ul>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><ul>
+<li><h4 id="not或-逻辑非"><a href="#not或-逻辑非" class="headerlink" title="not或!逻辑非"></a><code>not或!</code>逻辑非</h4>  相反</li>
+<li><h4 id="and逻辑与"><a href="#and逻辑与" class="headerlink" title="and逻辑与"></a><code>and</code>逻辑与</h4>  <img src="https://i.loli.net/2020/11/10/H9yFufYsW8bKQZw.png" alt="Snipaste_2020-11-10_15-18-43.png"></li>
+<li><h4 id="or逻辑或"><a href="#or逻辑或" class="headerlink" title="or逻辑或"></a><code>or</code>逻辑或</h4>  <img src="https://i.loli.net/2020/11/10/MzsEOxDqt8Y74yK.png" alt="Snipaste_2020-11-10_15-21-27.png"></li>
+<li><h4 id="xor逻辑异或"><a href="#xor逻辑异或" class="headerlink" title="xor逻辑异或"></a><code>xor</code>逻辑异或</h4>  相同就是0（除了null），有null就是null<br>  <img src="https://i.loli.net/2020/11/10/qF9U32xKzgcuyRN.png" alt="Snipaste_2020-11-10_15-23-56.png"></li>
+</ul>
+
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>Lilei</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2020/11/08/mysql/" target="_blank" title="mysql">http://Thunder-lilei.github.io/2020/11/08/mysql/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <div class="post-nav">
+
+  <div class="post-nav-prev post-nav-item">
+    <a href="/2020/11/09/html/">
+      上一篇:    html
+    </a>
+  </div>
+
+
+
+  <div class="post-nav-next post-nav-item">
+    <a href="/2020/11/06/http-xie-yi/">
+      <span>
+        下一篇:    HTTP协议 
+      </span>
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+      <div id="appDonate" class="post-donate">
+  <div id="donate_board" class="donate_bar center" ref="donate">
+    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
+  </div>
+  <transition name="fade">
+    <div 
+      class="donate-box-mask"
+      v-cloak 
+      v-if="visible"
+      @click="cancelDialogDrawer()"
+    >
+    </div>
+  </transition>
+  <transition name="bounce">
+    <div class="donate-box" v-cloak v-if="visible">
+      <div class="donate-box_close">
+        <i class="fa fa-times" aria-hidden="true" @click="cancelDialogDrawer"></i>
+      </div>
+      <div class="donate-box_title">
+        <h4>
+          你的赏识是我前进的动力
+        </h4>
+      </div>
+      <div class="donate-box_tab">
+        <div class="Alipay" :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
+          支付宝
+        </div>
+        <div class="WeChatpay" :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
+          微信
+        </div>
+      </div>
+      <div class="donate-box_img">
+        <div class="AlipayImg" v-if="tabActive === 'Alipay'">
+          <img src="/medias/zfb.jpg" alt="支付宝打赏" />
+        </div> 
+        <div class="WeChatpayImg" v-if="tabActive === 'WeChatpay'">
+          <img src="/medias/wx.jpg" alt="微信打赏" />
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appDonate',
+    data: {
+      visible: false,
+      tabActive: 'Alipay',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        // function getScroll() {
+        //   return {
+        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        //   };
+        // }
+        this.top = $(document).scrollTop() // or getScroll().top
+        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top + 'px; left: 0; overflow: hidden;';
+      },
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+      changeTabActive(name) {
+        this.tabActive = name;
+      }
+    },
+    created() {}
+  })
+</script>
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+
+
+<script src="/js/shareJs/social-share.min.js"></script>
+
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+
+    <!-- 评论 -->
+      
+        
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>目录</span>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+
+</style>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+    </main>
+    <div class="footer bg-color">
+  <div class="footer-main">
+    <div class="link">
+      <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:1730241541@qq.com">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
+      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541">
+        <i class="fa fa-qq" aria-hidden="true"></i>
+      </a>
+      <a href="/atom.xml" target="_blank">
+        <i class="fa fa-rss" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      Copyright © 2019 - 2020 <a target="_blank" rel="noopener" href="https://github.com/yuang01">yuang01</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> 
+    </div>
+    
+      
+  <!-- 不蒜子统计 -->
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-book" aria-hidden="true"></i>本站总阅读量：<span id="busuanzi_value_page_pv"></span> 次
+  </span>
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  <span class="post-meta-divider">|</span>
+  <span id="busuanzi_container_site_uv" style='display:none'>
+        <i class="fa fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+  </span>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+  </div>
+</div>
+
+
+    
+      <div class="goTop bg-color">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+
+<script src="/js/goTop.js"></script>
+
+    
+
+    
+      <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+<style>
+.aplayer .aplayer-lrc p {
+  
+  display: none;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px !important;
+}
+
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  
+  display: none;
+  
+  font-size: 15px;
+  color: #42b983;
+}
+
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0px !important;
+}
+
+
+</style>
+<meting-js  
+  class=""
+  server="netease"
+  type="playlist"
+  id="442274724"
+  fixed='true'
+  autoplay='false'
+  theme='#42b983'
+  loop='all'
+  order='random'
+  preload='auto'
+  volume='0.7'
+  list-folded='true'
+>
+</meting-js>
+
+<!-- <style>
+  #aplayer {
+    position: fixed;
+    left: 0;
+    bottom: 300px;
+  }
+</style> -->
+<script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    
+
+    <!-- 图片放大 -->
+    
+      
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/wrapImage.js"></script>
+
+    
+
+    <!-- 爱心点击 -->
+    
+      
+<script src="/js/clicklove.js"></script>
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
+    
+      
+<script src="/js/aos/aos.js"></script>
+
+      <script>
+        // https://github.com/michalsnik/aos
+        const themeOffset = parseInt('120') || 120;
+        const themeDelay = parseInt('0')|| 0;
+        const themeDuration = parseInt('400') || 400;
+        const themeEasing = 'ease' || 'ease';
+        const themeOnce = JSON.parse('true' || true);
+        const themeMirror = JSON.parse('false' || false);
+        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: themeOffset, // offset (in px) from the original trigger point
+          delay: themeDelay, // values from 0 to 3000, with step 50ms
+          duration: themeDuration, // values from 0 to 3000, with step 50ms
+          easing: themeEasing, // default easing for AOS animations
+          once: themeOnce, // whether animation should happen only once - while scrolling down
+          mirror: themeMirror, // whether elements should animate out while scrolling past them
+          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+        });
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+<div id="appCopy">
+</div>
+<script>
+  var vm = new Vue({
+    el: '#appCopy',
+    data: {
+    },
+    computed: {
+    },
+    mounted() {
+      const that = this;
+      //  监听 ctrl + c事件  
+      $(document).unbind('keypress').bind('keypress', function (e) {
+        if (e.ctrlKey && e.keyCode == 67) {
+          doSomething();
+          // 返回false, 防止重复触发copy事件  
+          return false;
+        }
+      })
+
+      // 鼠标右键的复制事件  
+      $(document).unbind('copy').bind('copy', function (e) {
+        doSomething();
+        // console.log('右键复制 监听成功');
+      });
+
+      function doSomething() {
+        that.$notify({
+          title: '成功',
+          content: '复制成功了哦',
+          type: 'success'
+        })
+        // console.log('ctrl + c 监听成功');  
+      }
+    },
+    methods: {
+    },
+    created() { }
+  })
+</script>
+    
+
+    <!-- 输入框打字特效 -->
+    
+      
+<script src="/js/activate-power-mode.js"></script>
+
+      <script>
+          POWERMODE.colorful = true;  // 打开随机颜色特效
+          POWERMODE.shake = false;    // 关闭输入框抖动
+          document.body.addEventListener('input', POWERMODE);//监听打字事件
+      </script>
+    
+
+    <!-- markdown代码一键复制功能 -->
+    
+<script src="/js/clipboard/clipboard.min.js"></script>
+
+    <script>
+      !function (e, t, a) {
+        var copy = '复制';
+        /* code */
+        var initCopyCode = function(){
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+          copyHtml += '<i class="fa fa-globe"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre code").before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+              target: function(trigger) {
+                  return trigger.nextElementSibling;
+              }
+          });
+        }
+        initCopyCode();
+      }(window, document);
+    </script>
+  
+  </body>
+</html>
