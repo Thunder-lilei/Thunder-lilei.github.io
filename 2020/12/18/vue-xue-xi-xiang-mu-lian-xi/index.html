@@ -361,7 +361,55 @@
       <div class="post-content">
         <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a></p>
 <hr>
-<h2 id="实现页面跳转"><a href="#实现页面跳转" class="headerlink" title="实现页面跳转"></a>实现页面跳转</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42119415/article/details/111355715">感谢</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wanwei1987/article/details/70569914">感谢</a><br>    path路径要加上访问名</p>
+<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><ol>
+<li>页面跳转<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42119415/article/details/111355715">感谢</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wanwei1987/article/details/70569914">感谢</a><br> path路径要加上访问名</li>
+</ol>
+<hr>
+<h2 id="获取后台数据"><a href="#获取后台数据" class="headerlink" title="获取后台数据"></a>获取后台数据</h2><ol>
+<li>安装依赖<br> <code>npm install axios --save</code></li>
+<li>配置跨域<ol>
+<li>index.js</li>
+<li>module.exports</li>
+<li>dev</li>
+<li>proxyTable<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;/api&#x27;</span>: &#123;  </span><br><span class="line">  <span class="comment">// 此处的写法，目的是为了 将 /api 替换成 http://localhost:8080/  </span></span><br><span class="line">  target: <span class="string">&#x27;http://localhost:8080/&#x27;</span>,  </span><br><span class="line">  <span class="comment">// 允许跨域  </span></span><br><span class="line">  changeOrigin: <span class="literal">true</span>,  </span><br><span class="line">  ws: <span class="literal">true</span>,  </span><br><span class="line">  pathRewrite: &#123;  </span><br><span class="line">    <span class="string">&#x27;^/api&#x27;</span>: <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>配置axios<ol>
+<li>main.js<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> Axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line"></span><br><span class="line">Vue.prototype.$axios = Axios  </span><br><span class="line">Axios.defaults.baseURL = <span class="string">&#x27;/api&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>编写function <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">methods: &#123;  </span><br><span class="line">  getQuizs:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">this</span>.$axios.post(<span class="string">&#x27;/answer/getQuizs&#x27;</span>).then(<span class="function"><span class="params">response</span> =&gt;</span> &#123;  </span><br><span class="line">      <span class="built_in">console</span>.log(response)  </span><br><span class="line">    &#125;).catch(  </span><br><span class="line">      <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;  </span><br><span class="line">        <span class="comment">// 请求失败处理  </span></span><br><span class="line">  alert(<span class="string">&#x27;请求失败！&#x27;</span>)  </span><br><span class="line">      &#125;)  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<hr>
+<h2 id="修改项目名"><a href="#修改项目名" class="headerlink" title="修改项目名"></a>修改项目名</h2><ol>
+<li>package.json文件<ol>
+<li>name</li>
+</ol>
+</li>
+<li>Project Structure<ol>
+<li>Project name</li>
+<li>output</li>
+</ol>
+</li>
+<li>Modules<ol>
+<li>name</li>
+</ol>
+</li>
+<li>package.json和package-lock.json<ol>
+<li>name</li>
+</ol>
+</li>
+<li>删掉node_modules文件<ol>
+<li>重新npm instrall一次</li>
+<li>之前通过npm安装的插件，也要重新安装</li>
+</ol>
+</li>
+<li>rebuild</li>
+</ol>
+<h3 id="eslint问题"><a href="#eslint问题" class="headerlink" title="eslint问题"></a>eslint问题</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/gaoquanquan/p/9550169.html">感谢</a><br>在build/webpack.base.conf.js文件中，注释或者删除掉：module-&gt;rules中有关eslint的规则</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>: &#123;</span><br><span class="line">  rules: [</span><br><span class="line">    <span class="comment">//...(config.dev.useEslint ? [createLintingRule()] : []), // 注释或者删除</span></span><br><span class="line">    &#123;</span><br><span class="line">      test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">      loader: <span class="string">&#x27;vue-loader&#x27;</span>,</span><br><span class="line">      options: vueLoaderConfig</span><br><span class="line">    &#125;,</span><br><span class="line">    ...</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       </div>
       
@@ -386,6 +434,12 @@
     <!-- 上一篇文章和下一篇文章 -->
     
       <div class="post-nav">
+
+  <div class="post-nav-prev post-nav-item">
+    <a href="/2020/12/21/pagehelper/">
+      上一篇:    PageHelper
+    </a>
+  </div>
 
 
 
