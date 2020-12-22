@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Spring里用@RequestParam接受Date类型的url参数 | 李雷的博客</title>
+  <title>前后端对于时间类型的处理 | 李雷的博客</title>
   
     
 <link rel="stylesheet" href="/js/aos/aos.css">
@@ -312,10 +312,10 @@
       
 
 
-<div class="post-detail-header" style="background: url(https://i.loli.net/2020/11/08/zuxYSNB2If9aFKm.jpg) no-repeat; background-size: cover; 
+<div class="post-detail-header" style="background: url(https://i.loli.net/2020/11/08/5yxKO9JAoF3BtzM.jpg) no-repeat; background-size: cover; 
   background-position: center center;">
   
-    <span class="title">Spring里用@RequestParam接受Date类型的url参数</span>
+    <span class="title">前后端对于时间类型的处理</span>
   
 </div>
 <div class="row justify-center">
@@ -325,7 +325,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2020-09-29</span>
+        <span class="post-time">2020-12-22</span>
       </div>
       
       <div class="post-tags-categories">
@@ -333,12 +333,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/ssm/" class="">
-              ssm
+            <a href="/tags/%E5%89%8D%E7%AB%AF/" class="">
+              前端
             </a>
           
-            <a href="/tags/Spring/" class="">
-              Spring
+            <a href="/tags/%E5%90%8E%E7%AB%AF/" class="">
+              后端
             </a>
           
         </div>
@@ -355,15 +355,13 @@
         
       </div>
       <div class="post-content">
-        <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a target="_blank" rel="noopener" href="https://blog.csdn.net/dianshanguo5388/article/details/102049302">https://blog.csdn.net/dianshanguo5388/article/details/102049302</a></p>
+        <p>作者 ： <a target="_blank" rel="noopener" href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a target="_blank" rel="noopener" href="https://blog.csdn.net/swq463/article/details/81900964">https://blog.csdn.net/swq463/article/details/81900964</a></p>
 <hr>
-<p>引入joda-time包 maven的dependency：</p>
-<pre><code>    &lt;dependency&gt;
-        &lt;groupId&gt;joda-time&lt;/groupId&gt;
-        &lt;artifactId&gt;joda-time&lt;/artifactId&gt;
-        &lt;version&gt;2.4&lt;/version&gt;
-    &lt;/dependency&gt;</code></pre>
-<p>Controller层<br>public String testMethod(@RequestParam @DateTimeFormat(pattern=”yyyy-MM-dd”) Date testdate){<br>}</p>
+<ol>
+<li><h2 id="DateTimeFormat"><a href="#DateTimeFormat" class="headerlink" title="@DateTimeFormat"></a><code>@DateTimeFormat</code></h2> 后端接收格式</li>
+<li><h2 id="JsonFormat"><a href="#JsonFormat" class="headerlink" title="@JsonFormat"></a><code>@JsonFormat</code></h2> 向前端传送格式<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)</span>  </span><br><span class="line"><span class="meta">@JsonFormat(pattern=&quot;yyyy-MM-dd&quot;,timezone = &quot;GMT+8&quot;)</span>  </span><br><span class="line"><span class="keyword">private</span> Date userBirthday;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 
       </div>
       
@@ -374,7 +372,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2020/09/29/spring-jie-shou-date-lei-xing/" target="_blank" title="Spring里用@RequestParam接受Date类型的url参数">http://Thunder-lilei.github.io/2020/09/29/spring-jie-shou-date-lei-xing/</a>
+    <a href="/2020/12/22/qian-hou-duan-dui-yu-shi-jian-lei-xing-de-chu-li/" target="_blank" title="前后端对于时间类型的处理">http://Thunder-lilei.github.io/2020/12/22/qian-hou-duan-dui-yu-shi-jian-lei-xing-de-chu-li/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -389,18 +387,12 @@
     
       <div class="post-nav">
 
-  <div class="post-nav-prev post-nav-item">
-    <a href="/2020/09/29/ssm-controller-xi-can-tiao-zhuan-ye-mian/">
-      上一篇:    ssm controller 携参跳转页面
-    </a>
-  </div>
-
 
 
   <div class="post-nav-next post-nav-item">
-    <a href="/2020/09/29/requestmapping-xiang-jie/">
+    <a href="/2020/12/21/pagehelper/">
       <span>
-        下一篇:    详解@RequestMapping 
+        下一篇:    PageHelper 
       </span>
     </a>
   </div>
