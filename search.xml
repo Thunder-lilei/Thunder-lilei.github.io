@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Ajax</title>
-    <url>/2020/11/17/ajax/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<ul>
-<li>HTTP GET形式</li>
-<li>从服务器获取JSON数据，Jquery会尝试将其转为对应的JS对象</li>
-<li>JSON 语法是 JavaScript 对象表示法语法的子集</li>
-<li>JSON数据必须符合严格的JSON语法<ul>
-<li>属性名称加双引号</li>
-<li>字符串值加双引号</li>
-<li>数组或对象的最后一个成员不加<code>,</code></li>
-<li>数据在名称/值对中（用<code>:</code>隔开）</li>
-<li>数据由<code>,</code>隔开</li>
-<li><code>&#123;&#125;</code>保存对象</li>
-<li><code>[]</code>保存数组</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="不执行回调函数"><a href="#不执行回调函数" class="headerlink" title="不执行回调函数"></a>不执行回调函数</h2><ul>
-<li>后台<code>json</code>格式错误</li>
-<li>建议不要<code>String</code>包装<code>json</code>，<code>String</code>格式前端使用<code>datatype=text</code>接收</li>
-</ul>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>js</tag>
-        <tag>Jquery</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>详解@RequestMapping</title>
     <url>/2020/09/29/requestmapping-xiang-jie/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://blog.csdn.net/zalan01408980/article/details/82904126">https://blog.csdn.net/zalan01408980/article/details/82904126</a></p>
@@ -68,6 +33,41 @@
       <tags>
         <tag>ssm</tag>
         <tag>Spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ajax</title>
+    <url>/2020/11/17/ajax/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<ul>
+<li>HTTP GET形式</li>
+<li>从服务器获取JSON数据，Jquery会尝试将其转为对应的JS对象</li>
+<li>JSON 语法是 JavaScript 对象表示法语法的子集</li>
+<li>JSON数据必须符合严格的JSON语法<ul>
+<li>属性名称加双引号</li>
+<li>字符串值加双引号</li>
+<li>数组或对象的最后一个成员不加<code>,</code></li>
+<li>数据在名称/值对中（用<code>:</code>隔开）</li>
+<li>数据由<code>,</code>隔开</li>
+<li><code>&#123;&#125;</code>保存对象</li>
+<li><code>[]</code>保存数组</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="不执行回调函数"><a href="#不执行回调函数" class="headerlink" title="不执行回调函数"></a>不执行回调函数</h2><ul>
+<li>后台<code>json</code>格式错误</li>
+<li>建议不要<code>String</code>包装<code>json</code>，<code>String</code>格式前端使用<code>datatype=text</code>接收</li>
+</ul>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>Jquery</tag>
       </tags>
   </entry>
   <entry>
@@ -170,44 +170,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2020/10/14/github/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="看不见图片"><a href="#看不见图片" class="headerlink" title="看不见图片"></a>看不见图片</h2><p><a href="https://blog.csdn.net/qq_38232598/article/details/91346392">感谢 查看详情</a><br>修改host文件</p>
-<figure class="highlight accesslog"><table><tr><td class="code"><pre><span class="line"># GitHub Start </span><br><span class="line"><span class="number">140.82.113.3</span>      github.com</span><br><span class="line"><span class="number">140.82.114.20</span>     gist.github.com</span><br><span class="line"></span><br><span class="line"><span class="number">151.101.184.133</span>    assets-cdn.github.com</span><br><span class="line"><span class="number">151.101.184.133</span>    raw.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    gist.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    cloud.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    camo.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars0.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars0.githubusercontent.com</span><br><span class="line"><span class="number">199.232.28.133</span>     avatars1.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars1.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars2.githubusercontent.com</span><br><span class="line"><span class="number">199.232.28.133</span>     avatars2.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars3.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars3.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars4.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars4.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars5.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars5.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars6.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars6.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars7.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars7.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars8.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars8.githubusercontent.com</span><br><span class="line"></span><br><span class="line"># GitHub End</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HEXO Git Bash</title>
-    <url>/2020/12/17/hexo-git-bash/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="解决hexo博文上传第二次密码错误的问题"><a href="#解决hexo博文上传第二次密码错误的问题" class="headerlink" title="解决hexo博文上传第二次密码错误的问题"></a>解决hexo博文上传第二次密码错误的问题</h2><ol>
-<li>登录github</li>
-<li>setting</li>
-<li>Developer settings</li>
-<li>修改token</li>
-<li>记住用户名和密码</li>
-<li><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Gitalk</title>
     <url>/2020/10/04/gitalk/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://www.cnblogs.com/quanxiaoha/p/10925401.html">https://www.cnblogs.com/quanxiaoha/p/10925401.html</a></p>
@@ -247,6 +209,44 @@ id: location.pathname</code></pre>
       <tags>
         <tag>git</tag>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub</title>
+    <url>/2020/10/14/github/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="看不见图片"><a href="#看不见图片" class="headerlink" title="看不见图片"></a>看不见图片</h2><p><a href="https://blog.csdn.net/qq_38232598/article/details/91346392">感谢 查看详情</a><br>修改host文件</p>
+<figure class="highlight accesslog"><table><tr><td class="code"><pre><span class="line"># GitHub Start </span><br><span class="line"><span class="number">140.82.113.3</span>      github.com</span><br><span class="line"><span class="number">140.82.114.20</span>     gist.github.com</span><br><span class="line"></span><br><span class="line"><span class="number">151.101.184.133</span>    assets-cdn.github.com</span><br><span class="line"><span class="number">151.101.184.133</span>    raw.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    gist.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    cloud.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    camo.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars0.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars0.githubusercontent.com</span><br><span class="line"><span class="number">199.232.28.133</span>     avatars1.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars1.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars2.githubusercontent.com</span><br><span class="line"><span class="number">199.232.28.133</span>     avatars2.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars3.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars3.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars4.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars4.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars5.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars5.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars6.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars6.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars7.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars7.githubusercontent.com</span><br><span class="line"><span class="number">151.101.184.133</span>    avatars8.githubusercontent.com</span><br><span class="line"><span class="number">199.232.68.133</span>     avatars8.githubusercontent.com</span><br><span class="line"></span><br><span class="line"># GitHub End</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HEXO Git Bash</title>
+    <url>/2020/12/17/hexo-git-bash/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="解决hexo博文上传第二次密码错误的问题"><a href="#解决hexo博文上传第二次密码错误的问题" class="headerlink" title="解决hexo博文上传第二次密码错误的问题"></a>解决hexo博文上传第二次密码错误的问题</h2><ol>
+<li>登录github</li>
+<li>setting</li>
+<li>Developer settings</li>
+<li>修改token</li>
+<li>记住用户名和密码</li>
+<li><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -316,40 +316,6 @@ id: location.pathname</code></pre>
       <tags>
         <tag>前端</tag>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HEXO绑定域名</title>
-    <url>/2020/09/29/hexo-bang-ding-yu-ming/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://blog.csdn.net/heimu24/article/details/81159099">https://blog.csdn.net/heimu24/article/details/81159099</a></p>
-<h2 id="1、购买域名"><a href="#1、购买域名" class="headerlink" title="1、购买域名"></a>1、购买域名</h2><h2 id="2、域名解析"><a href="#2、域名解析" class="headerlink" title="2、域名解析"></a>2、域名解析</h2><ul>
-<li>cmd指令输入<code>ping Yourname.github.io</code>获取ip地址</li>
-<li>配置两条</li>
-<li>1：www CANME Youename.github.io</li>
-<li>2：@ A ip </li>
-</ul>
-<hr>
-<h2 id="3、保存域名"><a href="#3、保存域名" class="headerlink" title="3、保存域名"></a>3、保存域名</h2><ul>
-<li>找到博客目录中的source文件夹</li>
-<li>创建记事本名字为CANME</li>
-<li>记事本中输入<a href="http://www.lileiblog.top(个人域名)/">www.lileiblog.top(个人域名)</a></li>
-</ul>
-<hr>
-<h2 id="4、设置域名"><a href="#4、设置域名" class="headerlink" title="4、设置域名"></a>4、设置域名</h2><ul>
-<li>进入github找到博客仓库</li>
-<li>setting最下方GitHub Pages中的Custom domain设置域名</li>
-<li>注意查看设置之后的状态（会在GitHub Pages中显示）</li>
-</ul>
-<hr>
-<h2 id="5、访问"><a href="#5、访问" class="headerlink" title="5、访问"></a>5、访问</h2><p>浏览器输入域名即可访问</p>
-<hr>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>aliyun</tag>
       </tags>
   </entry>
   <entry>
@@ -505,25 +471,6 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>HtmlEmail实现简单发送邮件</title>
-    <url>/2020/10/15/htmlemail-shi-xian-jian-dan-fa-song-you-jian/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://www.cnblogs.com/zhang-dongliang/p/10847746.html">https://www.cnblogs.com/zhang-dongliang/p/10847746.html</a></p>
-<hr>
-<ol>
-<li>引入依赖<figure class="highlight"><table><tr><td class="code"><pre><span class="line">`&lt;!--发送邮件引入jar包--&gt;`</span><br><span class="line"></span><br><span class="line">`&lt;dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;groupId &gt;javax.mail &lt;/groupId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;artifactId &gt;mail &lt;/artifactId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;version &gt;1.4.6 &lt;/version &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;/dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;groupId &gt;com.sun.mail &lt;/groupId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;artifactId &gt;javax.mail &lt;/artifactId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;version &gt;1.5.5 &lt;/version &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;/dependency &gt;`</span><br></pre></td></tr></table></figure></li>
-<li>测试类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">`<span class="keyword">import</span>`  `org.apache.commons.mail.EmailException;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">import</span>`  `org.apache.commons.mail.HtmlEmail;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">/**`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@author</span> pillar`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@date</span> 2019-05-10`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`*/</span>`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="class"><span class="keyword">class</span>`  `<span class="title">testMail</span> </span>&#123;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="keyword">static</span>`  `<span class="keyword">void</span>`  `main(String[] args) &#123;`</span><br><span class="line"></span><br><span class="line">`String msg=``<span class="string">&quot;testMail: hello word&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`testMail.sendMailMessage(msg);`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">/**`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* 发送邮件实现类`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@param</span> msg`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`*/</span>`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="keyword">static</span>`  `<span class="keyword">void</span>`  `sendMailMessage(String msg) &#123;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">try</span>`  `&#123;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">//邮箱服务器地址如：mail.qq.com`</span></span><br><span class="line"></span><br><span class="line">`String hostName =``<span class="string">&quot;139.159.XXX&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 帐号与密码`</span></span><br><span class="line"></span><br><span class="line">`String userName =``<span class="string">&quot;用户名&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`String password =` `<span class="string">&quot;密码&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 发件人`</span></span><br><span class="line"></span><br><span class="line">`String fromAddress =``<span class="string">&quot;用户名@XXX.com&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 发件人姓名`</span></span><br><span class="line"></span><br><span class="line">`String fromName =` `<span class="string">&quot;pillarzhang&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`HtmlEmail email=``<span class="keyword">new</span>`  `HtmlEmail();`</span><br><span class="line"></span><br><span class="line">`email.setHostName(hostName);``<span class="comment">// 设置smtp服务器`</span></span><br><span class="line"></span><br><span class="line">`email.setAuthentication(userName, password);``<span class="comment">// 设置授权信息`</span></span><br><span class="line"></span><br><span class="line">`email.setCharset(``<span class="string">&quot;utf-8&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`email.setFrom(fromAddress, fromName,` `<span class="string">&quot;utf-8&quot;</span>``);``<span class="comment">// 设置发件人信息`</span></span><br><span class="line"></span><br><span class="line">`email.setSubject(``<span class="string">&quot;testMail&quot;</span>``);``<span class="comment">// 设置主题`</span></span><br><span class="line"></span><br><span class="line">`email.setHtmlMsg(msg);``<span class="comment">// 设置邮件内容`</span></span><br><span class="line"></span><br><span class="line">`email.addTo(``<span class="string">&quot;1208699589@qq.com&quot;</span>``,` `<span class="string">&quot;pillarzhang&quot;</span>``,` `<span class="string">&quot;utf-8&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`System.err.println(email.getSmtpPort());`</span><br><span class="line"></span><br><span class="line">`System.err.println(email.getHostName());`</span><br><span class="line"></span><br><span class="line">`String res = email.send();``<span class="comment">// 发送邮件`</span></span><br><span class="line"></span><br><span class="line">`System.err.println(res);`</span><br><span class="line"></span><br><span class="line">`&#125;` `<span class="keyword">catch</span>`  `(EmailException e) &#123;`</span><br><span class="line"></span><br><span class="line">`System.err.println(``<span class="string">&quot;邮件发送失败&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`e.printStackTrace();`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>web</tag>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hbuilderx</title>
     <url>/2020/11/16/hbuilderx/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -543,6 +490,74 @@ id: location.pathname</code></pre>
       </categories>
       <tags>
         <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HEXO绑定域名</title>
+    <url>/2020/09/29/hexo-bang-ding-yu-ming/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://blog.csdn.net/heimu24/article/details/81159099">https://blog.csdn.net/heimu24/article/details/81159099</a></p>
+<h2 id="1、购买域名"><a href="#1、购买域名" class="headerlink" title="1、购买域名"></a>1、购买域名</h2><h2 id="2、域名解析"><a href="#2、域名解析" class="headerlink" title="2、域名解析"></a>2、域名解析</h2><ul>
+<li>cmd指令输入<code>ping Yourname.github.io</code>获取ip地址</li>
+<li>配置两条</li>
+<li>1：www CANME Youename.github.io</li>
+<li>2：@ A ip </li>
+</ul>
+<hr>
+<h2 id="3、保存域名"><a href="#3、保存域名" class="headerlink" title="3、保存域名"></a>3、保存域名</h2><ul>
+<li>找到博客目录中的source文件夹</li>
+<li>创建记事本名字为CANME</li>
+<li>记事本中输入<a href="http://www.lileiblog.top(个人域名)/">www.lileiblog.top(个人域名)</a></li>
+</ul>
+<hr>
+<h2 id="4、设置域名"><a href="#4、设置域名" class="headerlink" title="4、设置域名"></a>4、设置域名</h2><ul>
+<li>进入github找到博客仓库</li>
+<li>setting最下方GitHub Pages中的Custom domain设置域名</li>
+<li>注意查看设置之后的状态（会在GitHub Pages中显示）</li>
+</ul>
+<hr>
+<h2 id="5、访问"><a href="#5、访问" class="headerlink" title="5、访问"></a>5、访问</h2><p>浏览器输入域名即可访问</p>
+<hr>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>aliyun</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HtmlEmail实现简单发送邮件</title>
+    <url>/2020/10/15/htmlemail-shi-xian-jian-dan-fa-song-you-jian/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://www.cnblogs.com/zhang-dongliang/p/10847746.html">https://www.cnblogs.com/zhang-dongliang/p/10847746.html</a></p>
+<hr>
+<ol>
+<li>引入依赖<figure class="highlight"><table><tr><td class="code"><pre><span class="line">`&lt;!--发送邮件引入jar包--&gt;`</span><br><span class="line"></span><br><span class="line">`&lt;dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;groupId &gt;javax.mail &lt;/groupId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;artifactId &gt;mail &lt;/artifactId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;version &gt;1.4.6 &lt;/version &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;/dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;dependency &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;groupId &gt;com.sun.mail &lt;/groupId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;artifactId &gt;javax.mail &lt;/artifactId &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;version &gt;1.5.5 &lt;/version &gt;`</span><br><span class="line"></span><br><span class="line">`&lt;/dependency &gt;`</span><br></pre></td></tr></table></figure></li>
+<li>测试类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">`<span class="keyword">import</span>`  `org.apache.commons.mail.EmailException;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">import</span>`  `org.apache.commons.mail.HtmlEmail;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">/**`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@author</span> pillar`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@date</span> 2019-05-10`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`*/</span>`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="class"><span class="keyword">class</span>`  `<span class="title">testMail</span> </span>&#123;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="keyword">static</span>`  `<span class="keyword">void</span>`  `main(String[] args) &#123;`</span><br><span class="line"></span><br><span class="line">`String msg=``<span class="string">&quot;testMail: hello word&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`testMail.sendMailMessage(msg);`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">/**`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* 发送邮件实现类`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`* <span class="doctag">@param</span> msg`</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">`*/</span>`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">public</span>`  `<span class="keyword">static</span>`  `<span class="keyword">void</span>`  `sendMailMessage(String msg) &#123;`</span><br><span class="line"></span><br><span class="line">`<span class="keyword">try</span>`  `&#123;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">//邮箱服务器地址如：mail.qq.com`</span></span><br><span class="line"></span><br><span class="line">`String hostName =``<span class="string">&quot;139.159.XXX&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 帐号与密码`</span></span><br><span class="line"></span><br><span class="line">`String userName =``<span class="string">&quot;用户名&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`String password =` `<span class="string">&quot;密码&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 发件人`</span></span><br><span class="line"></span><br><span class="line">`String fromAddress =``<span class="string">&quot;用户名@XXX.com&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`<span class="comment">// 发件人姓名`</span></span><br><span class="line"></span><br><span class="line">`String fromName =` `<span class="string">&quot;pillarzhang&quot;</span>``;`</span><br><span class="line"></span><br><span class="line">`HtmlEmail email=``<span class="keyword">new</span>`  `HtmlEmail();`</span><br><span class="line"></span><br><span class="line">`email.setHostName(hostName);``<span class="comment">// 设置smtp服务器`</span></span><br><span class="line"></span><br><span class="line">`email.setAuthentication(userName, password);``<span class="comment">// 设置授权信息`</span></span><br><span class="line"></span><br><span class="line">`email.setCharset(``<span class="string">&quot;utf-8&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`email.setFrom(fromAddress, fromName,` `<span class="string">&quot;utf-8&quot;</span>``);``<span class="comment">// 设置发件人信息`</span></span><br><span class="line"></span><br><span class="line">`email.setSubject(``<span class="string">&quot;testMail&quot;</span>``);``<span class="comment">// 设置主题`</span></span><br><span class="line"></span><br><span class="line">`email.setHtmlMsg(msg);``<span class="comment">// 设置邮件内容`</span></span><br><span class="line"></span><br><span class="line">`email.addTo(``<span class="string">&quot;1208699589@qq.com&quot;</span>``,` `<span class="string">&quot;pillarzhang&quot;</span>``,` `<span class="string">&quot;utf-8&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`System.err.println(email.getSmtpPort());`</span><br><span class="line"></span><br><span class="line">`System.err.println(email.getHostName());`</span><br><span class="line"></span><br><span class="line">`String res = email.send();``<span class="comment">// 发送邮件`</span></span><br><span class="line"></span><br><span class="line">`System.err.println(res);`</span><br><span class="line"></span><br><span class="line">`&#125;` `<span class="keyword">catch</span>`  `(EmailException e) &#123;`</span><br><span class="line"></span><br><span class="line">`System.err.println(``<span class="string">&quot;邮件发送失败&quot;</span>``);`</span><br><span class="line"></span><br><span class="line">`e.printStackTrace();`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS</title>
+    <url>/2020/11/22/js/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="立即执行函数"><a href="#立即执行函数" class="headerlink" title="立即执行函数"></a>立即执行函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">    &#125;)()  </span><br><span class="line">    </span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; ... &#125;())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -597,21 +612,6 @@ id: location.pathname</code></pre>
         <tag>后端</tag>
         <tag>数据库</tag>
         <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JS</title>
-    <url>/2020/11/22/js/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="立即执行函数"><a href="#立即执行函数" class="headerlink" title="立即执行函数"></a>立即执行函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">    &#125;)()  </span><br><span class="line">    </span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; ... &#125;())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -733,6 +733,29 @@ id: location.pathname</code></pre>
       </categories>
       <tags>
         <tag>mybatis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx学习</title>
+    <url>/2020/12/18/nginx-xue-xi/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>HTTP服务器 反向代理服务器 邮件服务器<br><img src="https://i.loli.net/2020/12/18/tVhdJDiHCOWAMIy.png" alt="Snipaste_2020-12-18_15-58-18.png"></p>
+<hr>
+<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><ol>
+<li>什么是负载均衡<ul>
+<li>扩展网络设备和服务器的带宽、增加吞吐量、加强网络数据处理能力</li>
+<li>分摊到多个操作单元（Web服务器、FTP服务器…）执行</li>
+<li>负载（工作任务）进行平衡、分摊到多个操作单元进行运行</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -905,29 +928,6 @@ id: location.pathname</code></pre>
       <tags>
         <tag>mybatis</tag>
         <tag>pageHelper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Nginx学习</title>
-    <url>/2020/12/18/nginx-xue-xi/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>HTTP服务器 反向代理服务器 邮件服务器<br><img src="https://i.loli.net/2020/12/18/tVhdJDiHCOWAMIy.png" alt="Snipaste_2020-12-18_15-58-18.png"></p>
-<hr>
-<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><ol>
-<li>什么是负载均衡<ul>
-<li>扩展网络设备和服务器的带宽、增加吞吐量、加强网络数据处理能力</li>
-<li>分摊到多个操作单元（Web服务器、FTP服务器…）执行</li>
-<li>负载（工作任务）进行平衡、分摊到多个操作单元进行运行</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -1127,6 +1127,35 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Spring</title>
+    <url>/2020/12/07/spring/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>方便解耦</li>
+<li>AOP</li>
+<li>方便测试，结合junit</li>
+<li>方便和其他框架整合，例：mybatis</li>
+<li>事务管理</li>
+<li>封装</li>
+</ol>
+<hr>
+<h2 id="IOC"><a href="#IOC" class="headerlink" title="IOC"></a>IOC</h2><hr>
+<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><hr>
+<h2 id="通过Spring配置对象"><a href="#通过Spring配置对象" class="headerlink" title="通过Spring配置对象"></a>通过Spring配置对象</h2><ol>
+<li>配置文件<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;!-- 配置user对象创建 --&gt;  </span><br><span class="line">&lt;bean id=<span class="string">&quot;user&quot;</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;pers.lilei.test.po.User&quot;</span>/&gt;</span><br></pre></td></tr></table></figure></li>
+<li>测试方法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@org</span>.junit.jupiter.api.Test  </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addTest</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">  <span class="comment">//加载Spring配置文件  </span></span><br><span class="line">  <span class="comment">//BeanFactory context = new ClassPathXmlApplicationContext(&quot;bean.xml&quot;);</span></span><br><span class="line">  ApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;bean.xml&quot;</span>);  </span><br><span class="line">  <span class="comment">//获取配置创建的对象  </span></span><br><span class="line">  User user = context.getBean(<span class="string">&quot;user&quot;</span>, User.class);  </span><br><span class="line">  </span><br><span class="line">  System.out.println(user);  </span><br><span class="line">  user.add();  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<img src="https://i.loli.net/2020/12/07/qKZuxnUHIa5lGyD.png" alt="Snipaste_2020-12-07_18-29-27.png"><br>前一个是盘符路径<br>后一个是类路径</li>
+</ol>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring 事务</title>
     <url>/2020/12/08/spring-shi-wu/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -1207,35 +1236,6 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Spring</title>
-    <url>/2020/12/07/spring/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
-<li>方便解耦</li>
-<li>AOP</li>
-<li>方便测试，结合junit</li>
-<li>方便和其他框架整合，例：mybatis</li>
-<li>事务管理</li>
-<li>封装</li>
-</ol>
-<hr>
-<h2 id="IOC"><a href="#IOC" class="headerlink" title="IOC"></a>IOC</h2><hr>
-<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><hr>
-<h2 id="通过Spring配置对象"><a href="#通过Spring配置对象" class="headerlink" title="通过Spring配置对象"></a>通过Spring配置对象</h2><ol>
-<li>配置文件<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;!-- 配置user对象创建 --&gt;  </span><br><span class="line">&lt;bean id=<span class="string">&quot;user&quot;</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;pers.lilei.test.po.User&quot;</span>/&gt;</span><br></pre></td></tr></table></figure></li>
-<li>测试方法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@org</span>.junit.jupiter.api.Test  </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addTest</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">  <span class="comment">//加载Spring配置文件  </span></span><br><span class="line">  <span class="comment">//BeanFactory context = new ClassPathXmlApplicationContext(&quot;bean.xml&quot;);</span></span><br><span class="line">  ApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;bean.xml&quot;</span>);  </span><br><span class="line">  <span class="comment">//获取配置创建的对象  </span></span><br><span class="line">  User user = context.getBean(<span class="string">&quot;user&quot;</span>, User.class);  </span><br><span class="line">  </span><br><span class="line">  System.out.println(user);  </span><br><span class="line">  user.add();  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<img src="https://i.loli.net/2020/12/07/qKZuxnUHIa5lGyD.png" alt="Snipaste_2020-12-07_18-29-27.png"><br>前一个是盘符路径<br>后一个是类路径</li>
-</ol>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>spring</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring传送门</title>
     <url>/2020/12/17/spring-chuan-song-men/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -1247,34 +1247,6 @@ id: location.pathname</code></pre>
       <tags>
         <tag>spring</tag>
         <tag>portal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue学习（axios+vue）</title>
-    <url>/2020/12/17/vue-xue-xi-axios-vue/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="网络应用"><a href="#网络应用" class="headerlink" title="网络应用"></a>网络应用</h2><ol>
-<li><h3 id="axios测试"><a href="#axios测试" class="headerlink" title="axios测试"></a>axios测试</h3> <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;get请求&quot;</span> <span class="attr">class</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;post请求&quot;</span> <span class="attr">class</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">&#x27;#app&#x27;</span>,</span></span><br><span class="line">            data: &#123;</span><br><span class="line">               </span><br><span class="line">            &#125;,</span><br><span class="line">            methods: &#123;</span><br><span class="line">            </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.querySelector(<span class="string">&quot;.get&quot;</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            axios.get(<span class="string">&quot;https://autumnfish.cn/api/joke/list?num=3&quot;</span>)</span></span><br><span class="line"><span class="javascript">            .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(response)</span></span><br><span class="line"><span class="javascript">            &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(err)</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.querySelector(<span class="string">&quot;.post&quot;</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            axios.post(<span class="string">&quot;https://autumnfish.cn/api/user/reg&quot;</span>,&#123;<span class="attr">username</span>:<span class="string">&quot;lilei&quot;</span>&#125;)</span></span><br><span class="line"><span class="javascript">            .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(response)</span></span><br><span class="line"><span class="javascript">            &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(err)</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p> <img src="https://i.loli.net/2020/12/17/cmEIqN5Ah8OFlek.png" alt="Snipaste_2020-12-17_17-32-12.png"><br> <img src="https://i.loli.net/2020/12/17/JBAUg8rWGqHzRXv.png" alt="Snipaste_2020-12-17_17-31-53.png"></p>
-</li>
-<li><h3 id="axios-vue"><a href="#axios-vue" class="headerlink" title="axios+vue"></a>axios+vue</h3><p> 改变了数据来源<br> axios回调函数中的this已经改变 无法访问data中的数据<br> 把this保存起来 使用保存的this</p>
- <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> @<span class="attr">click</span>=<span class="string">&quot;getJoke&quot;</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;获取笑话&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; joke &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">           el: <span class="string">&#x27;#app&#x27;</span>,</span></span><br><span class="line">           data: &#123;</span><br><span class="line"><span class="javascript">              joke:<span class="string">&#x27;很好笑的笑话&#x27;</span></span></span><br><span class="line">           &#125;,</span><br><span class="line">           methods: &#123;</span><br><span class="line"><span class="javascript">               getJoke:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/api/joke&quot;</span>)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.joke=response.data</span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)</span><br><span class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p> <img src="https://i.loli.net/2020/12/17/vHOoEeZmls84bX2.png" alt="Snipaste_2020-12-17_17-39-54.png"></p>
-</li>
-</ol>
-<hr>
-<h2 id="综合应用"><a href="#综合应用" class="headerlink" title="综合应用"></a>综合应用</h2><p>音乐播放器</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;player&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&#x27;key&#x27;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> @<span class="attr">Keyup.enter</span>=<span class="string">&quot;getMusic&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;搜索&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">img</span> <span class="attr">:src</span>=<span class="string">&quot;musicImg&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in musicList&quot;</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;getMusicSrc(item.id)&quot;</span> &gt;</span>播放<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">audio</span> <span class="attr">:src</span>=<span class="string">&quot;musicUrl&quot;</span>&gt;</span>播放<span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">           el: <span class="string">&#x27;#player&#x27;</span>,</span></span><br><span class="line">           data: &#123;</span><br><span class="line"><span class="javascript">              key:<span class="string">&quot;&quot;</span>,</span></span><br><span class="line">              musicList:[],</span><br><span class="line"><span class="javascript">              musicUrl:<span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">              musicImg:<span class="string">&quot;&quot;</span></span></span><br><span class="line">           &#125;,</span><br><span class="line">           methods: &#123;</span><br><span class="line"><span class="javascript">               <span class="comment">//歌曲搜索</span></span></span><br><span class="line"><span class="javascript">               getMusic:<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/search?keywords=&quot;</span>+<span class="built_in">this</span>.key)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicList = response.data.result.songs; </span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.result.songs)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;,</span><br><span class="line"><span class="javascript">               <span class="comment">//获取歌曲链接</span></span></span><br><span class="line"><span class="javascript">               getMusicSrc:<span class="function"><span class="keyword">function</span>(<span class="params">id</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/song/url?id=&quot;</span>+id)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicUrl = response.data.data[0].url;</span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.data[<span class="number">0</span>].url)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line"><span class="javascript">               <span class="comment">//获取歌曲封面</span></span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/song/detail?ids=&quot;</span>+id)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicImg = response.data.songs[0].al.picUrl;</span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.songs[<span class="number">0</span>].al.picUrl)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;,</span><br><span class="line">               </span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)</span><br><span class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>js</tag>
-        <tag>vue</tag>
-        <tag>axios</tag>
       </tags>
   </entry>
   <entry>
@@ -1425,6 +1397,70 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Vue学习（项目练习）</title>
+    <url>/2020/12/18/vue-xue-xi-xiang-mu-lian-xi/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><ol>
+<li>页面跳转<br><a href="https://blog.csdn.net/weixin_42119415/article/details/111355715">感谢</a><br><a href="https://blog.csdn.net/wanwei1987/article/details/70569914">感谢</a><br> path路径要加上访问名</li>
+</ol>
+<hr>
+<h2 id="获取后台数据"><a href="#获取后台数据" class="headerlink" title="获取后台数据"></a>获取后台数据</h2><ol>
+<li>安装依赖<br> <code>npm install axios --save</code></li>
+<li>配置跨域<ol>
+<li>index.js</li>
+<li>module.exports</li>
+<li>dev</li>
+<li>proxyTable<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;/api&#x27;</span>: &#123;  </span><br><span class="line">  <span class="comment">// 此处的写法，目的是为了 将 /api 替换成 http://localhost:8080/  </span></span><br><span class="line">  target: <span class="string">&#x27;http://localhost:8080/&#x27;</span>,  </span><br><span class="line">  <span class="comment">// 允许跨域  </span></span><br><span class="line">  changeOrigin: <span class="literal">true</span>,  </span><br><span class="line">  ws: <span class="literal">true</span>,  </span><br><span class="line">  pathRewrite: &#123;  </span><br><span class="line">    <span class="string">&#x27;^/api&#x27;</span>: <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>配置axios<ol>
+<li>main.js<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> Axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line"></span><br><span class="line">Vue.prototype.$axios = Axios  </span><br><span class="line">Axios.defaults.baseURL = <span class="string">&#x27;/api&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>编写function <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">methods: &#123;  </span><br><span class="line">  getQuizs:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">this</span>.$axios.post(<span class="string">&#x27;/answer/getQuizs&#x27;</span>).then(<span class="function"><span class="params">response</span> =&gt;</span> &#123;  </span><br><span class="line">      <span class="built_in">console</span>.log(response)  </span><br><span class="line">    &#125;).catch(  </span><br><span class="line">      <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;  </span><br><span class="line">        <span class="comment">// 请求失败处理  </span></span><br><span class="line">  alert(<span class="string">&#x27;请求失败！&#x27;</span>)  </span><br><span class="line">      &#125;)  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<hr>
+<h2 id="修改项目名"><a href="#修改项目名" class="headerlink" title="修改项目名"></a>修改项目名</h2><ol>
+<li>package.json文件<ol>
+<li>name</li>
+</ol>
+</li>
+<li>Project Structure<ol>
+<li>Project name</li>
+<li>output</li>
+</ol>
+</li>
+<li>Modules<ol>
+<li>name</li>
+</ol>
+</li>
+<li>package.json和package-lock.json<ol>
+<li>name</li>
+</ol>
+</li>
+<li>删掉node_modules文件<ol>
+<li>重新npm instrall一次</li>
+<li>之前通过npm安装的插件，也要重新安装</li>
+</ol>
+</li>
+<li>rebuild</li>
+</ol>
+<h3 id="eslint问题"><a href="#eslint问题" class="headerlink" title="eslint问题"></a>eslint问题</h3><p><a href="https://www.cnblogs.com/gaoquanquan/p/9550169.html">感谢</a><br>在build/webpack.base.conf.js文件中，注释或者删除掉：module-&gt;rules中有关eslint的规则</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>: &#123;</span><br><span class="line">  rules: [</span><br><span class="line">    <span class="comment">//...(config.dev.useEslint ? [createLintingRule()] : []), // 注释或者删除</span></span><br><span class="line">    &#123;</span><br><span class="line">      test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">      loader: <span class="string">&#x27;vue-loader&#x27;</span>,</span><br><span class="line">      options: vueLoaderConfig</span><br><span class="line">    &#125;,</span><br><span class="line">    ...</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue学习（脚手架搭建）</title>
     <url>/2020/12/18/vue-xue-xi-jiao-shou-jia-da-jian/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢：<a href="https://www.jianshu.com/p/f0705f352524">https://www.jianshu.com/p/f0705f352524</a><br><a href="https://www.jianshu.com/p/32beaca25c0d">https://www.jianshu.com/p/32beaca25c0d</a></p>
@@ -1497,59 +1533,22 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Vue学习（项目练习）</title>
-    <url>/2020/12/18/vue-xue-xi-xiang-mu-lian-xi/</url>
+    <title>Vue学习（axios+vue）</title>
+    <url>/2020/12/17/vue-xue-xi-axios-vue/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
 <hr>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><ol>
-<li>页面跳转<br><a href="https://blog.csdn.net/weixin_42119415/article/details/111355715">感谢</a><br><a href="https://blog.csdn.net/wanwei1987/article/details/70569914">感谢</a><br> path路径要加上访问名</li>
-</ol>
-<hr>
-<h2 id="获取后台数据"><a href="#获取后台数据" class="headerlink" title="获取后台数据"></a>获取后台数据</h2><ol>
-<li>安装依赖<br> <code>npm install axios --save</code></li>
-<li>配置跨域<ol>
-<li>index.js</li>
-<li>module.exports</li>
-<li>dev</li>
-<li>proxyTable<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;/api&#x27;</span>: &#123;  </span><br><span class="line">  <span class="comment">// 此处的写法，目的是为了 将 /api 替换成 http://localhost:8080/  </span></span><br><span class="line">  target: <span class="string">&#x27;http://localhost:8080/&#x27;</span>,  </span><br><span class="line">  <span class="comment">// 允许跨域  </span></span><br><span class="line">  changeOrigin: <span class="literal">true</span>,  </span><br><span class="line">  ws: <span class="literal">true</span>,  </span><br><span class="line">  pathRewrite: &#123;  </span><br><span class="line">    <span class="string">&#x27;^/api&#x27;</span>: <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
+<h2 id="网络应用"><a href="#网络应用" class="headerlink" title="网络应用"></a>网络应用</h2><ol>
+<li><h3 id="axios测试"><a href="#axios测试" class="headerlink" title="axios测试"></a>axios测试</h3> <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;get请求&quot;</span> <span class="attr">class</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;post请求&quot;</span> <span class="attr">class</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">&#x27;#app&#x27;</span>,</span></span><br><span class="line">            data: &#123;</span><br><span class="line">               </span><br><span class="line">            &#125;,</span><br><span class="line">            methods: &#123;</span><br><span class="line">            </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.querySelector(<span class="string">&quot;.get&quot;</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            axios.get(<span class="string">&quot;https://autumnfish.cn/api/joke/list?num=3&quot;</span>)</span></span><br><span class="line"><span class="javascript">            .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(response)</span></span><br><span class="line"><span class="javascript">            &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(err)</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.querySelector(<span class="string">&quot;.post&quot;</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            axios.post(<span class="string">&quot;https://autumnfish.cn/api/user/reg&quot;</span>,&#123;<span class="attr">username</span>:<span class="string">&quot;lilei&quot;</span>&#125;)</span></span><br><span class="line"><span class="javascript">            .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(response)</span></span><br><span class="line"><span class="javascript">            &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(err)</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> <img src="https://i.loli.net/2020/12/17/cmEIqN5Ah8OFlek.png" alt="Snipaste_2020-12-17_17-32-12.png"><br> <img src="https://i.loli.net/2020/12/17/JBAUg8rWGqHzRXv.png" alt="Snipaste_2020-12-17_17-31-53.png"></p>
 </li>
-<li>配置axios<ol>
-<li>main.js<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> Axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line"></span><br><span class="line">Vue.prototype.$axios = Axios  </span><br><span class="line">Axios.defaults.baseURL = <span class="string">&#x27;/api&#x27;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>编写function <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">methods: &#123;  </span><br><span class="line">  getQuizs:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">this</span>.$axios.post(<span class="string">&#x27;/answer/getQuizs&#x27;</span>).then(<span class="function"><span class="params">response</span> =&gt;</span> &#123;  </span><br><span class="line">      <span class="built_in">console</span>.log(response)  </span><br><span class="line">    &#125;).catch(  </span><br><span class="line">      <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;  </span><br><span class="line">        <span class="comment">// 请求失败处理  </span></span><br><span class="line">  alert(<span class="string">&#x27;请求失败！&#x27;</span>)  </span><br><span class="line">      &#125;)  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<li><h3 id="axios-vue"><a href="#axios-vue" class="headerlink" title="axios+vue"></a>axios+vue</h3><p> 改变了数据来源<br> axios回调函数中的this已经改变 无法访问data中的数据<br> 把this保存起来 使用保存的this</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> @<span class="attr">click</span>=<span class="string">&quot;getJoke&quot;</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;获取笑话&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; joke &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">           el: <span class="string">&#x27;#app&#x27;</span>,</span></span><br><span class="line">           data: &#123;</span><br><span class="line"><span class="javascript">              joke:<span class="string">&#x27;很好笑的笑话&#x27;</span></span></span><br><span class="line">           &#125;,</span><br><span class="line">           methods: &#123;</span><br><span class="line"><span class="javascript">               getJoke:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/api/joke&quot;</span>)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.joke=response.data</span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)</span><br><span class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> <img src="https://i.loli.net/2020/12/17/vHOoEeZmls84bX2.png" alt="Snipaste_2020-12-17_17-39-54.png"></p>
 </li>
 </ol>
 <hr>
-<h2 id="修改项目名"><a href="#修改项目名" class="headerlink" title="修改项目名"></a>修改项目名</h2><ol>
-<li>package.json文件<ol>
-<li>name</li>
-</ol>
-</li>
-<li>Project Structure<ol>
-<li>Project name</li>
-<li>output</li>
-</ol>
-</li>
-<li>Modules<ol>
-<li>name</li>
-</ol>
-</li>
-<li>package.json和package-lock.json<ol>
-<li>name</li>
-</ol>
-</li>
-<li>删掉node_modules文件<ol>
-<li>重新npm instrall一次</li>
-<li>之前通过npm安装的插件，也要重新安装</li>
-</ol>
-</li>
-<li>rebuild</li>
-</ol>
-<h3 id="eslint问题"><a href="#eslint问题" class="headerlink" title="eslint问题"></a>eslint问题</h3><p><a href="https://www.cnblogs.com/gaoquanquan/p/9550169.html">感谢</a><br>在build/webpack.base.conf.js文件中，注释或者删除掉：module-&gt;rules中有关eslint的规则</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>: &#123;</span><br><span class="line">  rules: [</span><br><span class="line">    <span class="comment">//...(config.dev.useEslint ? [createLintingRule()] : []), // 注释或者删除</span></span><br><span class="line">    &#123;</span><br><span class="line">      test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">      loader: <span class="string">&#x27;vue-loader&#x27;</span>,</span><br><span class="line">      options: vueLoaderConfig</span><br><span class="line">    &#125;,</span><br><span class="line">    ...</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="综合应用"><a href="#综合应用" class="headerlink" title="综合应用"></a>综合应用</h2><p>音乐播放器</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;player&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&#x27;key&#x27;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> @<span class="attr">Keyup.enter</span>=<span class="string">&quot;getMusic&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;搜索&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">img</span> <span class="attr">:src</span>=<span class="string">&quot;musicImg&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in musicList&quot;</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;getMusicSrc(item.id)&quot;</span> &gt;</span>播放<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">audio</span> <span class="attr">:src</span>=<span class="string">&quot;musicUrl&quot;</span>&gt;</span>播放<span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">           el: <span class="string">&#x27;#player&#x27;</span>,</span></span><br><span class="line">           data: &#123;</span><br><span class="line"><span class="javascript">              key:<span class="string">&quot;&quot;</span>,</span></span><br><span class="line">              musicList:[],</span><br><span class="line"><span class="javascript">              musicUrl:<span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">              musicImg:<span class="string">&quot;&quot;</span></span></span><br><span class="line">           &#125;,</span><br><span class="line">           methods: &#123;</span><br><span class="line"><span class="javascript">               <span class="comment">//歌曲搜索</span></span></span><br><span class="line"><span class="javascript">               getMusic:<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/search?keywords=&quot;</span>+<span class="built_in">this</span>.key)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicList = response.data.result.songs; </span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.result.songs)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;,</span><br><span class="line"><span class="javascript">               <span class="comment">//获取歌曲链接</span></span></span><br><span class="line"><span class="javascript">               getMusicSrc:<span class="function"><span class="keyword">function</span>(<span class="params">id</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                   <span class="keyword">var</span> that = <span class="built_in">this</span>;</span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/song/url?id=&quot;</span>+id)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicUrl = response.data.data[0].url;</span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.data[<span class="number">0</span>].url)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line"><span class="javascript">               <span class="comment">//获取歌曲封面</span></span></span><br><span class="line"><span class="javascript">                   axios.get(<span class="string">&quot;https://autumnfish.cn/song/detail?ids=&quot;</span>+id)</span></span><br><span class="line"><span class="javascript">                   .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>)</span>&#123;</span></span><br><span class="line">                       that.musicImg = response.data.songs[0].al.picUrl;</span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(response.data.songs[<span class="number">0</span>].al.picUrl)</span></span><br><span class="line"><span class="javascript">                   &#125;,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">                       <span class="built_in">console</span>.log(err)</span></span><br><span class="line">                   &#125;)</span><br><span class="line">               &#125;,</span><br><span class="line">               </span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)</span><br><span class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>technology</category>
@@ -1558,129 +1557,40 @@ id: location.pathname</code></pre>
         <tag>前端</tag>
         <tag>js</tag>
         <tag>vue</tag>
+        <tag>axios</tag>
       </tags>
   </entry>
   <entry>
-    <title>css</title>
-    <url>/2020/11/17/css/</url>
+    <title>css_question</title>
+    <url>/2020/11/16/css-question/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
 <hr>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li>层叠样式表</li>
-<li><h3 id="声明优先权"><a href="#声明优先权" class="headerlink" title="声明优先权"></a>声明优先权</h3><ol>
-<li>内联样式（HTML元素内部）</li>
-<li>内联样式表（<head>标签内部）</head></li>
-<li>外部样式表</li>
-<li>浏览器缺省设置（浏览器中样式声明）</li>
-</ol>
-</li>
-</ul>
+<h2 id="图片透明文字不透明"><a href="#图片透明文字不透明" class="headerlink" title="图片透明文字不透明"></a>图片透明文字不透明</h2><h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/OFqnDIshkbQu68y.png" alt="Snipaste_2020-11-16_10-12-40.png"></p>
+<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.6</span>);</span><br></pre></td></tr></table></figure>
+<pre><code>前三个参数是**rgb颜色**
+最后一个参数是**透明度**</code></pre>
+<h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>2020全国有药品监督政策法规会议电视电话会议<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <hr>
-<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
-<li><h3 id="主要有两部分组成"><a href="#主要有两部分组成" class="headerlink" title="主要有两部分组成"></a>主要有两部分组成</h3><ul>
-<li><code>selector &#123;declaration1; declaration2; ... declarationN &#125;</code></li>
-<li>选择器（HTML元素）</li>
-<li>一条或多条声明（属性和值，用<code>:</code>隔开）<br><code>selector &#123;property: value&#125;</code></li>
-<li>值为若干单词需要加<code>&quot;&quot;</code></li>
-<li>多重声明用<code>;</code>隔开</li>
-<li>对大小写不敏感</li>
-<li><h3 id="选择器分组"><a href="#选择器分组" class="headerlink" title="选择器分组"></a>选择器分组</h3><ul>
-<li>被分组的选择器可以享用相同的声明，用<code>,</code>隔开<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>,<span class="selector-tag">h2</span>,<span class="selector-tag">h3</span>,<span class="selector-tag">h4</span>,<span class="selector-tag">h5</span>,<span class="selector-tag">h6</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: green;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><h3 id="子元素从父元素继承属性"><a href="#子元素从父元素继承属性" class="headerlink" title="子元素从父元素继承属性"></a>子元素从父元素继承属性</h3>  不希望继承可以单独写子元素的特殊规则</li>
-</ul>
-</li>
-</ul>
+<h2 id="文本溢出省略号表示"><a href="#文本溢出省略号表示" class="headerlink" title="文本溢出省略号表示"></a>文本溢出省略号表示</h2><h3 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/gY8LkfNR1TPK5Vx.png" alt="Snipaste_2020-11-16_10-24-46.png"></p>
+<h3 id="css-1"><a href="#css-1" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">display</span>: <span class="selector-tag">-webkit-box</span>;</span><br><span class="line"><span class="selector-tag">-webkit-box-orient</span>: <span class="selector-tag">vertical</span>;</span><br><span class="line"><span class="selector-tag">-webkit-line-clamp</span>: 2;</span><br><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br></pre></td></tr></table></figure>
+<p>第三行 允许显示的最大行数</p>
+<h3 id="html-1"><a href="#html-1" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">P</span> <span class="attr">class</span>=<span class="string">&quot;overflow&quot;</span>&gt;</span>内蒙古食药学会微循环用药多学科协作专委会组织召开Master Talk SCI Online Workshop线上学术讲座<span class="tag">&lt;/<span class="name">p</span>&gt;</span>	</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <hr>
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
-<li><h3 id="派生选择器"><a href="#派生选择器" class="headerlink" title="派生选择器"></a>派生选择器</h3>  根据元素在上下文的关系定义样式<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">li</span> <span class="selector-tag">strong</span>&#123;</span><br><span class="line">    <span class="attribute">font-style</span>: italic;</span><br><span class="line">    <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
-<li><h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3>  <code>#</code>名称<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#red</span> &#123;<span class="attribute">color</span>:red;&#125;;</span><br></pre></td></tr></table></figure>
-  定义标签<code>id</code><br>  可以结合派生选择器使用</li>
-<li><h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3>  <code>.</code>类名<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.center</span> &#123;<span class="attribute">text-align</span>: center&#125;</span><br></pre></td></tr></table></figure>
-  定义标签<code>class</code></li>
-<li><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3>  <code>[属性名]</code><br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[title]</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <code>[属性=值]</code><br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[title=W3School]</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="attribute">border</span>:<span class="number">5px</span> solid blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  例：<br>  <code>input[type=&quot;text&quot;]</code></li>
-<li><h3 id="相邻兄弟选择器"><a href="#相邻兄弟选择器" class="headerlink" title="相邻兄弟选择器"></a>相邻兄弟选择器</h3>  例：<br>  <code>h1 + p &#123;margin-top:50px;&#125;</code></li>
-</ul>
+<h2 id="hr颜色"><a href="#hr颜色" class="headerlink" title="hr颜色"></a>hr颜色</h2><h3 id="效果图-2"><a href="#效果图-2" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/iWmFVwcpoCuUQ4v.png" alt="Snipaste_2020-11-16_10-30-47.png"></p>
+<h3 id="css-2"><a href="#css-2" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">border</span><span class="selector-pseudo">:0</span>;<span class="selector-tag">background-color</span>: <span class="selector-tag">deepskyblue</span>;<span class="selector-tag">height</span><span class="selector-pseudo">:2px</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="html-2"><a href="#html-2" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <hr>
-<h2 id="创建css"><a href="#创建css" class="headerlink" title="创建css"></a>创建css</h2><ul>
-<li><h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3>  例：<code>&lt;</code>link<code> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;</code>样式表名称.css<code>&quot; /&gt;</code></li>
-<li><h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3>  例：  <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></li>
-<li><h3 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h3>  例：<code>&lt;p </code>style<code>=&quot;color: sienna; margin-left: 20px&quot;&gt;&lt;/p&gt;</code></li>
-<li><h3 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h3>  如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从<strong>更具体</strong>的样式表中被继承过来。</li>
-</ul>
-<hr>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ul>
-<li><h3 id="背景色background-color"><a href="#背景色background-color" class="headerlink" title="背景色background-color"></a>背景色<code>background-color</code></h3></li>
-<li><h3 id="背景图像background-image-url"><a href="#背景图像background-image-url" class="headerlink" title="背景图像background-image: url()"></a>背景图像<code>background-image: url()</code></h3><ul>
-<li><h4 id="背景重复background-repeat-no-repeat"><a href="#背景重复background-repeat-no-repeat" class="headerlink" title="背景重复background-repeat: no-repeat;"></a>背景重复<code>background-repeat: no-repeat;</code></h4></li>
-<li><h4 id="背景定位background-position-center"><a href="#背景定位background-position-center" class="headerlink" title="背景定位background-position:center;"></a>背景定位<code>background-position:center;</code></h4></li>
-<li><h4 id="关键字位置"><a href="#关键字位置" class="headerlink" title="关键字位置"></a>关键字位置</h4><ul>
-<li>位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。如果只出现一个关键字，则认为另一个关键字是 center<br><code>background-position:top;</code>=中上位置</li>
-</ul>
-</li>
-<li><h4 id="背景关联background-attachment-fixed"><a href="#背景关联background-attachment-fixed" class="headerlink" title="背景关联background-attachment:fixed"></a>背景关联<code>background-attachment:fixed</code></h4><ul>
-<li>背景不随页面滚动<br><img src="https://i.loli.net/2020/11/17/R9QThDlxyi5Motq.png" alt="Snipaste_2020-11-17_10-02-01.png"></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><hr>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><hr>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><hr>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
-<h2 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h2><p><img src="https://i.loli.net/2020/11/17/hp5YvebdfIi1NwZ.png" alt="Snipaste_2020-11-17_10-06-34.png"></p>
-<hr>
-<h2 id="框模型"><a href="#框模型" class="headerlink" title="框模型"></a>框模型</h2><p><img src="https://i.loli.net/2020/11/17/MXZieS4PwjrAlxp.gif" alt="ct_boxmodel.gif"></p>
-<ul>
-<li>背景在边框以内的部分</li>
-<li>内边距、边框、外边距默认是0</li>
-<li>高、宽只在<strong>内容区域</strong></li>
-<li><h3 id="内边距padding"><a href="#内边距padding" class="headerlink" title="内边距padding"></a>内边距<code>padding</code></h3><ul>
-<li><code>h1 &#123;padding: 10px 0.25em 2ex 20%;&#125;</code>上、右、下、左</li>
-<li>只写一个就是各边距为相同值<br><img src="https://i.loli.net/2020/11/17/iBYyFT1DSWcvdLO.png" alt="Snipaste_2020-11-17_10-14-25.png"></li>
-</ul>
-</li>
-<li><h3 id="边框border"><a href="#边框border" class="headerlink" title="边框border"></a>边框<code>border</code></h3><ul>
-<li><code>border-style: solid dotted dashed double;</code>上、右、下、左，定义四种不同的边框<br><img src="https://i.loli.net/2020/11/17/zoun1DS4ZXJewh8.png" alt="Snipaste_2020-11-17_10-16-24.png"></li>
-<li><code>border-style: solid; border-width: 15px 5px 15px 5px;</code>上、右、下、左，定义四边宽度<br><img src="https://i.loli.net/2020/11/17/fNyL3wlR7APtBnp.png" alt="Snipaste_2020-11-17_10-17-54.png"></li>
-<li><code>border-style: none;</code>没有边框</li>
-<li>颜色<br><img src="https://i.loli.net/2020/11/17/Xcy4ShF6BbNVT8r.png" alt="Snipaste_2020-11-17_10-18-56.png"></li>
-</ul>
-</li>
-<li><h3 id="外边距margin"><a href="#外边距margin" class="headerlink" title="外边距margin"></a>外边距<code>margin</code></h3><ul>
-<li><code>margin : 10px 0px 15px 5px;</code>上、右、下、左</li>
-<li><code>margin: 0.5em 1em;</code>值复制<br><img src="https://i.loli.net/2020/11/17/UotY1zgnyFrdaev.png" alt="Snipaste_2020-11-17_10-22-27.png"><br><img src="https://i.loli.net/2020/11/17/tUKcqwnJlkDReQ8.gif" alt="ct_css_margin_value.gif"><br><img src="https://i.loli.net/2020/11/17/TQyLHclIqfwFeB9.png" alt="Snipaste_2020-11-17_10-23-39.png"></li>
-<li><h4 id="外边距合并"><a href="#外边距合并" class="headerlink" title="外边距合并"></a>外边距合并</h4><ul>
-<li>当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者<br><img src="https://i.loli.net/2020/11/17/CReQaGhPvErTBX7.gif" alt="ct_css_margin_collapsing.gif"><br><img src="https://i.loli.net/2020/11/17/GHNaof942Rwjbvi.gif" alt="ct_css_margin_collapsing_example_2.gif"><br><img src="https://i.loli.net/2020/11/17/7fyhOJATNzR9Xl3.gif" alt="ct_css_margin_collapsing_example_1.gif"><br><img src="https://i.loli.net/2020/11/17/5pLhv6JxjzEGCBf.gif" alt="ct_css_margin_collapsing_example_4.gif"><br><img src="https://i.loli.net/2020/11/17/2ut145gV7B3Jo9q.gif" alt="ct_css_margin_collapsing_example_3.gif"></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="定位position"><a href="#定位position" class="headerlink" title="定位position"></a>定位<code>position</code></h2><p><img src="https://i.loli.net/2020/11/17/XPd5ShbYF2WLqtT.png" alt="Snipaste_2020-11-17_10-37-18.png"><br><img src="https://i.loli.net/2020/11/17/HRP1gLIoCJxYjqf.png" alt="Snipaste_2020-11-17_10-39-54.png"></p>
-<ul>
-<li><h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_left</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">left</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_right</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">right</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_top</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">top</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_bottom</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">bottom</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>这是位于正常位置的标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_left&quot;</span>&gt;</span>这个标题相对于其正常位置向左移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_right&quot;</span>&gt;</span>这个标题相对于其正常位置向右移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_top&quot;</span>&gt;</span>这个标题相对于其正常位置向上移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_bottom&quot;</span>&gt;</span>这个标题相对于其正常位置向下移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://i.loli.net/2020/11/17/uywsM2mCNF4qG1e.png" alt="Snipaste_2020-11-17_10-36-40.png"></p>
-</li>
-<li><h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_abs</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">left</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">top</span><span class="selector-pseudo">:150px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_abs&quot;</span>&gt;</span>这是带有绝对定位的标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://i.loli.net/2020/11/17/c9fPJ5wIln4qWgM.png" alt="Snipaste_2020-11-17_10-38-53.png"></p>
-</li>
-</ul>
-<hr>
-<h2 id="浮动float"><a href="#浮动float" class="headerlink" title="浮动float"></a>浮动<code>float</code></h2><hr>
-<h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><ul>
-<li>向某些选择器添加特殊效果</li>
-</ul>
+<h2 id="添加多张背景图"><a href="#添加多张背景图" class="headerlink" title="添加多张背景图"></a>添加多张背景图</h2><h3 id="效果图-3"><a href="#效果图-3" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/zBJYpnmGtoAauhL.png" alt="Snipaste_2020-11-16_10-36-10.png"></p>
+<h3 id="css-3"><a href="#css-3" class="headerlink" title="css"></a>css</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">background: url(https://i.loli.net/2020/11/11/9mfQudTwoKN1GaF.png)top center no-repeat,url(https://i.loli.net/2020/11/11/yLsgxuvlz1o78tP.png)center bottom no-repeat;</span><br></pre></td></tr></table></figure>
+<p>多个图片url之间用<code>,</code>隔开</p>
+<h3 id="html-3"><a href="#html-3" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>technology</category>
+        <category>question</category>
       </categories>
       <tags>
         <tag>前端</tag>
@@ -2060,40 +1970,182 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>css_question</title>
-    <url>/2020/11/16/css-question/</url>
+    <title>java基础</title>
+    <url>/2020/11/16/java-ji-chu/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
 <hr>
-<h2 id="图片透明文字不透明"><a href="#图片透明文字不透明" class="headerlink" title="图片透明文字不透明"></a>图片透明文字不透明</h2><h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/OFqnDIshkbQu68y.png" alt="Snipaste_2020-11-16_10-12-40.png"></p>
-<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(0,0,0,0<span class="selector-class">.6</span>);</span><br></pre></td></tr></table></figure>
-<pre><code>前三个参数是**rgb颜色**
-最后一个参数是**透明度**</code></pre>
-<h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>2020全国有药品监督政策法规会议电视电话会议<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h2><p>云端——JavaEE服务器——（数据库服务器、资源服务器）</p>
+<ul>
+<li><h3 id="客户机"><a href="#客户机" class="headerlink" title="客户机"></a>客户机</h3><ul>
+<li><h4 id="应用程序客户端（pc、手机端、物联网）"><a href="#应用程序客户端（pc、手机端、物联网）" class="headerlink" title="应用程序客户端（pc、手机端、物联网）"></a>应用程序客户端（pc、手机端、物联网）</h4></li>
+<li><h4 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a>前端页面</h4></li>
+</ul>
+</li>
+<li><h3 id="JavaEE服务器"><a href="#JavaEE服务器" class="headerlink" title="JavaEE服务器"></a>JavaEE服务器</h3><ul>
+<li><h4 id="WEB层（jsp-pages、servlet）"><a href="#WEB层（jsp-pages、servlet）" class="headerlink" title="WEB层（jsp pages、servlet）"></a>WEB层（jsp pages、servlet）</h4></li>
+<li><h4 id="业务层-（企业级Beans）、EJB容器"><a href="#业务层-（企业级Beans）、EJB容器" class="headerlink" title="业务层 （企业级Beans）、EJB容器"></a>业务层 （企业级Beans）、EJB容器</h4></li>
+</ul>
+</li>
+<li><h3 id="数据库服务器、邮件服务器"><a href="#数据库服务器、邮件服务器" class="headerlink" title="数据库服务器、邮件服务器"></a>数据库服务器、邮件服务器</h3><ul>
+<li><h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>Controller<br>View<br>Model</p>
+<hr>
+<h2 id="JavaEE上升简介"><a href="#JavaEE上升简介" class="headerlink" title="JavaEE上升简介"></a>JavaEE上升简介</h2><p><img src="https://i.loli.net/2020/11/16/aHr1CP8z3Z6ihsX.png" alt="F8428C89A565F522709E06293EFFEFD6.png"></p>
+<hr>
+<h2 id="Java历史"><a href="#Java历史" class="headerlink" title="Java历史"></a>Java历史</h2><ul>
+<li>SUN</li>
+<li>James Gosling创始人</li>
+</ul>
+<hr>
+<h2 id="Java特点"><a href="#Java特点" class="headerlink" title="Java特点"></a>Java特点</h2><ul>
+<li><strong>面向对象</strong></li>
+<li>可移植</li>
+<li>多线程</li>
+<li>分布式</li>
+<li>简单</li>
+<li>安全</li>
+<li><strong>跨平台</strong></li>
+<li><strong>开源</strong></li>
+</ul>
+<hr>
+<h2 id="Java机制"><a href="#Java机制" class="headerlink" title="Java机制"></a>Java机制</h2><ul>
+<li><h3 id="jvm（Java虚拟机）"><a href="#jvm（Java虚拟机）" class="headerlink" title="jvm（Java虚拟机）"></a>jvm（Java虚拟机）</h3><ul>
+<li>运用硬件或软件手段实现虚拟的计算机</li>
+<li>有自己完善的硬件架构</li>
+<li>可运行Java字节码</li>
+<li>有一个<strong>解释器</strong>组件，可以实现<strong>Java字节码</strong>和<strong>计算机操作系统</strong>之间的通信<br><img src="https://i.loli.net/2020/11/16/f3ZnYt8gC4BDXPm.png" alt="F7BABF57F69635C9513E251B6AF99CD5.png"></li>
+</ul>
+</li>
+<li><h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><ul>
+<li><code>C/C++</code>需要析构函数回收</li>
+<li>不再使用的内存区<strong>自动回收</strong> </li>
+<li>对象回收需要移除其所有<strong>引用</strong></li>
+<li>可能出现<strong>内存溢出</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Java应用程序"><a href="#Java应用程序" class="headerlink" title="Java应用程序"></a>Java应用程序</h2><ul>
+<li>Java严格区分<strong>大小写</strong></li>
+<li>class表示<strong>类</strong>，Java应用程序全部内容都必须在类中</li>
+<li><strong>源代码文件名</strong>必须与<strong>共有类名</strong>相同</li>
+<li>main函数，共有的<code>public</code>，静态的<code>static</code>，无返回类型<code>void</code>，带有一个字符串数组类型的参数<code>String args[]</code></li>
+<li>每个Java应用程序都必须有一个<strong>main函数</strong></li>
+<li>一对<strong>花括号</strong><code>&#123;&#125;</code>表示程序的开始和结束</li>
+<li>编写第一个应用程序<ul>
+<li>记得目录名<br>  <img src="https://i.loli.net/2020/11/16/peSxil4E7g9WOQy.png" alt="Snipaste_2020-11-16_16-19-52.png"></li>
+<li>Javac 编译文件后出现 HelloWorld.class文件<br><img src="https://i.loli.net/2020/11/16/MwOgf5Drn2AoU6K.png" alt="Snipaste_2020-11-16_16-20-07.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="文本溢出省略号表示"><a href="#文本溢出省略号表示" class="headerlink" title="文本溢出省略号表示"></a>文本溢出省略号表示</h2><h3 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/gY8LkfNR1TPK5Vx.png" alt="Snipaste_2020-11-16_10-24-46.png"></p>
-<h3 id="css-1"><a href="#css-1" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">display</span>: <span class="selector-tag">-webkit-box</span>;</span><br><span class="line"><span class="selector-tag">-webkit-box-orient</span>: <span class="selector-tag">vertical</span>;</span><br><span class="line"><span class="selector-tag">-webkit-line-clamp</span>: 2;</span><br><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br></pre></td></tr></table></figure>
-<p>第三行 允许显示的最大行数</p>
-<h3 id="html-1"><a href="#html-1" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">P</span> <span class="attr">class</span>=<span class="string">&quot;overflow&quot;</span>&gt;</span>内蒙古食药学会微循环用药多学科协作专委会组织召开Master Talk SCI Online Workshop线上学术讲座<span class="tag">&lt;/<span class="name">p</span>&gt;</span>	</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="集成开发工具"><a href="#集成开发工具" class="headerlink" title="集成开发工具"></a>集成开发工具</h2><h3 id="IDEA"><a href="#IDEA" class="headerlink" title="IDEA"></a>IDEA</h3><h3 id="MyEclipse"><a href="#MyEclipse" class="headerlink" title="MyEclipse"></a>MyEclipse</h3><pre><code>Eclipse基础上集成开发</code></pre>
 <hr>
-<h2 id="hr颜色"><a href="#hr颜色" class="headerlink" title="hr颜色"></a>hr颜色</h2><h3 id="效果图-2"><a href="#效果图-2" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/iWmFVwcpoCuUQ4v.png" alt="Snipaste_2020-11-16_10-30-47.png"></p>
-<h3 id="css-2"><a href="#css-2" class="headerlink" title="css"></a>css</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">border</span><span class="selector-pseudo">:0</span>;<span class="selector-tag">background-color</span>: <span class="selector-tag">deepskyblue</span>;<span class="selector-tag">height</span><span class="selector-pseudo">:2px</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="html-2"><a href="#html-2" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h2><hr>
+<h2 id="Java运行原理"><a href="#Java运行原理" class="headerlink" title="Java运行原理"></a>Java运行原理</h2><hr>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
+<li><h3 id="8种基本数据类型"><a href="#8种基本数据类型" class="headerlink" title="8种基本数据类型"></a>8种基本数据类型</h3><ul>
+<li><h4 id="整型：byte（-128——127）-short（-32768——32767）-int（-231——230）-long"><a href="#整型：byte（-128——127）-short（-32768——32767）-int（-231——230）-long" class="headerlink" title="整型：byte（-128——127） short（-32768——32767） int（-231——230） long"></a>整型：<code>byte（-128——127） short（-32768——32767） int（-231——230） long</code></h4><ul>
+<li>1，2，4，8个字节</li>
+</ul>
+</li>
+<li><h4 id="浮点型：float-double"><a href="#浮点型：float-double" class="headerlink" title="浮点型：float double"></a>浮点型：<code>float double</code></h4><ul>
+<li>4，8个字节</li>
+<li><code>float</code>后缀<code>f</code>，没有默认为<code>double</code><br><img src="https://i.loli.net/2020/11/18/QPshxgWzibEGSRF.png" alt="Snipaste_2020-11-18_10-30-22.png"></li>
+</ul>
+</li>
+<li><h4 id="字符型：char（0——65535）"><a href="#字符型：char（0——65535）" class="headerlink" title="字符型：char（0——65535）"></a>字符型：<code>char</code>（0——65535）</h4><ul>
+<li>2个字节</li>
+<li>不能将字符串字面量分配给char变量，即使String字面量只有一个字符。</li>
+<li>Java汉字只有一个字节，需要单引号</li>
+<li>字符转义序列<br><img src="https://i.loli.net/2020/11/18/4lCNhb7a5TeJYov.png" alt="Snipaste_2020-11-18_10-25-13.png"></li>
+<li>字符字面量可以表示为“\ uxxxx”形式的Unicode转义序列（<strong>ASCII字符集</strong>占据Unicode字符集中的前127个值）</li>
+</ul>
+</li>
+<li><h4 id="布尔型：boolean"><a href="#布尔型：boolean" class="headerlink" title="布尔型：boolean"></a>布尔型：<code>boolean</code></h4><ul>
+<li><code>false true</code></li>
+</ul>
+</li>
+<li><h4 id="下划线数字字面量"><a href="#下划线数字字面量" class="headerlink" title="下划线数字字面量"></a>下划线数字字面量</h4><ul>
+<li>可以在两位数字之间使用下划线</li>
+<li>允许以八进制，十六进制和二进制格式使用下划线<br><img src="https://i.loli.net/2020/11/18/KfkNvCzru9cslQF.png" alt="Snipaste_2020-11-18_10-32-26.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><ul>
+<li>字符串</li>
+<li>数组</li>
+<li>自定义</li>
+</ul>
+</li>
+<li><h3 id="强类型"><a href="#强类型" class="headerlink" title="强类型"></a>强类型</h3><ul>
+<li>Java是强类型语言</li>
+<li>每个变量、表达式都有类型，每个类型都有严格定义</li>
+<li>检查所有分配的类型的兼容性</li>
+<li>没有自动强制或有冲突类型的转换</li>
+</ul>
+</li>
+</ul>
 <hr>
-<h2 id="添加多张背景图"><a href="#添加多张背景图" class="headerlink" title="添加多张背景图"></a>添加多张背景图</h2><h3 id="效果图-3"><a href="#效果图-3" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://i.loli.net/2020/11/16/zBJYpnmGtoAauhL.png" alt="Snipaste_2020-11-16_10-36-10.png"></p>
-<h3 id="css-3"><a href="#css-3" class="headerlink" title="css"></a>css</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">background: url(https://i.loli.net/2020/11/11/9mfQudTwoKN1GaF.png)top center no-repeat,url(https://i.loli.net/2020/11/11/yLsgxuvlz1o78tP.png)center bottom no-repeat;</span><br></pre></td></tr></table></figure>
-<p>多个图片url之间用<code>,</code>隔开</p>
-<h3 id="html-3"><a href="#html-3" class="headerlink" title="html"></a>html</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
+<li><h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
+<li>赋予变量、类和方法的名称</li>
+<li>字母、下划线、美元符号$开头</li>
+<li>大小写敏感</li>
+<li>不能是关键字</li>
+</ul>
+</li>
+<li><h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><ul>
+<li>数据类型 变量名称</li>
+</ul>
+</li>
+<li><h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><ul>
+<li>小到大 自动类型转换<br><img src="https://i.loli.net/2020/11/18/7tkoYXTHeLBzjaI.png" alt="06FB789D403BBE1C533374560C27B75E.png"></li>
+<li>大到小 强制类型转换（目标类型 类型名=（目标类型）值）<br>会导致<strong>数据丢失</strong></li>
+<li>数字型、字符型、布尔型相互不兼容<br><img src="https://i.loli.net/2020/11/18/6nLuZ1Hex4kMQwv.png" alt="90813CE4BC591EB9DBD54FD9C46106A5.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h2><ul>
+<li><h3 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h3>  按出现的顺序依次执行</li>
+<li><h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3>  根据条件判断的结果不同，执行不同功能  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>()&#123;</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">1</span>:</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">2</span>:</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3>  重复执行一段代码  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(循环条件)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">&#125;<span class="keyword">while</span>(循环条件)</span><br></pre></td></tr></table></figure>
+  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(参数初始化;条件判断;更新循环变量)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(类型 变量名 : 数组)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><ul>
+<li><code>break</code>跳出整个循环</li>
+<li><code>continue</code>跳出当前循环</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="java-lang包"><a href="#java-lang包" class="headerlink" title="java.lang包"></a>java.lang包</h2><p>由java虚拟机<strong>自动引入</strong></p>
+<h3 id="String类"><a href="#String类" class="headerlink" title="String类"></a><code>String</code>类</h3><ul>
+<li><h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><ul>
+<li>例：<code>String str1 = &quot;lilei&quot;;</code><br>  常量区，常量区有的直接指向地址</li>
+<li>例：<code>String str2 = new String(&quot;lilei&quot;);</code><br>  堆内存分配新地址<h3 id="StringBuffer类"><a href="#StringBuffer类" class="headerlink" title="StringBuffer类"></a><code>StringBuffer</code>类</h3></li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>technology</category>
-        <category>question</category>
+        <category>knowledge</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>css</tag>
+        <tag>java</tag>
+        <tag>后端</tag>
+        <tag>javase</tag>
       </tags>
   </entry>
   <entry>
@@ -2388,185 +2440,6 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>java基础</title>
-    <url>/2020/11/16/java-ji-chu/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
-<hr>
-<h2 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h2><p>云端——JavaEE服务器——（数据库服务器、资源服务器）</p>
-<ul>
-<li><h3 id="客户机"><a href="#客户机" class="headerlink" title="客户机"></a>客户机</h3><ul>
-<li><h4 id="应用程序客户端（pc、手机端、物联网）"><a href="#应用程序客户端（pc、手机端、物联网）" class="headerlink" title="应用程序客户端（pc、手机端、物联网）"></a>应用程序客户端（pc、手机端、物联网）</h4></li>
-<li><h4 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a>前端页面</h4></li>
-</ul>
-</li>
-<li><h3 id="JavaEE服务器"><a href="#JavaEE服务器" class="headerlink" title="JavaEE服务器"></a>JavaEE服务器</h3><ul>
-<li><h4 id="WEB层（jsp-pages、servlet）"><a href="#WEB层（jsp-pages、servlet）" class="headerlink" title="WEB层（jsp pages、servlet）"></a>WEB层（jsp pages、servlet）</h4></li>
-<li><h4 id="业务层-（企业级Beans）、EJB容器"><a href="#业务层-（企业级Beans）、EJB容器" class="headerlink" title="业务层 （企业级Beans）、EJB容器"></a>业务层 （企业级Beans）、EJB容器</h4></li>
-</ul>
-</li>
-<li><h3 id="数据库服务器、邮件服务器"><a href="#数据库服务器、邮件服务器" class="headerlink" title="数据库服务器、邮件服务器"></a>数据库服务器、邮件服务器</h3><ul>
-<li><h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>Controller<br>View<br>Model</p>
-<hr>
-<h2 id="JavaEE上升简介"><a href="#JavaEE上升简介" class="headerlink" title="JavaEE上升简介"></a>JavaEE上升简介</h2><p><img src="https://i.loli.net/2020/11/16/aHr1CP8z3Z6ihsX.png" alt="F8428C89A565F522709E06293EFFEFD6.png"></p>
-<hr>
-<h2 id="Java历史"><a href="#Java历史" class="headerlink" title="Java历史"></a>Java历史</h2><ul>
-<li>SUN</li>
-<li>James Gosling创始人</li>
-</ul>
-<hr>
-<h2 id="Java特点"><a href="#Java特点" class="headerlink" title="Java特点"></a>Java特点</h2><ul>
-<li><strong>面向对象</strong></li>
-<li>可移植</li>
-<li>多线程</li>
-<li>分布式</li>
-<li>简单</li>
-<li>安全</li>
-<li><strong>跨平台</strong></li>
-<li><strong>开源</strong></li>
-</ul>
-<hr>
-<h2 id="Java机制"><a href="#Java机制" class="headerlink" title="Java机制"></a>Java机制</h2><ul>
-<li><h3 id="jvm（Java虚拟机）"><a href="#jvm（Java虚拟机）" class="headerlink" title="jvm（Java虚拟机）"></a>jvm（Java虚拟机）</h3><ul>
-<li>运用硬件或软件手段实现虚拟的计算机</li>
-<li>有自己完善的硬件架构</li>
-<li>可运行Java字节码</li>
-<li>有一个<strong>解释器</strong>组件，可以实现<strong>Java字节码</strong>和<strong>计算机操作系统</strong>之间的通信<br><img src="https://i.loli.net/2020/11/16/f3ZnYt8gC4BDXPm.png" alt="F7BABF57F69635C9513E251B6AF99CD5.png"></li>
-</ul>
-</li>
-<li><h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><ul>
-<li><code>C/C++</code>需要析构函数回收</li>
-<li>不再使用的内存区<strong>自动回收</strong> </li>
-<li>对象回收需要移除其所有<strong>引用</strong></li>
-<li>可能出现<strong>内存溢出</strong></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Java应用程序"><a href="#Java应用程序" class="headerlink" title="Java应用程序"></a>Java应用程序</h2><ul>
-<li>Java严格区分<strong>大小写</strong></li>
-<li>class表示<strong>类</strong>，Java应用程序全部内容都必须在类中</li>
-<li><strong>源代码文件名</strong>必须与<strong>共有类名</strong>相同</li>
-<li>main函数，共有的<code>public</code>，静态的<code>static</code>，无返回类型<code>void</code>，带有一个字符串数组类型的参数<code>String args[]</code></li>
-<li>每个Java应用程序都必须有一个<strong>main函数</strong></li>
-<li>一对<strong>花括号</strong><code>&#123;&#125;</code>表示程序的开始和结束</li>
-<li>编写第一个应用程序<ul>
-<li>记得目录名<br>  <img src="https://i.loli.net/2020/11/16/peSxil4E7g9WOQy.png" alt="Snipaste_2020-11-16_16-19-52.png"></li>
-<li>Javac 编译文件后出现 HelloWorld.class文件<br><img src="https://i.loli.net/2020/11/16/MwOgf5Drn2AoU6K.png" alt="Snipaste_2020-11-16_16-20-07.png"></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="集成开发工具"><a href="#集成开发工具" class="headerlink" title="集成开发工具"></a>集成开发工具</h2><h3 id="IDEA"><a href="#IDEA" class="headerlink" title="IDEA"></a>IDEA</h3><h3 id="MyEclipse"><a href="#MyEclipse" class="headerlink" title="MyEclipse"></a>MyEclipse</h3><pre><code>Eclipse基础上集成开发</code></pre>
-<hr>
-<h2 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h2><hr>
-<h2 id="Java运行原理"><a href="#Java运行原理" class="headerlink" title="Java运行原理"></a>Java运行原理</h2><hr>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
-<li><h3 id="8种基本数据类型"><a href="#8种基本数据类型" class="headerlink" title="8种基本数据类型"></a>8种基本数据类型</h3><ul>
-<li><h4 id="整型：byte（-128——127）-short（-32768——32767）-int（-231——230）-long"><a href="#整型：byte（-128——127）-short（-32768——32767）-int（-231——230）-long" class="headerlink" title="整型：byte（-128——127） short（-32768——32767） int（-231——230） long"></a>整型：<code>byte（-128——127） short（-32768——32767） int（-231——230） long</code></h4><ul>
-<li>1，2，4，8个字节</li>
-</ul>
-</li>
-<li><h4 id="浮点型：float-double"><a href="#浮点型：float-double" class="headerlink" title="浮点型：float double"></a>浮点型：<code>float double</code></h4><ul>
-<li>4，8个字节</li>
-<li><code>float</code>后缀<code>f</code>，没有默认为<code>double</code><br><img src="https://i.loli.net/2020/11/18/QPshxgWzibEGSRF.png" alt="Snipaste_2020-11-18_10-30-22.png"></li>
-</ul>
-</li>
-<li><h4 id="字符型：char（0——65535）"><a href="#字符型：char（0——65535）" class="headerlink" title="字符型：char（0——65535）"></a>字符型：<code>char</code>（0——65535）</h4><ul>
-<li>2个字节</li>
-<li>不能将字符串字面量分配给char变量，即使String字面量只有一个字符。</li>
-<li>Java汉字只有一个字节，需要单引号</li>
-<li>字符转义序列<br><img src="https://i.loli.net/2020/11/18/4lCNhb7a5TeJYov.png" alt="Snipaste_2020-11-18_10-25-13.png"></li>
-<li>字符字面量可以表示为“\ uxxxx”形式的Unicode转义序列（<strong>ASCII字符集</strong>占据Unicode字符集中的前127个值）</li>
-</ul>
-</li>
-<li><h4 id="布尔型：boolean"><a href="#布尔型：boolean" class="headerlink" title="布尔型：boolean"></a>布尔型：<code>boolean</code></h4><ul>
-<li><code>false true</code></li>
-</ul>
-</li>
-<li><h4 id="下划线数字字面量"><a href="#下划线数字字面量" class="headerlink" title="下划线数字字面量"></a>下划线数字字面量</h4><ul>
-<li>可以在两位数字之间使用下划线</li>
-<li>允许以八进制，十六进制和二进制格式使用下划线<br><img src="https://i.loli.net/2020/11/18/KfkNvCzru9cslQF.png" alt="Snipaste_2020-11-18_10-32-26.png"></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><ul>
-<li>字符串</li>
-<li>数组</li>
-<li>自定义</li>
-</ul>
-</li>
-<li><h3 id="强类型"><a href="#强类型" class="headerlink" title="强类型"></a>强类型</h3><ul>
-<li>Java是强类型语言</li>
-<li>每个变量、表达式都有类型，每个类型都有严格定义</li>
-<li>检查所有分配的类型的兼容性</li>
-<li>没有自动强制或有冲突类型的转换</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
-<li><h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
-<li>赋予变量、类和方法的名称</li>
-<li>字母、下划线、美元符号$开头</li>
-<li>大小写敏感</li>
-<li>不能是关键字</li>
-</ul>
-</li>
-<li><h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><ul>
-<li>数据类型 变量名称</li>
-</ul>
-</li>
-<li><h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><ul>
-<li>小到大 自动类型转换<br><img src="https://i.loli.net/2020/11/18/7tkoYXTHeLBzjaI.png" alt="06FB789D403BBE1C533374560C27B75E.png"></li>
-<li>大到小 强制类型转换（目标类型 类型名=（目标类型）值）<br>会导致<strong>数据丢失</strong></li>
-<li>数字型、字符型、布尔型相互不兼容<br><img src="https://i.loli.net/2020/11/18/6nLuZ1Hex4kMQwv.png" alt="90813CE4BC591EB9DBD54FD9C46106A5.png"></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h2><ul>
-<li><h3 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h3>  按出现的顺序依次执行</li>
-<li><h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3>  根据条件判断的结果不同，执行不同功能  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>()&#123;</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">1</span>:</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> 常量<span class="number">2</span>:</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3>  重复执行一段代码  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(循环条件)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">&#125;<span class="keyword">while</span>(循环条件)</span><br></pre></td></tr></table></figure>
-  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(参数初始化;条件判断;更新循环变量)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(类型 变量名 : 数组)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><ul>
-<li><code>break</code>跳出整个循环</li>
-<li><code>continue</code>跳出当前循环</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="java-lang包"><a href="#java-lang包" class="headerlink" title="java.lang包"></a>java.lang包</h2><p>由java虚拟机<strong>自动引入</strong></p>
-<h3 id="String类"><a href="#String类" class="headerlink" title="String类"></a><code>String</code>类</h3><ul>
-<li><h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><ul>
-<li>例：<code>String str1 = &quot;lilei&quot;;</code><br>  常量区，常量区有的直接指向地址</li>
-<li>例：<code>String str2 = new String(&quot;lilei&quot;);</code><br>  堆内存分配新地址<h3 id="StringBuffer类"><a href="#StringBuffer类" class="headerlink" title="StringBuffer类"></a><code>StringBuffer</code>类</h3></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>knowledge</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>后端</tag>
-        <tag>javase</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql</title>
     <url>/2020/11/08/mysql/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -2855,21 +2728,6 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>ssm controller 携参跳转页面</title>
-    <url>/2020/09/29/ssm-controller-xi-can-tiao-zhuan-ye-mian/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://blog.csdn.net/dianshanguo5388/article/details/102049302">https://blog.csdn.net/dianshanguo5388/article/details/102049302</a></p>
-<hr>
-<p>使用modelAndView完成跳转，然后可以将数据放入addObject传入跳转页面，然后页面上使用js直接获取数据，直接通过el表达式获取数据</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">index</span><span class="params">()</span></span>&#123;  </span><br><span class="line">     ModelAndView modelAndView = <span class="keyword">new</span> ModelAndView(<span class="string">&quot;/user/index&quot;</span>);  </span><br><span class="line">     modelAndView.addObject(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;xxx&quot;</span>);  </span><br><span class="line">     <span class="keyword">return</span> modelAndView;  </span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//js获取</span></span><br><span class="line">  <span class="keyword">var</span> name = $&#123;name &#125;;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>ssm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>spring_mvc 拦截器</title>
     <url>/2020/11/20/spring-mvc-lan-jie-qi/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -2912,19 +2770,145 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>二分法查找</title>
-    <url>/2020/09/29/er-fen-fa-cha-zhao-suan-fa/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://www.cnblogs.com/kyoner/p/11080078.html">https://www.cnblogs.com/kyoner/p/11080078.html</a></p>
+    <title>ssm controller 携参跳转页面</title>
+    <url>/2020/09/29/ssm-controller-xi-can-tiao-zhuan-ye-mian/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://blog.csdn.net/dianshanguo5388/article/details/102049302">https://blog.csdn.net/dianshanguo5388/article/details/102049302</a></p>
 <hr>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>寻找一个数、寻找左侧边界、寻找右侧边界</p>
-<hr>
-<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><figure class="highlight vbscript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> binarySearch(<span class="built_in">int</span>[] nums, <span class="built_in">int</span> target) &#123;</span><br><span class="line">	<span class="built_in">int</span> <span class="built_in">left</span> = <span class="number">0</span>, <span class="built_in">right</span> = ...;</span><br><span class="line">	<span class="keyword">while</span>(...) &#123;</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">mid</span> = (<span class="built_in">right</span> + <span class="built_in">left</span>) / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span> (nums[<span class="built_in">mid</span>] == target) &#123;</span><br><span class="line">			...</span><br><span class="line">		&#125; <span class="keyword">else</span>  <span class="keyword">if</span> (nums[<span class="built_in">mid</span>] &lt; target) &#123;</span><br><span class="line">			<span class="built_in">left</span> = ...</span><br><span class="line">		&#125; <span class="keyword">else</span>  <span class="keyword">if</span> (nums[<span class="built_in">mid</span>] &gt; target) &#123;</span><br><span class="line">			<span class="built_in">right</span> = ...</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用modelAndView完成跳转，然后可以将数据放入addObject传入跳转页面，然后页面上使用js直接获取数据，直接通过el表达式获取数据</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">index</span><span class="params">()</span></span>&#123;  </span><br><span class="line">     ModelAndView modelAndView = <span class="keyword">new</span> ModelAndView(<span class="string">&quot;/user/index&quot;</span>);  </span><br><span class="line">     modelAndView.addObject(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;xxx&quot;</span>);  </span><br><span class="line">     <span class="keyword">return</span> modelAndView;  </span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//js获取</span></span><br><span class="line">  <span class="keyword">var</span> name = $&#123;name &#125;;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>technology</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css</title>
+    <url>/2020/11/17/css/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li>层叠样式表</li>
+<li><h3 id="声明优先权"><a href="#声明优先权" class="headerlink" title="声明优先权"></a>声明优先权</h3><ol>
+<li>内联样式（HTML元素内部）</li>
+<li>内联样式表（<head>标签内部）</head></li>
+<li>外部样式表</li>
+<li>浏览器缺省设置（浏览器中样式声明）</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
+<li><h3 id="主要有两部分组成"><a href="#主要有两部分组成" class="headerlink" title="主要有两部分组成"></a>主要有两部分组成</h3><ul>
+<li><code>selector &#123;declaration1; declaration2; ... declarationN &#125;</code></li>
+<li>选择器（HTML元素）</li>
+<li>一条或多条声明（属性和值，用<code>:</code>隔开）<br><code>selector &#123;property: value&#125;</code></li>
+<li>值为若干单词需要加<code>&quot;&quot;</code></li>
+<li>多重声明用<code>;</code>隔开</li>
+<li>对大小写不敏感</li>
+<li><h3 id="选择器分组"><a href="#选择器分组" class="headerlink" title="选择器分组"></a>选择器分组</h3><ul>
+<li>被分组的选择器可以享用相同的声明，用<code>,</code>隔开<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>,<span class="selector-tag">h2</span>,<span class="selector-tag">h3</span>,<span class="selector-tag">h4</span>,<span class="selector-tag">h5</span>,<span class="selector-tag">h6</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: green;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h3 id="子元素从父元素继承属性"><a href="#子元素从父元素继承属性" class="headerlink" title="子元素从父元素继承属性"></a>子元素从父元素继承属性</h3>  不希望继承可以单独写子元素的特殊规则</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
+<li><h3 id="派生选择器"><a href="#派生选择器" class="headerlink" title="派生选择器"></a>派生选择器</h3>  根据元素在上下文的关系定义样式<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">li</span> <span class="selector-tag">strong</span>&#123;</span><br><span class="line">    <span class="attribute">font-style</span>: italic;</span><br><span class="line">    <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3>  <code>#</code>名称<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#red</span> &#123;<span class="attribute">color</span>:red;&#125;;</span><br></pre></td></tr></table></figure>
+  定义标签<code>id</code><br>  可以结合派生选择器使用</li>
+<li><h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3>  <code>.</code>类名<br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.center</span> &#123;<span class="attribute">text-align</span>: center&#125;</span><br></pre></td></tr></table></figure>
+  定义标签<code>class</code></li>
+<li><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3>  <code>[属性名]</code><br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[title]</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <code>[属性=值]</code><br>  例：  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[title=W3School]</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="attribute">border</span>:<span class="number">5px</span> solid blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  例：<br>  <code>input[type=&quot;text&quot;]</code></li>
+<li><h3 id="相邻兄弟选择器"><a href="#相邻兄弟选择器" class="headerlink" title="相邻兄弟选择器"></a>相邻兄弟选择器</h3>  例：<br>  <code>h1 + p &#123;margin-top:50px;&#125;</code></li>
+</ul>
+<hr>
+<h2 id="创建css"><a href="#创建css" class="headerlink" title="创建css"></a>创建css</h2><ul>
+<li><h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3>  例：<code>&lt;</code>link<code> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;</code>样式表名称.css<code>&quot; /&gt;</code></li>
+<li><h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3>  例：  <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h3>  例：<code>&lt;p </code>style<code>=&quot;color: sienna; margin-left: 20px&quot;&gt;&lt;/p&gt;</code></li>
+<li><h3 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h3>  如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从<strong>更具体</strong>的样式表中被继承过来。</li>
+</ul>
+<hr>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ul>
+<li><h3 id="背景色background-color"><a href="#背景色background-color" class="headerlink" title="背景色background-color"></a>背景色<code>background-color</code></h3></li>
+<li><h3 id="背景图像background-image-url"><a href="#背景图像background-image-url" class="headerlink" title="背景图像background-image: url()"></a>背景图像<code>background-image: url()</code></h3><ul>
+<li><h4 id="背景重复background-repeat-no-repeat"><a href="#背景重复background-repeat-no-repeat" class="headerlink" title="背景重复background-repeat: no-repeat;"></a>背景重复<code>background-repeat: no-repeat;</code></h4></li>
+<li><h4 id="背景定位background-position-center"><a href="#背景定位background-position-center" class="headerlink" title="背景定位background-position:center;"></a>背景定位<code>background-position:center;</code></h4></li>
+<li><h4 id="关键字位置"><a href="#关键字位置" class="headerlink" title="关键字位置"></a>关键字位置</h4><ul>
+<li>位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。如果只出现一个关键字，则认为另一个关键字是 center<br><code>background-position:top;</code>=中上位置</li>
+</ul>
+</li>
+<li><h4 id="背景关联background-attachment-fixed"><a href="#背景关联background-attachment-fixed" class="headerlink" title="背景关联background-attachment:fixed"></a>背景关联<code>background-attachment:fixed</code></h4><ul>
+<li>背景不随页面滚动<br><img src="https://i.loli.net/2020/11/17/R9QThDlxyi5Motq.png" alt="Snipaste_2020-11-17_10-02-01.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
+<h2 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h2><p><img src="https://i.loli.net/2020/11/17/hp5YvebdfIi1NwZ.png" alt="Snipaste_2020-11-17_10-06-34.png"></p>
+<hr>
+<h2 id="框模型"><a href="#框模型" class="headerlink" title="框模型"></a>框模型</h2><p><img src="https://i.loli.net/2020/11/17/MXZieS4PwjrAlxp.gif" alt="ct_boxmodel.gif"></p>
+<ul>
+<li>背景在边框以内的部分</li>
+<li>内边距、边框、外边距默认是0</li>
+<li>高、宽只在<strong>内容区域</strong></li>
+<li><h3 id="内边距padding"><a href="#内边距padding" class="headerlink" title="内边距padding"></a>内边距<code>padding</code></h3><ul>
+<li><code>h1 &#123;padding: 10px 0.25em 2ex 20%;&#125;</code>上、右、下、左</li>
+<li>只写一个就是各边距为相同值<br><img src="https://i.loli.net/2020/11/17/iBYyFT1DSWcvdLO.png" alt="Snipaste_2020-11-17_10-14-25.png"></li>
+</ul>
+</li>
+<li><h3 id="边框border"><a href="#边框border" class="headerlink" title="边框border"></a>边框<code>border</code></h3><ul>
+<li><code>border-style: solid dotted dashed double;</code>上、右、下、左，定义四种不同的边框<br><img src="https://i.loli.net/2020/11/17/zoun1DS4ZXJewh8.png" alt="Snipaste_2020-11-17_10-16-24.png"></li>
+<li><code>border-style: solid; border-width: 15px 5px 15px 5px;</code>上、右、下、左，定义四边宽度<br><img src="https://i.loli.net/2020/11/17/fNyL3wlR7APtBnp.png" alt="Snipaste_2020-11-17_10-17-54.png"></li>
+<li><code>border-style: none;</code>没有边框</li>
+<li>颜色<br><img src="https://i.loli.net/2020/11/17/Xcy4ShF6BbNVT8r.png" alt="Snipaste_2020-11-17_10-18-56.png"></li>
+</ul>
+</li>
+<li><h3 id="外边距margin"><a href="#外边距margin" class="headerlink" title="外边距margin"></a>外边距<code>margin</code></h3><ul>
+<li><code>margin : 10px 0px 15px 5px;</code>上、右、下、左</li>
+<li><code>margin: 0.5em 1em;</code>值复制<br><img src="https://i.loli.net/2020/11/17/UotY1zgnyFrdaev.png" alt="Snipaste_2020-11-17_10-22-27.png"><br><img src="https://i.loli.net/2020/11/17/tUKcqwnJlkDReQ8.gif" alt="ct_css_margin_value.gif"><br><img src="https://i.loli.net/2020/11/17/TQyLHclIqfwFeB9.png" alt="Snipaste_2020-11-17_10-23-39.png"></li>
+<li><h4 id="外边距合并"><a href="#外边距合并" class="headerlink" title="外边距合并"></a>外边距合并</h4><ul>
+<li>当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者<br><img src="https://i.loli.net/2020/11/17/CReQaGhPvErTBX7.gif" alt="ct_css_margin_collapsing.gif"><br><img src="https://i.loli.net/2020/11/17/GHNaof942Rwjbvi.gif" alt="ct_css_margin_collapsing_example_2.gif"><br><img src="https://i.loli.net/2020/11/17/7fyhOJATNzR9Xl3.gif" alt="ct_css_margin_collapsing_example_1.gif"><br><img src="https://i.loli.net/2020/11/17/5pLhv6JxjzEGCBf.gif" alt="ct_css_margin_collapsing_example_4.gif"><br><img src="https://i.loli.net/2020/11/17/2ut145gV7B3Jo9q.gif" alt="ct_css_margin_collapsing_example_3.gif"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="定位position"><a href="#定位position" class="headerlink" title="定位position"></a>定位<code>position</code></h2><p><img src="https://i.loli.net/2020/11/17/XPd5ShbYF2WLqtT.png" alt="Snipaste_2020-11-17_10-37-18.png"><br><img src="https://i.loli.net/2020/11/17/HRP1gLIoCJxYjqf.png" alt="Snipaste_2020-11-17_10-39-54.png"></p>
+<ul>
+<li><h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_left</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">left</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_right</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">right</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_top</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">top</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_bottom</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:relative</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">bottom</span><span class="selector-pseudo">:-20px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>这是位于正常位置的标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_left&quot;</span>&gt;</span>这个标题相对于其正常位置向左移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_right&quot;</span>&gt;</span>这个标题相对于其正常位置向右移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_top&quot;</span>&gt;</span>这个标题相对于其正常位置向上移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_bottom&quot;</span>&gt;</span>这个标题相对于其正常位置向下移动<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2020/11/17/uywsM2mCNF4qG1e.png" alt="Snipaste_2020-11-17_10-36-40.png"></p>
+</li>
+<li><h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">h2</span><span class="selector-class">.pos_abs</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">left</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">top</span><span class="selector-pseudo">:150px</span></span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;pos_abs&quot;</span>&gt;</span>这是带有绝对定位的标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2020/11/17/c9fPJ5wIln4qWgM.png" alt="Snipaste_2020-11-17_10-38-53.png"></p>
+</li>
+</ul>
+<hr>
+<h2 id="浮动float"><a href="#浮动float" class="headerlink" title="浮动float"></a>浮动<code>float</code></h2><hr>
+<h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><ul>
+<li>向某些选择器添加特殊效果</li>
+</ul>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -3021,6 +3005,22 @@ id: location.pathname</code></pre>
         <tag>tomcat</tag>
         <tag>域名</tag>
         <tag>ip</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二分法查找</title>
+    <url>/2020/09/29/er-fen-fa-cha-zhao-suan-fa/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://www.cnblogs.com/kyoner/p/11080078.html">https://www.cnblogs.com/kyoner/p/11080078.html</a></p>
+<hr>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>寻找一个数、寻找左侧边界、寻找右侧边界</p>
+<hr>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><figure class="highlight vbscript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> binarySearch(<span class="built_in">int</span>[] nums, <span class="built_in">int</span> target) &#123;</span><br><span class="line">	<span class="built_in">int</span> <span class="built_in">left</span> = <span class="number">0</span>, <span class="built_in">right</span> = ...;</span><br><span class="line">	<span class="keyword">while</span>(...) &#123;</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">mid</span> = (<span class="built_in">right</span> + <span class="built_in">left</span>) / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span> (nums[<span class="built_in">mid</span>] == target) &#123;</span><br><span class="line">			...</span><br><span class="line">		&#125; <span class="keyword">else</span>  <span class="keyword">if</span> (nums[<span class="built_in">mid</span>] &lt; target) &#123;</span><br><span class="line">			<span class="built_in">left</span> = ...</span><br><span class="line">		&#125; <span class="keyword">else</span>  <span class="keyword">if</span> (nums[<span class="built_in">mid</span>] &gt; target) &#123;</span><br><span class="line">			<span class="built_in">right</span> = ...</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return ...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -3122,6 +3122,25 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>前后端对于时间类型的处理</title>
+    <url>/2020/12/22/qian-hou-duan-dui-yu-shi-jian-lei-xing-de-chu-li/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://blog.csdn.net/swq463/article/details/81900964">https://blog.csdn.net/swq463/article/details/81900964</a></p>
+<hr>
+<ol>
+<li><h2 id="DateTimeFormat"><a href="#DateTimeFormat" class="headerlink" title="@DateTimeFormat"></a><code>@DateTimeFormat</code></h2> 后端接收格式</li>
+<li><h2 id="JsonFormat"><a href="#JsonFormat" class="headerlink" title="@JsonFormat"></a><code>@JsonFormat</code></h2> 向前端传送格式<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)</span>  </span><br><span class="line"><span class="meta">@JsonFormat(pattern=&quot;yyyy-MM-dd&quot;,timezone = &quot;GMT+8&quot;)</span>  </span><br><span class="line"><span class="keyword">private</span> Date userBirthday;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>后端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>快速排序</title>
     <url>/2020/09/29/kuai-su-pai-xu/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://www.jianshu.com/p/c1a05c50a75c">https://www.jianshu.com/p/c1a05c50a75c</a></p>
@@ -3139,25 +3158,6 @@ id: location.pathname</code></pre>
       <tags>
         <tag>算法</tag>
         <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前后端对于时间类型的处理</title>
-    <url>/2020/12/22/qian-hou-duan-dui-yu-shi-jian-lei-xing-de-chu-li/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://blog.csdn.net/swq463/article/details/81900964">https://blog.csdn.net/swq463/article/details/81900964</a></p>
-<hr>
-<ol>
-<li><h2 id="DateTimeFormat"><a href="#DateTimeFormat" class="headerlink" title="@DateTimeFormat"></a><code>@DateTimeFormat</code></h2> 后端接收格式</li>
-<li><h2 id="JsonFormat"><a href="#JsonFormat" class="headerlink" title="@JsonFormat"></a><code>@JsonFormat</code></h2> 向前端传送格式<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)</span>  </span><br><span class="line"><span class="meta">@JsonFormat(pattern=&quot;yyyy-MM-dd&quot;,timezone = &quot;GMT+8&quot;)</span>  </span><br><span class="line"><span class="keyword">private</span> Date userBirthday;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -3459,31 +3459,6 @@ id: location.pathname</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>选择排序</title>
-    <url>/2020/09/29/xuan-ze-pai-xu/</url>
-    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://www.jianshu.com/p/51100da14cc2">https://www.jianshu.com/p/51100da14cc2</a></p>
-<hr>
-<p>传送门<br><a href="https://www.lileiblog.top/2020/09/29/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">快速排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a></p>
-<hr>
-<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><p>每一次遍历待排序的序列，记录最小（大）值的下标，和待排序第一个元素进行比较，如果小（大）与待排序第一个元素，交换</p>
-<hr>
-<p><img src="https://i.loli.net/2020/10/07/E7hVPN1i2uB6FQL.gif" alt="9916080-105a90fe3d1e56d6.gif"></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: fanjiajia</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: 2019/3/1 下午9:05</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version</span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:选择排序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        selectSort(arr);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt; arr.length; i++)&#123;</span><br><span class="line">            System.out.print(arr[i] + <span class="string">&quot;,&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 选择排序</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>,k =<span class="number">0</span>; i &lt; arr.length; i++, k = i)&#123;</span><br><span class="line">            <span class="comment">// 这一层查找后面最小值的下标</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;arr.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[k] &gt; arr[j]) &#123;  <span class="comment">// 这个改为小与符合即为从大到小</span></span><br><span class="line">                    k = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 交换值</span></span><br><span class="line">            <span class="keyword">if</span>( i != k) &#123;</span><br><span class="line">                <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">                arr[i] = arr[k];</span><br><span class="line">                arr[k] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><ul>
-<li>时间复杂度：<img src="https://math.jianshu.com/math?formula=O(N%5E2)" alt="O(N^2)"></li>
-<li>空间复杂度:  <img src="https://math.jianshu.com/math?formula=O(1)" alt="O(1)"></li>
-<li>稳定性： 不稳定</li>
-</ul>
-]]></content>
-      <categories>
-        <category>technology</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面试题</title>
     <url>/2020/09/29/mian-shi-ti/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -3724,6 +3699,31 @@ finally语句块<br>和是：43</li>
       </tags>
   </entry>
   <entry>
+    <title>选择排序</title>
+    <url>/2020/09/29/xuan-ze-pai-xu/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a><br>感谢 ：<a href="https://www.jianshu.com/p/51100da14cc2">https://www.jianshu.com/p/51100da14cc2</a></p>
+<hr>
+<p>传送门<br><a href="https://www.lileiblog.top/2020/09/29/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">快速排序</a><br><a href="https://www.lileiblog.top/2020/09/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a></p>
+<hr>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><p>每一次遍历待排序的序列，记录最小（大）值的下标，和待排序第一个元素进行比较，如果小（大）与待排序第一个元素，交换</p>
+<hr>
+<p><img src="https://i.loli.net/2020/10/07/E7hVPN1i2uB6FQL.gif" alt="9916080-105a90fe3d1e56d6.gif"></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span>: fanjiajia</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span>: 2019/3/1 下午9:05</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Version</span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:选择排序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        selectSort(arr);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt; arr.length; i++)&#123;</span><br><span class="line">            System.out.print(arr[i] + <span class="string">&quot;,&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 选择排序</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>,k =<span class="number">0</span>; i &lt; arr.length; i++, k = i)&#123;</span><br><span class="line">            <span class="comment">// 这一层查找后面最小值的下标</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;arr.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[k] &gt; arr[j]) &#123;  <span class="comment">// 这个改为小与符合即为从大到小</span></span><br><span class="line">                    k = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 交换值</span></span><br><span class="line">            <span class="keyword">if</span>( i != k) &#123;</span><br><span class="line">                <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">                arr[i] = arr[k];</span><br><span class="line">                arr[k] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><ul>
+<li>时间复杂度：<img src="https://math.jianshu.com/math?formula=O(N%5E2)" alt="O(N^2)"></li>
+<li>空间复杂度:  <img src="https://math.jianshu.com/math?formula=O(1)" alt="O(1)"></li>
+<li>稳定性： 不稳定</li>
+</ul>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面试题_os</title>
     <url>/2020/09/30/mian-shi-ti-os/</url>
     <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
@@ -3888,6 +3888,60 @@ finally语句块<br>和是：43</li>
       </categories>
       <tags>
         <tag>portal</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面试题_java</title>
+    <url>/2021/03/04/mian-shi-ti-ji-zhu-mian-zong-jie/</url>
+    <content><![CDATA[<p>作者 ： <a href="http://www.lilei.host/">我有一把小榔头丶</a></p>
+<hr>
+<h2 id="20210304拓超科技"><a href="#20210304拓超科技" class="headerlink" title="20210304拓超科技"></a>20210304拓超科技</h2><ol>
+<li>Java基本数据类型<ol>
+<li>内置数据类型<ul>
+<li>short</li>
+<li>int</li>
+<li>long</li>
+<li>float</li>
+<li>double</li>
+<li>boolean</li>
+<li>char</li>
+</ul>
+</li>
+<li>引用类型</li>
+<li>常量</li>
+</ol>
+</li>
+<li>SpringMVC基本原理<ol>
+<li>用户请求</li>
+<li>返回ModelAndView</li>
+<li>响应用户<br><img src="https://i.loli.net/2021/03/04/FeQIPjCSrH9RDZO.png" alt="Snipaste_2021-03-04_21-24-24.png"><br><img src="https://i.loli.net/2021/03/04/OwFx7qCl46tj2AD.jpg" alt="249993-20161212142542042-2117679195.jpg"></li>
+</ol>
+</li>
+<li>MyBatis基本原理<ul>
+<li>自定义SQL、存bai储过程和高级映射的持久层框架</li>
+<li>使用简单的 XML或注解用于配置和原始映射</li>
+<li>优点：<br>消除了几乎所有的JDBC代码、参数的手工设置、结果集的检索</li>
+</ul>
+</li>
+<li>AOP基本原理<ul>
+<li>面向切面编程</li>
+<li>声明式事务管理</li>
+<li>支持用户自定义的切面</li>
+</ul>
+</li>
+<li>权限管理框架<ol>
+<li>Security</li>
+<li>Shiro</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>question</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
         <tag>面试</tag>
       </tags>
   </entry>
